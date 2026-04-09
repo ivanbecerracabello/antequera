@@ -1,0 +1,145 @@
+[gd_scene load_steps=15 format=3 uid="uid://dvwvesvaihoe8"]
+
+[ext_resource type="PackedScene" uid="uid://d2ocfa73ddylq" path="res://assets/buildings/puerta_estepa.blend" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://dgdgqjw7qflxe" path="res://assets/buildings/bullfighting_arena.blend" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://saskvuf3g353" path="res://assets/buildings/iglesia_san_sebastian.blend" id="3_k0juu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71j4m"]
+albedo_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qfnet"]
+material = SubResource("StandardMaterial3D_71j4m")
+size = Vector2(64, 8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mrxx"]
+albedo_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7r4gi"]
+material = SubResource("StandardMaterial3D_4mrxx")
+size = Vector2(64, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qfnet"]
+albedo_color = Color(0.501961, 0.501961, 0.501961, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i7141"]
+material = SubResource("StandardMaterial3D_qfnet")
+size = Vector2(32, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
+albedo_color = Color(1, 1, 0.301961, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e3hyu"]
+material = SubResource("StandardMaterial3D_w7kh3")
+size = Vector3(192, 0.2, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5onr"]
+albedo_color = Color(0.4, 1, 0.4, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jhx03"]
+material = SubResource("StandardMaterial3D_q5onr")
+size = Vector2(96, 80)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_o8fc1"]
+top_radius = 8.0
+bottom_radius = 8.0
+height = 0.2
+
+[node name="World" type="Node3D"]
+
+[node name="Roads" type="Node" parent="."]
+
+[node name="Wide" type="Node" parent="Roads"]
+
+[node name="Sombra" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, 0, -20)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Sombra2" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128, 0, -20)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Sombra3" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -192, 0, -20)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Alameda" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -12)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Alameda2" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, -12)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Albergue" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12, 0, -64)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Ronda" type="MeshInstance3D" parent="Roads/Wide"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -244, 0, 32)
+mesh = SubResource("PlaneMesh_qfnet")
+skeleton = NodePath("../..")
+
+[node name="Narrow" type="Node" parent="Roads"]
+
+[node name="CorazonJesus" type="MeshInstance3D" parent="Roads/Narrow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, 0, -114)
+mesh = SubResource("PlaneMesh_7r4gi")
+skeleton = NodePath("../../..")
+
+[node name="CorazonJesus2" type="MeshInstance3D" parent="Roads/Narrow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128, 0, -114)
+mesh = SubResource("PlaneMesh_7r4gi")
+skeleton = NodePath("../../..")
+
+[node name="Legion" type="MeshInstance3D" parent="Roads/Narrow"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 66, 0, 24)
+mesh = SubResource("PlaneMesh_7r4gi")
+skeleton = NodePath("../../..")
+
+[node name="Roundabouts" type="Node" parent="Roads"]
+
+[node name="Estepa" type="MeshInstance3D" parent="Roads/Roundabouts"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -16)
+mesh = SubResource("PlaneMesh_i7141")
+
+[node name="Bus Station" type="MeshInstance3D" parent="Roads/Roundabouts"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -112)
+mesh = SubResource("PlaneMesh_i7141")
+
+[node name="Mercadona" type="MeshInstance3D" parent="Roads/Roundabouts"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -240, 0, -16)
+mesh = SubResource("PlaneMesh_i7141")
+
+[node name="Ground" type="Node" parent="."]
+
+[node name="PaseoReal" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128, 0.1, -8)
+mesh = SubResource("BoxMesh_e3hyu")
+
+[node name="MapaGarden" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 0, -72)
+mesh = SubResource("PlaneMesh_jhx03")
+
+[node name="Buildings" type="Node" parent="."]
+
+[node name="BullfightingArena" parent="Buildings" instance=ExtResource("3_4wyf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.8735, 0.01, -46.1595)
+
+[node name="PuertaEstepa" parent="Buildings" instance=ExtResource("2_4wyf3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16, 0.2, -16)
+
+[node name="Traffic" type="Node" parent="."]
+
+[node name="EstepaRoundabout" type="MeshInstance3D" parent="Traffic"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0.1, -16)
+mesh = SubResource("CylinderMesh_o8fc1")
+skeleton = NodePath("../..")
+
+[node name="iglesia_san_sebastian" parent="." instance=ExtResource("3_k0juu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116, 0, -28)
