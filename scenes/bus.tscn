@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://x7le3kiw3yij"]
+
+[ext_resource type="Script" uid="uid://c1vahw5m847gv" path="res://scripts/bus.gd" id="1_t7ha2"]
+[ext_resource type="PackedScene" uid="uid://urobt42qg88t" path="res://assets/vehicles/bus.glb" id="2_stnsb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b0jew"]
+size = Vector3(2, 1, 6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qt2eu"]
+albedo_color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_50v30"]
+material = SubResource("StandardMaterial3D_qt2eu")
+top_radius = 0.35
+bottom_radius = 0.35
+height = 0.3
+radial_segments = 16
+
+[node name="VehicleBody3D" type="VehicleBody3D"]
+script = ExtResource("1_t7ha2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_b0jew")
+
+[node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+use_as_steering = true
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+wheel_friction_slip = 2.0
+suspension_travel = 0.4
+suspension_stiffness = 20.0
+damping_compression = 3.0
+damping_relaxation = 1.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_50v30")
+
+[node name="VehicleWheel3D2" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+use_as_steering = true
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+wheel_friction_slip = 2.0
+suspension_travel = 0.4
+suspension_stiffness = 20.0
+damping_compression = 3.0
+damping_relaxation = 1.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D2"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_50v30")
+
+[node name="VehicleWheel3D3" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1.5)
+use_as_traction = true
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+wheel_friction_slip = 2.0
+suspension_travel = 0.4
+suspension_stiffness = 20.0
+damping_compression = 3.0
+damping_relaxation = 1.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D3"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_50v30")
+
+[node name="VehicleWheel3D4" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.5)
+use_as_traction = true
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+wheel_friction_slip = 2.0
+suspension_travel = 0.4
+suspension_stiffness = 20.0
+damping_compression = 3.0
+damping_relaxation = 1.5
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleWheel3D4"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_50v30")
+
+[node name="bus" parent="." instance=ExtResource("2_stnsb")]
