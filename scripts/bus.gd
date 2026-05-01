@@ -12,9 +12,11 @@ var BUS_STOPS = [
 	Vector3(-27, 0, -22),
 	Vector3(-150, 0, -22),
 	Vector3(-162, 0, -30),
-	Vector3(-162, 0, -138),
-	Vector3(-120, 0, -178),
-	Vector3(-58, 0, -179)
+	
+	Vector3(-162, 0, -106),
+	Vector3(-121, 0, -110),
+	Vector3(-118, 0, -176),
+	Vector3(-59, 0, -180)
 ]
 
 var current_target_index: int = 0
