@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dwd2xmrgsoeo1"
-path="res://.godot/imported/capitan_moreno.glb-554cb62fe712d3b267acc121096f1e3b.scn"
+uid="uid://7ofd0wduvpyy"
+path="res://.godot/imported/bullfighting_arena.glb-bfd435519914eea79a914958dd1e6db1.scn"
 
 [deps]
 
-source_file="res://assets/buildings/capitan_moreno.glb"
-dest_files=["res://.godot/imported/capitan_moreno.glb-554cb62fe712d3b267acc121096f1e3b.scn"]
+source_file="res://assets/buildings/bullfighting_arena.glb"
+dest_files=["res://.godot/imported/bullfighting_arena.glb-bfd435519914eea79a914958dd1e6db1.scn"]
 
 [params]
 
