@@ -13,10 +13,8 @@ func toggle():
 	if closed:
 		tween.tween_property(self, "rotation:y", deg_to_rad(current_rotation - 90), 3)
 		closed = false
+		return 1
 	else:
 		tween.tween_property(self, "rotation:y", deg_to_rad(current_rotation), 3)
 		closed = true
-
-func _input(event):
-	if event.is_action_pressed("action"):
-		toggle()
+		return 0

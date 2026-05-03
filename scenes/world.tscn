@@ -836,6 +836,11 @@ shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Buildings" type="Node" parent="."]
 
+[node name="Gates" type="Node" parent="Buildings"]
+
+[node name="ArenaGate" parent="Buildings/Gates" instance=ExtResource("11_e3hyu")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -30.0738, 0, -59.9202)
+
 [node name="Arena" parent="Buildings" instance=ExtResource("1_o8fc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -48)
 
@@ -952,11 +957,6 @@ transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 128, 0, 
 [node name="Football" parent="Buildings" instance=ExtResource("14_o8fc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140, 0, 28)
 
-[node name="Gates" type="Node" parent="Buildings"]
-
-[node name="ArenaGate" parent="Buildings/Gates" instance=ExtResource("11_e3hyu")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -30.0738, 0, -59.9202)
-
 [node name="Ground" type="Node" parent="."]
 
 [node name="PaseoReal" type="MeshInstance3D" parent="Ground"]
@@ -989,5 +989,18 @@ shape = SubResource("ConvexPolygonShape3D_pm21f")
 [node name="Bus" parent="." instance=ExtResource("6_qfnet")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59, 0.35, -180)
 
-[node name="Player" parent="." instance=ExtResource("5_71j4m")]
+[node name="Car" parent="." instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9825, 0.3, -75.4513)
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+offset_left = 56.0
+offset_top = 201.0
+offset_right = 428.0
+offset_bottom = 232.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 49.0
+offset_right = 96.0
+offset_bottom = 72.0
