@@ -29,36 +29,14 @@ func _ready():
 	add_message("Welcome to Antequera Role Play.")
 
 func _physics_process(delta: float) -> void:
-	if not is_multiplayer_authority():
-		return
-	if not is_active:
+	if not is_active or command_mode:
 		return
 	
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	apply_gravity(delta)
+	void_check()
+	apply_jump()
+	apply_movement()
 	
-	if command_mode:
-		return
-	
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-	
-	if self.position.y < VOID:
-		handle_void()
-
-	# Get the input direction and handle the movement/deceleration.
-	var input_dir := Input.get_vector("left", "right", "forward", "backward")
-	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	direction = direction.rotated(Vector3.UP, pivot.rotation.y)
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		armature.rotation.y = lerp_angle(armature.rotation.y, atan2(-velocity.x, -velocity.z), LERP_VAL)
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
 	move_and_slide()
 
 func _input(event):
@@ -90,8 +68,29 @@ func _unhandled_input(event):
 			spring_arm.rotate_x(-event.relative.y * 0.005)
 			spring_arm.rotation.x = clamp(spring_arm.rotation.x, -PI/4, PI/4)
 
-func handle_void():
-	self.position = Vector3(0, 10, 0)
+func apply_gravity(delta):
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+func void_check():
+	if self.position.y < VOID:
+		self.position = Vector3(0, 10, 0)
+
+func apply_jump():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+func apply_movement():
+	var input_dir := Input.get_vector("left", "right", "forward", "backward")
+	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	direction = direction.rotated(Vector3.UP, pivot.rotation.y)
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+		armature.rotation.y = lerp_angle(armature.rotation.y, atan2(-velocity.x, -velocity.z), LERP_VAL)
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 func open_command():
 	command_mode = true
@@ -133,32 +132,34 @@ func parse_command(cmd: String):
 			else:
 				add_message("* You have closed the gate.")
 		"/miami":
-			var env = $"../WorldEnvironment".environment
-			var sky = Sky.new()
 			var mat = ProceduralSkyMaterial.new()
 			mat.sky_horizon_color = Color("#ff4fd8")
 			mat.ground_horizon_color = Color("#ff4fd8")
 			mat.ground_bottom_color = Color("#1a0033")
+			
+			var sky = Sky.new()
 			sky.sky_material = mat
+			
+			var env = $"../WorldEnvironment".environment
 			env.sky = sky
 		"/night":
-			var env = $"../WorldEnvironment".environment
-	
-			# 🌌 Sky
-			var sky = Sky.new()
 			var mat = ProceduralSkyMaterial.new()
+			mat.sky_horizon_color = Color("#0b1026")
+			mat.sky_top_color = Color("#05010f")
+			mat.ground_horizon_color = Color("#0a0a1a")
+			mat.ground_bottom_color = Color("#000000")
 			
-			mat.sky_horizon_color = Color("#0b1026")      # dark blue horizon
-			mat.sky_top_color = Color("#05010f")          # almost black sky
-			mat.ground_horizon_color = Color("#0a0a1a")   # dark ground haze
-			mat.ground_bottom_color = Color("#000000")    # pure darkness
-			
+			var sky = Sky.new()
 			sky.sky_material = mat
+			
+			var env = $"../WorldEnvironment".environment
 			env.sky = sky
-	
-			# 💡 Lighting (important for mood)
 			env.ambient_light_energy = 0.15
 			env.ambient_light_color = Color("#2a2a3a")
+			
+			var sun = $"../DirectionalLight3D"
+			sun.light_energy = 0.05
+			sun.shadow_enabled = false
 		_:
 			add_message("Unknown command.")
 			print("This command does NOT exist: ", args.slice(0))
