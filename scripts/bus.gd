@@ -12,7 +12,6 @@ var BUS_STOPS = [
 	Vector3(-27, 0, -22),
 	Vector3(-150, 0, -22),
 	Vector3(-162, 0, -30),
-	
 	Vector3(-162, 0, -106),
 	Vector3(-121, 0, -110),
 	Vector3(-118, 0, -176),
@@ -21,7 +20,7 @@ var BUS_STOPS = [
 
 var current_target_index: int = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var engine_power := 18
 	var target_position = BUS_STOPS[current_target_index]
 	var to_target = target_position - global_transform.origin
@@ -36,12 +35,8 @@ func _physics_process(delta):
 
 	# Calculate steering angle
 	var angle_to_target = forward.signed_angle_to(target_dir, Vector3.UP)
-	steering = clamp(angle_to_target * 2.0, -MAX_STEER, MAX_STEER) # Adjust multiplier for sensitivity
-
-	# The bus needs more power to drive uphill.
-	if current_target_index == 5:
-		engine_power = 30
-		
+	steering = clamp(angle_to_target * 2.0, -MAX_STEER, MAX_STEER)
+	
 	# Apply engine force (always moving forward)
 	engine_force = engine_power
 

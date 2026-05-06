@@ -5,9 +5,12 @@ var is_active := false
 @export var MAX_STEER = 0.9
 @export var ENGINE_POWER = 100
 
+@onready var twist_pivot = $TwistPivot
+@onready var pitch_pivot = $TwistPivot/PitchPivot
 var mouse_sensitivity := 0.001
 var twist_input := 0.0
 var pitch_input := 0.0
+
 
 # Rear lights when braking
 @onready var rear_left_light = $BrakeLight
@@ -24,7 +27,7 @@ func _physics_process(delta):
 	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
 	engine_force = Input.get_axis("backward", "forward") * ENGINE_POWER
 	
-	if Input.is_action_just_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("escape"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	apply_camera()
@@ -38,12 +41,12 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func apply_camera():
 	# Horizontal rotation.
-	$TwistPivot.rotate_y(twist_input)
+	twist_pivot.rotate_y(twist_input)
 	
 	# Vertical rotation.
-	$TwistPivot/PitchPivot.rotate_x(pitch_input)
-	$TwistPivot/PitchPivot.rotation.x = clamp(
-		$TwistPivot/PitchPivot.rotation.x,
+	pitch_pivot.rotate_x(pitch_input)
+	pitch_pivot.rotation.x = clamp(
+		pitch_pivot.rotation.x,
 		-0.5,
 		0.5
 	)

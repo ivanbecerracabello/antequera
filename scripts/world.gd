@@ -1,11 +1,10 @@
 extends Node3D
 
+# Switch between Player and Car.
 @onready var player = $Player
 @onready var car = $Car
-
 @onready var player_camera = $Player/Pivot/SpringArm3D/Camera3D
 @onready var car_camera = $Car/TwistPivot/PitchPivot/Camera3D
-
 var controlling_car := false
 
 func _input(event):

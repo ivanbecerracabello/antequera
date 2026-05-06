@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bhw15v63w2ysa"]
+
+[ext_resource type="Script" uid="uid://d142a2maiqld" path="res://scripts/inventory_ui.gd" id="1_tahbm"]
+
+[node name="InventoryUI" type="CanvasLayer" unique_id=778877993]
+script = ExtResource("1_tahbm")
+
+[node name="Panel" type="Panel" parent="." unique_id=1134219758]
+offset_left = 550.0
+offset_top = 100.0
+offset_right = 750.0
+offset_bottom = 350.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=206010097]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 95.0
+offset_bottom = 23.0
+text = "Inventory"
+
+[node name="Slot1" type="Button" parent="Panel" unique_id=523425697]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 28.0
+offset_bottom = 58.0
+
+[node name="Slot2" type="Button" parent="Panel" unique_id=810889581]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 28.0
+offset_bottom = 88.0
+
+[node name="Slot3" type="Button" parent="Panel" unique_id=760926446]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 110.0
+offset_right = 28.0
+offset_bottom = 118.0
+
+[node name="Slot4" type="Button" parent="Panel" unique_id=485107186]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 140.0
+offset_right = 28.0
+offset_bottom = 148.0
+
+[node name="Slot5" type="Button" parent="Panel" unique_id=481596819]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 170.0
+offset_right = 28.0
+offset_bottom = 178.0
+
+[node name="Hand" type="Label" parent="Panel" unique_id=901226534]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 220.0
+offset_right = 60.0
+offset_bottom = 243.0

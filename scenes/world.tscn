@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://b84mwsq5db4e0" path="res://assets/buildings/city_hall.blend" id="13_jhx03"]
 [ext_resource type="PackedScene" uid="uid://oskwxyn5bqya" path="res://assets/buildings/football.blend" id="14_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
+[ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory_ui.tscn" id="17_7t5mc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -188,10 +189,6 @@ size = Vector2(4, 64)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pm21f"]
 points = PackedVector3Array(2, 0, 32, -2, 0, 32, 2, 0, -32, -2, 0, -32)
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_dss4m"]
-radius = 0.4
-height = 1.7
-
 [node name="World" type="Node3D" unique_id=726503201]
 script = ExtResource("1_dss4m")
 
@@ -199,7 +196,7 @@ script = ExtResource("1_dss4m")
 environment = SubResource("Environment_i7141")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1219551878]
-transform = Transform3D(-0.17364824, -0.17100999, 0.9698454, 0, 0.9848073, 0.17364803, -0.98480797, 0.030153679, -0.17100993, 1000, 64, 0)
+transform = Transform3D(-0.17364824, -0.6330219, 0.75440586, 0, 0.7660441, 0.642787, -0.98480797, 0.11161885, -0.13302211, 1000, 64, 0)
 shadow_enabled = true
 
 [node name="Roads" type="Node" parent="." unique_id=544354002]
@@ -1025,6 +1022,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.265932, 1.2000008, -103.7
 [node name="Car" parent="." unique_id=361044799 instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.343334, 0.5000008, -37.92799)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2052332349]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.804, 0.85, -9.641)
-mesh = SubResource("CapsuleMesh_dss4m")
+[node name="InventoryUI" parent="." unique_id=778877993 instance=ExtResource("17_7t5mc")]
