@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://oskwxyn5bqya" path="res://assets/buildings/football.blend" id="14_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory_ui.tscn" id="17_7t5mc"]
+[ext_resource type="PackedScene" uid="uid://cibl7mykjw8oe" path="res://assets/inventory/beer.blend" id="18_lakw3"]
+[ext_resource type="PackedScene" uid="uid://ctcf0av40ya60" path="res://assets/inventory/mollete.blend" id="19_2lf6f"]
+[ext_resource type="PackedScene" uid="uid://dvfht3nxwwswk" path="res://assets/inventory/pistol.blend" id="20_7iits"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -1023,3 +1026,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.265932, 1.2000008, -103.7
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.343334, 0.5000008, -37.92799)
 
 [node name="InventoryUI" parent="." unique_id=778877993 instance=ExtResource("17_7t5mc")]
+visible = false
+
+[node name="beer" parent="." unique_id=113653992 instance=ExtResource("18_lakw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.223888, -1.9073486e-06, -107.3159)
+
+[node name="mollete" parent="." unique_id=83972498 instance=ExtResource("19_2lf6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.849916, 1.1920929e-07, -107.01601)
+
+[node name="pistol" parent="." unique_id=101963255 instance=ExtResource("20_7iits")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.296955, 1.1920929e-07, -106.26002)

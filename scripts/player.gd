@@ -23,8 +23,13 @@ var command_mode = false
 # Inventory.
 @onready var inventory_ui = $"../InventoryUI"
 const MAX_ITEMS := 5
+var inventory_open := false
 var inventory: Array[String] = []
 var held_item: String = ""
+@onready var held_item_asset = $Body/HeldItem
+var pistol_asset = preload("res://assets/inventory/pistol.blend")
+var beer_asset = preload("res://assets/inventory/beer.blend")
+var mollete_asset = preload("res://assets/inventory/mollete.blend")
 
 
 func _ready():
@@ -33,7 +38,6 @@ func _ready():
 	
 	inventory = ["Beer", "Mollete", "Pistol", "", ""]
 	held_item = ""
-	update_inventory_ui()
 
 func _physics_process(delta: float):
 	if not is_active:
@@ -42,7 +46,7 @@ func _physics_process(delta: float):
 	apply_gravity(delta)
 	void_check()
 	
-	if not command_mode:
+	if not command_mode and not inventory_open:
 		apply_jump()
 		apply_movement()
 	
@@ -53,7 +57,7 @@ func _input(event):
 		submit_command()
 		get_viewport().set_input_as_handled()
 		return
-	if not command_mode and event.is_action_pressed("text"):
+	if not command_mode and not inventory_open and event.is_action_pressed("text"):
 		open_command()
 		get_viewport().set_input_as_handled()
 		
@@ -126,6 +130,7 @@ func parse_command(cmd: String):
 	match base:
 		"/help":
 			add_message("List of commands:")
+			add_message("[INVENTORY] /inv /stash /use")
 			add_message("/gate")
 			add_message("/quit")
 		"/quit":
@@ -138,10 +143,16 @@ func parse_command(cmd: String):
 				add_message("* You have closed the gate.")
 		
 		# Inventory system.
-		"/inventory":
+		"/inv":
 			update_inventory_ui()
 			open_inventory()
-			
+		"/stash":
+			if held_item == "":
+				add_message("Error: your hands are empty!")
+			else:
+				add_to_inventory(held_item)
+		"/use":
+			use_item()
 		# Weather.
 		"/miami":
 			var mat = ProceduralSkyMaterial.new()
@@ -178,7 +189,6 @@ func parse_command(cmd: String):
 
 func update_inventory_ui():
 	inventory_ui.get_node("Panel/Hand").text = "Hand: " + (held_item if held_item != "" else "[empty]")
-
 	for i in range(5):
 		var slot = inventory_ui.get_node("Panel/Slot%d" % (i + 1))
 		if i < inventory.size() and inventory[i] != "":
@@ -186,43 +196,69 @@ func update_inventory_ui():
 		else:
 			slot.text = "[empty]"
 
-func add_to_inventory(item_id: String) -> bool:
-	if inventory.size() >= MAX_ITEMS:
-		return false
-
-	inventory.append(item_id)
-	return true
-
-func take_from_inventory(index: int):
-	if index < 0 or index >= inventory.size():
-		return
-	held_item = inventory[index]
-	
-func use_item():
-	match held_item:
-		"Beer":
-			print("You drink beer")
-			held_item = ""
-		"Mollete":
-			print("You eat a mollete")
-			held_item = ""
-		"Pistol":
-			print("Bang!")
-
-var inventory_open := false
-
 func open_inventory():
 	inventory_open = true
-	var panel = inventory_ui.get_node("Panel")
-	panel.visible = true
+	inventory_ui.visible = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func close_inventory():
 	inventory_open = false
 	inventory_ui.visible = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
+
+func add_to_inventory(hand_item: String) -> bool:
+	for i in range(inventory.size()):
+		if inventory[i] == "":
+			inventory[i] = hand_item
+			add_message("* You stash %s in the inventory." % held_item)
+			held_item = ""
+			update_held_item_visual()
+			return true
+	add_message("Error: your inventory is full.")
+	return false
+
 func try_equip(index: int):
-	print(index)
-	if held_item == "":
-		take_from_inventory(index)
+	if held_item != "":
+		add_message("Error: your hands are busy!")
+		return
+	if inventory[index] == "":
+		add_message("Error: that slot is empty!")
+		return
+	take_from_inventory(index)
+
+func take_from_inventory(index: int):
+	held_item = inventory[index]
+	inventory[index] = ""
+	add_message("* You take %s from slot %d." % [held_item, index+1])
+	update_held_item_visual()
+	close_inventory()
+
+func update_held_item_visual():
+	for child in held_item_asset.get_children():
+		child.queue_free()
+		
+	var item_asset = null
+		
+	match held_item:
+		"Pistol":
+			item_asset = pistol_asset
+		"Beer":
+			item_asset = beer_asset
+		"Mollete":
+			item_asset = mollete_asset
+	if item_asset != null:
+		var item_instance = item_asset.instantiate()
+		held_item_asset.add_child(item_instance)
+
+func use_item():
+	match held_item:
+		"Beer":
+			add_message("You drink beer.")
+			held_item = ""
+		"Mollete":
+			add_message("You eat a mollete.")
+			held_item = ""
+			
+		"Pistol":
+			add_message("Bang!")
+	update_held_item_visual()
