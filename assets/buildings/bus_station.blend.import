@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://oskwxyn5bqya"
-path="res://.godot/imported/football.blend-1539a8f85e1321c589ad88cf0cbb8169.scn"
+uid="uid://c80qb474eo2m5"
+path="res://.godot/imported/bus_station.blend-05292e08b9c924a13c37b4c2d991a598.scn"
 
 [deps]
 
-source_file="res://assets/buildings/football.blend"
-dest_files=["res://.godot/imported/football.blend-1539a8f85e1321c589ad88cf0cbb8169.scn"]
+source_file="res://assets/buildings/bus_station.blend"
+dest_files=["res://.godot/imported/bus_station.blend-05292e08b9c924a13c37b4c2d991a598.scn"]
 
 [params]
 

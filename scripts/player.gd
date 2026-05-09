@@ -31,6 +31,9 @@ var pistol_asset = preload("res://assets/inventory/pistol.blend")
 var beer_asset = preload("res://assets/inventory/beer.blend")
 var mollete_asset = preload("res://assets/inventory/mollete.blend")
 
+# Aiming with weapons.
+var aiming := false
+var aim_sensitivity := 0.003
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -53,26 +56,42 @@ func _physics_process(delta: float):
 	move_and_slide()
 
 func _input(event):
-	if command_mode and event.is_action_pressed("enter"):
+	if event.is_action_pressed("enter") and command_mode:
 		submit_command()
 		get_viewport().set_input_as_handled()
 		return
-	if not command_mode and not inventory_open and event.is_action_pressed("text"):
+	
+	if event.is_action_pressed("text") and not command_mode and not inventory_open:
 		open_command()
-		get_viewport().set_input_as_handled()
 		
-	if command_mode and event.is_action_pressed("escape"):
+	if event.is_action_pressed("escape") and command_mode:
 		command_input.visible = false
 		command_mode = false
 		command_input.text = ""
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	if event.is_action_pressed("escape") and inventory_open:
+		close_inventory()
+	
+	if event.is_action_pressed("right_click") and held_item == "Pistol":
+		aiming = true
+		rotation.y += pivot.rotation.y
+		pivot.rotation.y = 0
+	if event.is_action_released("right_click") and aiming:
+		aiming = false
 		
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-			pivot.rotate_y(-event.relative.x * 0.005)
 			spring_arm.rotate_x(-event.relative.y * 0.005)
 			spring_arm.rotation.x = clamp(spring_arm.rotation.x, -PI/4, PI/4)
+			if not aiming:
+				pivot.rotate_y(-event.relative.x * 0.005)
+			else:
+				# Rotate body horizontally when aiming:
+				rotate_y(-event.relative.x * 0.005)
+				# Rotate weapon vertically:
+				held_item_asset.rotation.x = -spring_arm.rotation.x
 
 func apply_gravity(delta):
 	if not is_on_floor():
@@ -83,7 +102,7 @@ func void_check():
 		self.position = Vector3(0, 10, 0)
 
 func apply_jump():
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("space") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 func apply_movement():
@@ -93,7 +112,12 @@ func apply_movement():
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
-		armature.rotation.y = lerp_angle(armature.rotation.y, atan2(-velocity.x, -velocity.z), LERP_VAL)
+		if not aiming:
+			armature.rotation.y = lerp_angle(armature.rotation.y, atan2(
+				-velocity.x,
+				-velocity.z),
+				LERP_VAL
+			)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
@@ -147,12 +171,15 @@ func parse_command(cmd: String):
 			update_inventory_ui()
 			open_inventory()
 		"/stash":
-			if held_item == "":
-				add_message("Error: your hands are empty!")
-			else:
+			if held_item != "":
 				add_to_inventory(held_item)
+			else:
+				add_message("Error: your hands are empty!")
 		"/use":
-			use_item()
+			if held_item != "":
+				use_item()
+			else:
+				add_message("Error: your hands are empty!")
 		# Weather.
 		"/miami":
 			var mat = ProceduralSkyMaterial.new()
