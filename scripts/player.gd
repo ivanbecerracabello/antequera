@@ -75,8 +75,7 @@ func _input(event):
 	
 	if event.is_action_pressed("right_click") and held_item == "Pistol":
 		aiming = true
-		rotation.y += pivot.rotation.y
-		pivot.rotation.y = 0
+		armature.rotation.y = pivot.rotation.y
 	if event.is_action_released("right_click") and aiming:
 		aiming = false
 		
@@ -89,7 +88,9 @@ func _unhandled_input(event):
 				pivot.rotate_y(-event.relative.x * 0.005)
 			else:
 				# Rotate body horizontally when aiming:
-				rotate_y(-event.relative.x * 0.005)
+				armature.rotate_y(-event.relative.x * 0.005)
+				# If we don't rotate the pivot too, we break ASDW.
+				pivot.rotate_y(-event.relative.x * 0.005)
 				# Rotate weapon vertically:
 				held_item_asset.rotation.x = -spring_arm.rotation.x
 

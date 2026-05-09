@@ -1029,7 +1029,7 @@ offset_bottom = 72.0
 visible = false
 
 [node name="Player" parent="." unique_id=360165300 instance=ExtResource("14_xo05s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.265932, 1.2000008, -103.71484)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.224112, 1.2000008, -29.801676)
 
 [node name="Car" parent="." unique_id=361044799 instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.343334, 0.5000008, -37.92799)
