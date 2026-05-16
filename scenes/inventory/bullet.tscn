@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b5yjvfrm3lir3"]
+
+[ext_resource type="Script" uid="uid://iw2fghx3erk5" path="res://scripts/inventory/bullet.gd" id="1_iggdx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iggdx"]
+albedo_color = Color(1, 1, 0, 1)
+emission_enabled = true
+emission = Color(0, 1, 0, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_srg8g"]
+material = SubResource("StandardMaterial3D_iggdx")
+size = Vector3(0.1, 0.1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_srg8g"]
+size = Vector3(0.1, 0.1, 1)
+
+[node name="Area3D" type="Area3D" unique_id=1156355946]
+collision_layer = 3
+script = ExtResource("1_iggdx")
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=645403497]
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=979442775]
+mesh = SubResource("BoxMesh_srg8g")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1338283348]
+shape = SubResource("BoxShape3D_srg8g")

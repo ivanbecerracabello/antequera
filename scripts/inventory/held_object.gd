@@ -8,6 +8,9 @@ var mollete_asset = preload("res://assets/inventory/mollete.blend")
 
 @onready var animation = $AnimationPlayer
 
+var bullet = load("res://scenes/inventory/bullet.tscn")
+@onready var weapon_barrel = $RayCast3D
+
 func use(object_name, amount):
 	if object_name == "Beer":
 		animation.play("drink")
@@ -44,3 +47,13 @@ func update_asset(object_name):
 
 func shoot():
 	animation.play("shoot")
+	'instance = bullet.instantiate()
+	instance.position = weapon_barrel.global_position
+	instance.transform.basis = weapon_barrel.global_transform.basis
+
+	get_tree().current_scene.add_child(instance)'
+	
+	var instance = bullet.instantiate()
+	instance.global_transform = weapon_barrel.global_transform
+	instance.direction = -weapon_barrel.global_transform.basis.z
+	get_tree().current_scene.add_child(instance)

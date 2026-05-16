@@ -35,6 +35,8 @@ var amount: int = 0
 # Aiming with weapons.
 var aiming := false
 var aim_sensitivity := 0.003
+var aim_offset := Vector3(0.4, 0.0, 0.0)
+var default_offset := Vector3(0.0, 0.0, 0.0)
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -60,6 +62,11 @@ func _physics_process(delta: float):
 		apply_movement()
 	
 	move_and_slide()
+	
+	if aiming:
+		spring_arm.position = spring_arm.position.lerp(aim_offset, 10 * delta)
+	else:
+		spring_arm.position = spring_arm.position.lerp(default_offset, 10 * delta)
 
 func _input(event):
 	if event.is_action_pressed("enter") and command_mode:
