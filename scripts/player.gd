@@ -86,9 +86,8 @@ func _input(event):
 	if event.is_action_released("right_click") and aiming:
 		aiming = false
 		held_item.rotation_degrees.x = 90
-		
 	if event.is_action_pressed("left_click") and held_item_name == "Pistol":
-		pass
+		held_item.shoot()
 		
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:

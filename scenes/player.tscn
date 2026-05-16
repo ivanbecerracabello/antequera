@@ -28,11 +28,6 @@ mesh = SubResource("CapsuleMesh_u8vuu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.4)
 mesh = SubResource("BoxMesh_g2els")
 
-[node name="HeldItem" type="MeshInstance3D" parent="Body" unique_id=69261055]
-transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.5, 0, 0)
-visible = false
-skeleton = NodePath("../..")
-
 [node name="HeldObject" parent="Body" unique_id=1382971991 instance=ExtResource("2_g2els")]
 transform = Transform3D(-1, 8.742278e-08, -3.821371e-15, 0, -4.371139e-08, -1, -8.742278e-08, -1, 4.371139e-08, 0.5, 0, 0)
 

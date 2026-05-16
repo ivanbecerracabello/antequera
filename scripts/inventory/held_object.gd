@@ -9,13 +9,12 @@ var mollete_asset = preload("res://assets/inventory/mollete.blend")
 @onready var animation = $AnimationPlayer
 
 func use(object_name, amount):
-	animation.play("drink")
 	if object_name == "Beer":
+		animation.play("drink")
 		amount -= 1
 	elif object_name == "Mollete":
+		animation.play("drink")
 		amount -= 1
-	else:
-		print("Kick ass!")
 	
 	if amount < 1:
 		update_asset(null)
@@ -42,3 +41,6 @@ func update_asset(object_name):
 
 	var instance = new_asset.instantiate()
 	asset.add_child(instance)
+
+func shoot():
+	animation.play("shoot")
