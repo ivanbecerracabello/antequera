@@ -20,16 +20,17 @@ var message_log: Array[String] = []
 const MAX_MESSAGES := 5
 var command_mode = false
 
-# Inventory.
+# Inventory UI.
 @onready var inventory_ui = $"../InventoryUI"
-const MAX_ITEMS := 5
 var inventory_open := false
-var inventory: Array[String] = []
-var held_item: String = ""
-@onready var held_item_asset = $Body/HeldItem
-var pistol_asset = preload("res://assets/inventory/pistol.blend")
-var beer_asset = preload("res://assets/inventory/beer.blend")
-var mollete_asset = preload("res://assets/inventory/mollete.blend")
+
+# Inventory.
+@onready var held_item = $Body/HeldObject
+var inventory: Array = [null, null, null, null, null]
+var held_item_name: String = ""
+var amount: int = 0
+#@onready var held_item_asset = $Body/HeldItem
+
 
 # Aiming with weapons.
 var aiming := false
@@ -39,8 +40,13 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	add_message("Welcome to Antequera Role Play.")
 	
-	inventory = ["Beer", "Mollete", "Pistol", "", ""]
-	held_item = ""
+	inventory = [
+		{ "name": "Beer", "amount": 5 },
+		{ "name": "Mollete", "amount": 5 },
+		{ "name": "Pistol", "amount": 7},
+		null, null
+	]
+	held_item_name = ""
 
 func _physics_process(delta: float):
 	if not is_active:
@@ -73,26 +79,30 @@ func _input(event):
 	if event.is_action_pressed("escape") and inventory_open:
 		close_inventory()
 	
-	if event.is_action_pressed("right_click") and held_item == "Pistol":
+	if event.is_action_pressed("right_click") and held_item_name == "Pistol":
 		aiming = true
 		armature.rotation.y = pivot.rotation.y
+		held_item.rotation.x = -spring_arm.rotation.x
 	if event.is_action_released("right_click") and aiming:
 		aiming = false
+		held_item.rotation_degrees.x = 90
+		
+	if event.is_action_pressed("left_click") and held_item_name == "Pistol":
+		pass
 		
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			spring_arm.rotate_x(-event.relative.y * 0.005)
 			spring_arm.rotation.x = clamp(spring_arm.rotation.x, -PI/4, PI/4)
+			pivot.rotate_y(-event.relative.x * 0.005)
 			if not aiming:
-				pivot.rotate_y(-event.relative.x * 0.005)
+				pass
 			else:
 				# Rotate body horizontally when aiming:
 				armature.rotate_y(-event.relative.x * 0.005)
-				# If we don't rotate the pivot too, we break ASDW.
-				pivot.rotate_y(-event.relative.x * 0.005)
 				# Rotate weapon vertically:
-				held_item_asset.rotation.x = -spring_arm.rotation.x
+				held_item.rotation.x = -spring_arm.rotation.x
 
 func apply_gravity(delta):
 	if not is_on_floor():
@@ -172,57 +182,37 @@ func parse_command(cmd: String):
 			update_inventory_ui()
 			open_inventory()
 		"/stash":
-			if held_item != "":
-				add_to_inventory(held_item)
+			if held_item_name != "":
+				add_to_inventory(held_item_name)
 			else:
 				add_message("Error: your hands are empty!")
 		"/use":
-			if held_item != "":
-				use_item()
-			else:
+			if held_item_name == "":
 				add_message("Error: your hands are empty!")
-		# Weather.
-		"/miami":
-			var mat = ProceduralSkyMaterial.new()
-			mat.sky_horizon_color = Color("#ff4fd8")
-			mat.ground_horizon_color = Color("#ff4fd8")
-			mat.ground_bottom_color = Color("#1a0033")
-			
-			var sky = Sky.new()
-			sky.sky_material = mat
-			
-			var env = $"../WorldEnvironment".environment
-			env.sky = sky
-		"/night":
-			var mat = ProceduralSkyMaterial.new()
-			mat.sky_horizon_color = Color("#0b1026")
-			mat.sky_top_color = Color("#05010f")
-			mat.ground_horizon_color = Color("#0a0a1a")
-			mat.ground_bottom_color = Color("#000000")
-			
-			var sky = Sky.new()
-			sky.sky_material = mat
-			
-			var env = $"../WorldEnvironment".environment
-			env.sky = sky
-			env.ambient_light_energy = 0.15
-			env.ambient_light_color = Color("#2a2a3a")
-			
-			var sun = $"../DirectionalLight3D"
-			sun.light_energy = 0.05
-			sun.shadow_enabled = false
+			else:
+				amount = held_item.use(held_item_name, amount)
+				if amount < 1:
+					held_item_name = ""
+		"/test":
+			pass
 		_:
 			add_message("Unknown command.")
 			print("This command does NOT exist: ", args.slice(0))
 
 func update_inventory_ui():
-	inventory_ui.get_node("Panel/Hand").text = "Hand: " + (held_item if held_item != "" else "[empty]")
+	if held_item_name != "":
+		inventory_ui.get_node("Panel/Hand").text = "Hand: %s (%d)" % [ held_item_name, amount ]
+	
 	for i in range(5):
 		var slot = inventory_ui.get_node("Panel/Slot%d" % (i + 1))
-		if i < inventory.size() and inventory[i] != "":
-			slot.text = inventory[i]
+		if i < inventory.size():
+			var item = inventory[i]
+			if item != null:
+				slot.text = "%s (%d)" % [item["name"], item["amount"]]
+			else:
+				slot.text = "     "
 		else:
-			slot.text = "[empty]"
+			slot.text = " "
 
 func open_inventory():
 	inventory_open = true
@@ -236,57 +226,30 @@ func close_inventory():
 
 func add_to_inventory(hand_item: String) -> bool:
 	for i in range(inventory.size()):
-		if inventory[i] == "":
-			inventory[i] = hand_item
-			add_message("* You stash %s in the inventory." % held_item)
-			held_item = ""
-			update_held_item_visual()
+		if inventory[i] == null:
+			inventory[i] = { "name": hand_item, "amount": amount }
+			add_message("* You stash %s in the inventory." % held_item_name)
+			held_item_name = ""
+			held_item.update_asset(null)
 			return true
 	add_message("Error: your inventory is full.")
 	return false
 
 func try_equip(index: int):
-	if held_item != "":
+	if held_item_name != "":
 		add_message("Error: your hands are busy!")
 		return
-	if inventory[index] == "":
+	if inventory[index] == null:
 		add_message("Error: that slot is empty!")
 		return
 	take_from_inventory(index)
 
 func take_from_inventory(index: int):
-	held_item = inventory[index]
-	inventory[index] = ""
-	add_message("* You take %s from slot %d." % [held_item, index+1])
-	update_held_item_visual()
+	var item = inventory[index]
+	held_item_name = item["name"]
+	amount = item["amount"]
+	inventory[index] = null
+	
+	add_message("* You take %s from slot %d." % [held_item_name, index+1])
+	held_item.update_asset(held_item_name)
 	close_inventory()
-
-func update_held_item_visual():
-	for child in held_item_asset.get_children():
-		child.queue_free()
-		
-	var item_asset = null
-		
-	match held_item:
-		"Pistol":
-			item_asset = pistol_asset
-		"Beer":
-			item_asset = beer_asset
-		"Mollete":
-			item_asset = mollete_asset
-	if item_asset != null:
-		var item_instance = item_asset.instantiate()
-		held_item_asset.add_child(item_instance)
-
-func use_item():
-	match held_item:
-		"Beer":
-			add_message("You drink beer.")
-			held_item = ""
-		"Mollete":
-			add_message("You eat a mollete.")
-			held_item = ""
-			
-		"Pistol":
-			add_message("Bang!")
-	update_held_item_visual()

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dvwvesvaihoe8"]
+[gd_scene format=3 uid="uid://0qe23221ngf1"]
 
 [ext_resource type="Script" uid="uid://e2fx2r6et7yl" path="res://scripts/world.gd" id="1_dss4m"]
 [ext_resource type="PackedScene" uid="uid://7ofd0wduvpyy" path="res://assets/buildings/bullfighting_arena.glb" id="1_o8fc1"]
