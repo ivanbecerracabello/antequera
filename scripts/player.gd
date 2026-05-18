@@ -175,7 +175,7 @@ func parse_command(cmd: String):
 		"/quit":
 			get_tree().quit()
 		"/gate":
-			var open = $"../Buildings/Gates/ArenaGate".toggle()
+			var open = $"../Other/Gates/ArenaGate".toggle()
 			if open:
 				add_message("* You have opened the gate.")
 			else:

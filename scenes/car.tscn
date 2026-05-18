@@ -23,6 +23,13 @@ albedo_color = Color(0.5058824, 0.019607844, 0.019607844, 1)
 material = SubResource("StandardMaterial3D_50v30")
 size = Vector2(0.1, 0.1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jtldb"]
+albedo_color = Color(0.42352942, 0.42352942, 0.42352942, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qt2eu"]
+material = SubResource("StandardMaterial3D_jtldb")
+size = Vector2(0.1, 0.1)
+
 [node name="VehicleBody3D" type="VehicleBody3D" unique_id=361044799]
 script = ExtResource("1_c35m8")
 
@@ -111,3 +118,11 @@ mesh = SubResource("PlaneMesh_jtldb")
 [node name="RightBrakeLight" type="MeshInstance3D" parent="." unique_id=1886834239]
 transform = Transform3D(1, 0, 0, 0, 1.1924881e-08, 1, 0, -1, 1.1924881e-08, -0.68, 0.37, -1.94)
 mesh = SubResource("PlaneMesh_jtldb")
+
+[node name="LeftReverseLight" type="MeshInstance3D" parent="." unique_id=2110989595]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.68, 0.27, -1.94)
+mesh = SubResource("PlaneMesh_qt2eu")
+
+[node name="RightReverseLight" type="MeshInstance3D" parent="." unique_id=957323314]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.68, 0.27, -1.94)
+mesh = SubResource("PlaneMesh_qt2eu")

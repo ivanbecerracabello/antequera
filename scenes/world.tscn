@@ -183,7 +183,7 @@ size = Vector3(128, 0.2, 16)
 points = PackedVector3Array(-64, -0.1, -8, -64, 0.1, -8, 64, -0.1, -8, -64, -0.1, 8, -64, 0.1, 8, 64, 0.1, -8, 64, -0.1, 8, 64, 0.1, 8)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5onr"]
-albedo_color = Color(0.18431373, 0.61960787, 0.2901961, 1)
+albedo_color = Color(0, 0.6, 0.2, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_jhx03"]
 material = SubResource("StandardMaterial3D_q5onr")
@@ -438,7 +438,7 @@ skeleton = NodePath("../../..")
 shape = SubResource("ConvexPolygonShape3D_7iits")
 
 [node name="Narrow14" type="MeshInstance3D" parent="Roads/Narrow" unique_id=374050310]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -62)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -74)
 mesh = SubResource("PlaneMesh_7r4gi")
 skeleton = NodePath("../../..")
 
@@ -876,7 +876,7 @@ shape = SubResource("BoxShape3D_ts3gi")
 [node name="BusStation" type="StaticBody3D" parent="Buildings" unique_id=1387709914]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -112)
 
-[node name="Asset" parent="Buildings/BusStation" unique_id=1197560578 instance=ExtResource("18_lakw3")]
+[node name="Asset" parent="Buildings/BusStation" unique_id=813894545 instance=ExtResource("18_lakw3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/BusStation" unique_id=1048664141]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.05, -1)
@@ -1072,5 +1072,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.224112, 1.2000008, -29.80
 [node name="Car" parent="." unique_id=361044799 instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.343334, 0.5000008, -66.715126)
 
-[node name="Tree" parent="." unique_id=406781313 instance=ExtResource("19_pm21f")]
+[node name="Tree" parent="." unique_id=1958798803 instance=ExtResource("19_pm21f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.01138, 3.8146973e-06, -38.44656)
+
+[node name="Tree2" parent="." unique_id=1993251036 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.629206, 3.8146973e-06, -76.17746)
+
+[node name="Tree3" parent="." unique_id=28075631 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.79845, 3.8146973e-06, -76.17746)
+
+[node name="Tree4" parent="." unique_id=1222631667 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.79845, 3.8146973e-06, -102.01401)
+
+[node name="Tree5" parent="." unique_id=1735573259 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.39804, 3.8146973e-06, -102.01401)
+
+[node name="Tree6" parent="." unique_id=1224842520 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.39804, 3.8146973e-06, -40.911407)

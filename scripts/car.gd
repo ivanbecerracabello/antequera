@@ -13,8 +13,8 @@ var pitch_input := 0.0
 
 
 # Rear lights when braking
-@onready var left_brake_light = $LeftBrakeLight
-@onready var right_brake_light = $RightBrakeLight
+@onready var brake_light = $LeftBrakeLight
+@onready var reverse_light = $LeftReverseLight
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -33,6 +33,7 @@ func _physics_process(delta):
 	
 	apply_camera()
 	apply_braking_lights()
+	apply_reverse_lights()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -55,25 +56,37 @@ func apply_camera():
 	pitch_input = 0.0
 
 func apply_braking_lights():
-	var left_light = left_brake_light.get_active_material(0)
-	var right_light = right_brake_light.get_active_material(0)
+	var lights = brake_light.get_active_material(0)
 	
 	var throttle = Input.get_axis("backward", "forward")
 	var forward_speed = transform.basis.z.dot(linear_velocity)
 	var braking = throttle < 0 and forward_speed > 1.0
 	if braking:
-		left_light.albedo_color = Color8(220, 40, 40)
-		left_light.emission_enabled = true
-		left_light.emission = Color(0.8, 0.05, 0.05)
-		left_light.emission_energy_multiplier = 1.5
+		lights.albedo_color = Color8(220, 40, 40)
+		lights.emission_enabled = true
+		lights.emission = Color(0.8, 0.05, 0.05)
+		lights.emission_energy_multiplier = 1.5
 		
-		right_light.albedo_color = Color8(220, 40, 40)
-		right_light.emission_enabled = true
-		right_light.emission = Color(0.8, 0.05, 0.05)
-		right_light.emission_energy_multiplier = 1.5
 	else:
-		left_light.albedo_color = Color8(129, 5, 5)
-		left_light.emission_enabled = false
-		
-		right_light.albedo_color = Color8(129, 5, 5)
-		right_light.emission_enabled = false
+		lights.albedo_color = Color8(129, 5, 5)
+		lights.emission_enabled = false
+
+func apply_reverse_lights():
+	var lights = reverse_light.get_active_material(0)
+
+	var throttle = Input.get_axis("backward", "forward")
+	var forward_speed = transform.basis.z.dot(linear_velocity)
+
+	var pressing_reverse = throttle < -0.2
+	var moving_backward = forward_speed < -1.0
+
+	var is_reversing = pressing_reverse and moving_backward
+
+	if is_reversing:
+		lights.albedo_color = Color("#A8C8FF")
+		'lights.emission_enabled = true
+		lights.emission = Color(0.5, 0.6, 1.0)
+		lights.emission_energy_multiplier = 1.2'
+	else:
+		lights.albedo_color = Color("#6C6C6C")
+		#lights.emission_enabled = false
