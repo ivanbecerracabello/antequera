@@ -16,10 +16,17 @@ bottom_radius = 0.3
 height = 0.2
 radial_segments = 8
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50v30"]
+albedo_color = Color(0.5058824, 0.019607844, 0.019607844, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jtldb"]
+material = SubResource("StandardMaterial3D_50v30")
+size = Vector2(0.1, 0.1)
+
 [node name="VehicleBody3D" type="VehicleBody3D" unique_id=361044799]
 script = ExtResource("1_c35m8")
 
-[node name="Asset" parent="." unique_id=609349887 instance=ExtResource("2_qt2eu")]
+[node name="Asset" parent="." unique_id=1746796797 instance=ExtResource("2_qt2eu")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1511531394]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.15)
@@ -97,8 +104,10 @@ visible = false
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -5)
 visible = false
 
-[node name="BrakeLight" type="OmniLight3D" parent="." unique_id=1140700341]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -2.2)
-light_color = Color(1, 0, 0, 1)
-light_energy = 0.0
-omni_range = 2.0
+[node name="LeftBrakeLight" type="MeshInstance3D" parent="." unique_id=706494761]
+transform = Transform3D(1, 0, 0, 0, 1.1924881e-08, 1, 0, -1, 1.1924881e-08, 0.68, 0.37, -1.94)
+mesh = SubResource("PlaneMesh_jtldb")
+
+[node name="RightBrakeLight" type="MeshInstance3D" parent="." unique_id=1886834239]
+transform = Transform3D(1, 0, 0, 0, 1.1924881e-08, 1, 0, -1, 1.1924881e-08, -0.68, 0.37, -1.94)
+mesh = SubResource("PlaneMesh_jtldb")

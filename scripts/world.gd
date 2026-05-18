@@ -8,7 +8,7 @@ extends Node3D
 var controlling_car := false
 
 func _ready() -> void:
-	var mat = ProceduralSkyMaterial.new()
+	'var mat = ProceduralSkyMaterial.new()
 	mat.sky_horizon_color = Color("#0b1026")
 	mat.sky_top_color = Color("#05010f")
 	mat.ground_horizon_color = Color("#0a0a1a")
@@ -23,8 +23,8 @@ func _ready() -> void:
 	env.ambient_light_color = Color("#2a2a3a")
 	
 	var sun = $"DirectionalLight3D"
-	sun.light_energy = 0.05
-	sun.shadow_enabled = false
+	sun.light_energy = 0.01
+	sun.shadow_enabled = false'
 
 func _input(event):
 	if player.command_mode:

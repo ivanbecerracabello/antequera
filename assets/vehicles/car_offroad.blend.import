@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://m3yviec0fugt"
-path="res://.godot/imported/capitan_moreno.blend-6f1a5695b21953c9e08e85241b8fd153.scn"
+uid="uid://de1a5xiqvgwsw"
+path="res://.godot/imported/car_offroad.blend-1d5ac6392fedec6232ea1fd921590353.scn"
 
 [deps]
 
-source_file="res://assets/buildings/capitan_moreno.blend"
-dest_files=["res://.godot/imported/capitan_moreno.blend-6f1a5695b21953c9e08e85241b8fd153.scn"]
+source_file="res://assets/vehicles/car_offroad.blend"
+dest_files=["res://.godot/imported/car_offroad.blend-1d5ac6392fedec6232ea1fd921590353.scn"]
 
 [params]
 

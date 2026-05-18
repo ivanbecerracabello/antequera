@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://m3yviec0fugt"
-path="res://.godot/imported/capitan_moreno.blend-6f1a5695b21953c9e08e85241b8fd153.scn"
+uid="uid://b4hwdxjm1m4uq"
+path="res://.godot/imported/lottery_cabin.blend-10132aed9e2df2639417dcc1c853bfe6.scn"
 
 [deps]
 
-source_file="res://assets/buildings/capitan_moreno.blend"
-dest_files=["res://.godot/imported/capitan_moreno.blend-6f1a5695b21953c9e08e85241b8fd153.scn"]
+source_file="res://assets/others/lottery_cabin.blend"
+dest_files=["res://.godot/imported/lottery_cabin.blend-10132aed9e2df2639417dcc1c853bfe6.scn"]
 
 [params]
 

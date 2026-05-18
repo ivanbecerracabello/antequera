@@ -102,9 +102,7 @@ func _unhandled_input(event):
 			spring_arm.rotate_x(-event.relative.y * 0.005)
 			spring_arm.rotation.x = clamp(spring_arm.rotation.x, -PI/4, PI/4)
 			pivot.rotate_y(-event.relative.x * 0.005)
-			if not aiming:
-				pass
-			else:
+			if aiming:
 				# Rotate body horizontally when aiming:
 				armature.rotate_y(-event.relative.x * 0.005)
 				# Rotate weapon vertically:

@@ -13,7 +13,8 @@ var pitch_input := 0.0
 
 
 # Rear lights when braking
-@onready var rear_left_light = $BrakeLight
+@onready var left_brake_light = $LeftBrakeLight
+@onready var right_brake_light = $RightBrakeLight
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -54,11 +55,25 @@ func apply_camera():
 	pitch_input = 0.0
 
 func apply_braking_lights():
+	var left_light = left_brake_light.get_active_material(0)
+	var right_light = right_brake_light.get_active_material(0)
+	
 	var throttle = Input.get_axis("backward", "forward")
 	var forward_speed = transform.basis.z.dot(linear_velocity)
-
-	var braking = throttle < 0 and forward_speed > 2.0
+	var braking = throttle < 0 and forward_speed > 1.0
 	if braking:
-		rear_left_light.light_energy = 2
+		left_light.albedo_color = Color8(220, 40, 40)
+		left_light.emission_enabled = true
+		left_light.emission = Color(0.8, 0.05, 0.05)
+		left_light.emission_energy_multiplier = 1.5
+		
+		right_light.albedo_color = Color8(220, 40, 40)
+		right_light.emission_enabled = true
+		right_light.emission = Color(0.8, 0.05, 0.05)
+		right_light.emission_energy_multiplier = 1.5
 	else:
-		rear_left_light.light_energy = 0.0
+		left_light.albedo_color = Color8(129, 5, 5)
+		left_light.emission_enabled = false
+		
+		right_light.albedo_color = Color8(129, 5, 5)
+		right_light.emission_enabled = false
