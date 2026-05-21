@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b84mwsq5db4e0"
-path="res://.godot/imported/city_hall.blend-7b817c5820ad1fd27b5ccc46ed790f19.scn"
+uid="uid://b2xhh8wxslpmj"
+path="res://.godot/imported/garage.blend-9610a5ea68e1a4c28e60c25dbe61d08b.scn"
 
 [deps]
 
-source_file="res://assets/buildings/city_hall.blend"
-dest_files=["res://.godot/imported/city_hall.blend-7b817c5820ad1fd27b5ccc46ed790f19.scn"]
+source_file="res://assets/buildings/garage.blend"
+dest_files=["res://.godot/imported/garage.blend-9610a5ea68e1a4c28e60c25dbe61d08b.scn"]
 
 [params]
 

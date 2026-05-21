@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b84mwsq5db4e0"
-path="res://.godot/imported/city_hall.blend-7b817c5820ad1fd27b5ccc46ed790f19.scn"
+uid="uid://bq06e0v1g00uk"
+path="res://.godot/imported/barrier.blend-ad4c1ac64b0e0f43a0818be543e54179.scn"
 
 [deps]
 
-source_file="res://assets/buildings/city_hall.blend"
-dest_files=["res://.godot/imported/city_hall.blend-7b817c5820ad1fd27b5ccc46ed790f19.scn"]
+source_file="res://assets/others/barrier.blend"
+dest_files=["res://.godot/imported/barrier.blend-ad4c1ac64b0e0f43a0818be543e54179.scn"]
 
 [params]
 

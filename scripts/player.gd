@@ -175,7 +175,21 @@ func parse_command(cmd: String):
 		"/quit":
 			get_tree().quit()
 		"/gate":
-			var open = $"../Other/Gates/ArenaGate".toggle()
+			var barrier = $"../Barrier"
+			var arena_gate = $"../Other/Gates/ArenaGate"
+			
+			var distance_barrier = global_position.distance_to(barrier.global_position)
+			var distance_arena_gate = global_position.distance_to(arena_gate.global_position)
+			
+			var open
+			
+			if distance_barrier < 10:
+				open = barrier.toggle("z")
+			elif distance_arena_gate < 10:
+				open = arena_gate.toggle("y")
+			else:
+				return
+			
 			if open:
 				add_message("* You have opened the gate.")
 			else:

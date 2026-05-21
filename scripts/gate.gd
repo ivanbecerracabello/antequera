@@ -1,20 +1,26 @@
-extends StaticBody3D
+extends Node3D
 
 var closed
-var current_rotation
+var full_rotation := {}
 
 func _ready():
 	closed = true
-	current_rotation = rad_to_deg(rotation.y)
+	full_rotation.x = rotation.x
+	full_rotation.y = rotation.y
+	full_rotation.z = rotation.z
 
-func toggle() -> bool:
+func toggle(axis: String) -> bool:
 	var tween = create_tween()
+	var property = "rotation:" + axis
+	var start_rotation = full_rotation[axis]
 	
 	if closed:
-		tween.tween_property(self, "rotation:y", deg_to_rad(current_rotation - 90), 3)
+		tween.tween_property(self, property,
+			start_rotation - deg_to_rad(90), 3
+		)
 		closed = false
 		return true
 	else:
-		tween.tween_property(self, "rotation:y", deg_to_rad(current_rotation), 3)
+		tween.tween_property(self, property, start_rotation, 3)
 		closed = true
 		return false
