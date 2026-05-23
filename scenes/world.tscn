@@ -23,6 +23,8 @@
 [ext_resource type="PackedScene" uid="uid://b2xhh8wxslpmj" path="res://assets/buildings/garage.blend" id="21_7iits"]
 [ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/others/barrier.blend" id="22_oo54l"]
 [ext_resource type="PackedScene" uid="uid://dexx1lub5ng5" path="res://assets/buildings/paseo.blend" id="23_kpybi"]
+[ext_resource type="PackedScene" uid="uid://bfe2v8cus8m8c" path="res://assets/buildings/poor_hood.blend" id="24_ctatt"]
+[ext_resource type="PackedScene" uid="uid://c1w1w55ad082s" path="res://assets/buildings/flat.blend" id="25_xgqkh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -193,16 +195,6 @@ size = Vector3(2, 0.1, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_rup4s"]
 size = Vector3(4, 1, 0.1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7kh3"]
-albedo_color = Color(1, 1, 0.301961, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_e3hyu"]
-material = SubResource("StandardMaterial3D_w7kh3")
-size = Vector3(128, 0.2, 16)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xo05s"]
-points = PackedVector3Array(-64, -0.1, -8, -64, 0.1, -8, 64, -0.1, -8, -64, -0.1, 8, -64, 0.1, 8, 64, 0.1, -8, 64, -0.1, 8, 64, 0.1, 8)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5onr"]
 albedo_color = Color(0, 0.6, 0.2, 1)
 
@@ -272,7 +264,7 @@ script = ExtResource("1_dss4m")
 environment = SubResource("Environment_i7141")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1219551878]
-transform = Transform3D(-0.17364824, -0.6330219, 0.75440586, 0, 0.7660441, 0.642787, -0.98480797, 0.11161885, -0.13302211, 1000, 64, 0)
+transform = Transform3D(-0.17364824, -0.63302183, 0.75440586, 0, 0.766044, 0.642787, -0.98480797, 0.11161884, -0.13302211, 1000, 64, 0)
 
 [node name="Roads" type="Node" parent="." unique_id=544354002]
 
@@ -771,7 +763,7 @@ mesh = SubResource("BoxMesh_71j4m")
 shape = SubResource("ConvexPolygonShape3D_munwf")
 
 [node name="Sidewalk14" type="MeshInstance3D" parent="Roads/Sidewalk" unique_id=833317208]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116, 0.05, 55)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -126, 0.05, 55)
 mesh = SubResource("BoxMesh_71j4m")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Roads/Sidewalk/Sidewalk14" unique_id=1750511678]
@@ -900,7 +892,7 @@ shape = SubResource("BoxShape3D_7iits")
 [node name="Football" type="StaticBody3D" parent="Buildings" unique_id=1246642580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140, 0, 28)
 
-[node name="Asset" parent="Buildings/Football" unique_id=1290094279 instance=ExtResource("14_o8fc1")]
+[node name="Asset" parent="Buildings/Football" unique_id=1952748376 instance=ExtResource("14_o8fc1")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Football" unique_id=1453399569]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
@@ -967,15 +959,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 180, 0.1, 14)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 398, 0, 8)
 
 [node name="Ground" type="Node" parent="." unique_id=402141304]
-
-[node name="PaseoReal" type="MeshInstance3D" parent="Ground" unique_id=1523891536]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 0.1, -8)
-mesh = SubResource("BoxMesh_e3hyu")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Ground/PaseoReal" unique_id=1856843331]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/PaseoReal/StaticBody3D" unique_id=896309307]
-shape = SubResource("ConvexPolygonShape3D_xo05s")
 
 [node name="MapaGarden" type="MeshInstance3D" parent="Ground" unique_id=308461197]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -108, 0, -70)
@@ -1177,5 +1160,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.6, 7.9)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.075, 0)
 shape = SubResource("BoxShape3D_4kbfs")
 
-[node name="paseo" parent="." unique_id=959607595 instance=ExtResource("23_kpybi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.496, 0.3, -15.294)
+[node name="paseo" parent="." unique_id=2019509352 instance=ExtResource("23_kpybi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -16)
+
+[node name="poor_hood" parent="." unique_id=958997487 instance=ExtResource("24_ctatt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92, 0, 56)
+
+[node name="flat" parent="." unique_id=301465459 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.1, 12)
+
+[node name="flat2" parent="." unique_id=1890482414 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.1, 36)

@@ -84,9 +84,9 @@ func apply_reverse_lights():
 
 	if is_reversing:
 		lights.albedo_color = Color("#A8C8FF")
-		'lights.emission_enabled = true
+		lights.emission_enabled = true
 		lights.emission = Color(0.5, 0.6, 1.0)
-		lights.emission_energy_multiplier = 1.2'
+		lights.emission_energy_multiplier = 1.2
 	else:
 		lights.albedo_color = Color("#6C6C6C")
-		#lights.emission_enabled = false
+		lights.emission_enabled = false
