@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bfe2v8cus8m8c"
-path="res://.godot/imported/poor_hood.blend-80d99286a8ca05c6c05aca50f7ee82d1.scn"
+uid="uid://baypvcu1rf2ph"
+path="res://.godot/imported/inmaculada.blend-3c7f61813d89a438c00e70811f6fe7a3.scn"
 
 [deps]
 
-source_file="res://assets/buildings/poor_hood.blend"
-dest_files=["res://.godot/imported/poor_hood.blend-80d99286a8ca05c6c05aca50f7ee82d1.scn"]
+source_file="res://assets/buildings/inmaculada.blend"
+dest_files=["res://.godot/imported/inmaculada.blend-3c7f61813d89a438c00e70811f6fe7a3.scn"]
 
 [params]
 

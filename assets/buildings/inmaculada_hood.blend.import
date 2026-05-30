@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://x1droy4g6vvf"
-path="res://.godot/imported/gasolinera.blend-3cd2e23cb97f59c6e170cb351738f9a8.scn"
+uid="uid://bk1idclnb52ie"
+path="res://.godot/imported/inmaculada_hood.blend-3c028f7362ec8803e11aa16c191bb7e9.scn"
 
 [deps]
 
-source_file="res://assets/buildings/gasolinera.blend"
-dest_files=["res://.godot/imported/gasolinera.blend-3cd2e23cb97f59c6e170cb351738f9a8.scn"]
+source_file="res://assets/buildings/inmaculada_hood.blend"
+dest_files=["res://.godot/imported/inmaculada_hood.blend-3c028f7362ec8803e11aa16c191bb7e9.scn"]
 
 [params]
 
