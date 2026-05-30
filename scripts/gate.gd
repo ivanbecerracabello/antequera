@@ -15,9 +15,7 @@ func toggle(axis: String) -> bool:
 	var start_rotation = full_rotation[axis]
 	
 	if closed:
-		tween.tween_property(self, property,
-			start_rotation - deg_to_rad(90), 3
-		)
+		tween.tween_property(self, property, start_rotation - deg_to_rad(90), 3)
 		closed = false
 		return true
 	else:

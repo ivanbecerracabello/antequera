@@ -74,4 +74,5 @@ left_click={
 
 [rendering]
 
+occlusion_culling/occlusion_rays_per_thread=1
 occlusion_culling/use_occlusion_culling=true

@@ -14,14 +14,14 @@ const LERP_VAL = .15
 const VOID = -10
 
 # Commands.
-@onready var command_input = $"../LineEdit"
-@onready var texts = $"../Label"
+@onready var command_input = $"../UI/CommandInput"
+@onready var texts = $"../UI/Texts"
 var message_log: Array[String] = []
 const MAX_MESSAGES := 5
 var command_mode = false
 
 # Inventory UI.
-@onready var inventory_ui = $"../InventoryUI"
+@onready var inventory_ui = $"../UI/InventoryUI"
 var inventory_open := false
 
 # Inventory.
@@ -175,7 +175,7 @@ func parse_command(cmd: String):
 		"/quit":
 			get_tree().quit()
 		"/gate":
-			var barrier = $"../Barrier"
+			var barrier = $"../Other/Gates/Barrier"
 			var arena_gate = $"../Other/Gates/ArenaGate"
 			
 			var distance_barrier = global_position.distance_to(barrier.global_position)
