@@ -1235,6 +1235,15 @@ shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Asset" parent="Other/Traffic/GoRight2" unique_id=1583730098 instance=ExtResource("9_q5onr")]
 
+[node name="GoRight3" type="StaticBody3D" parent="Other/Traffic" unique_id=538762330]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 194, 0.1, -47.8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Traffic/GoRight3" unique_id=220047387]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_oo54l")
+
+[node name="Asset" parent="Other/Traffic/GoRight3" unique_id=1505901146 instance=ExtResource("9_q5onr")]
+
 [node name="Lottery" type="StaticBody3D" parent="Other" unique_id=1695943243]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 145, 0.1, 14)
 
@@ -1253,14 +1262,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.60718, 3.8146973e-06, -6
 [node name="Tree3" parent="Other" unique_id=2117649402 instance=ExtResource("19_pm21f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.485405, 3.8146973e-06, -37.414246)
 
-[node name="VehicleBody3D" parent="." unique_id=366470424 instance=ExtResource("5_71j4m")]
+[node name="VehicleBody3D" parent="." unique_id=1784666080 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.0711136, 0.3, -6.6266785)
 
 [node name="cruz_blanca" parent="." unique_id=1862813760 instance=ExtResource("26_munwf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194.018, 0, -52)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194, 0, -52)
 
 [node name="inmaculada" parent="." unique_id=872634919 instance=ExtResource("27_ts3gi")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 68, 0, -76)
 
-[node name="inmaculada_hood" parent="." unique_id=871846656 instance=ExtResource("28_37qwj")]
+[node name="inmaculada_hood" parent="." unique_id=1343582570 instance=ExtResource("28_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)

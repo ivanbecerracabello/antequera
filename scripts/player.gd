@@ -329,7 +329,7 @@ func enter_vehicle(vehicle):
 	reparent(seat)
 	$CollisionShape3D.disabled = true
 	position = Vector3.ZERO
-	spring_arm.spring_length = 5
+	spring_arm.spring_length = 4
 	
 func exit_vehicle():
 	if current_vehicle == null:
@@ -339,7 +339,7 @@ func exit_vehicle():
 	reparent(get_tree().current_scene)
 	global_position = (
 		current_vehicle.global_position
-		+ current_vehicle.global_basis.x * 2.0
+		+ current_vehicle.global_basis.x * 1.0
 	)
 	current_vehicle = null
 	rotation = saved_rotation
