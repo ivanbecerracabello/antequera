@@ -1,7 +1,5 @@
 extends CharacterBody3D
 
-var is_active := true
-
 # Camera.
 @onready var pivot = $Pivot
 @onready var spring_arm = $Pivot/SpringArm3D
@@ -29,14 +27,17 @@ var inventory_open := false
 var inventory: Array = [null, null, null, null, null]
 var held_item_name: String = ""
 var amount: int = 0
-#@onready var held_item_asset = $Body/HeldItem
-
 
 # Aiming with weapons.
 var aiming := false
 var aim_sensitivity := 0.003
 var aim_offset := Vector3(0.4, 0.0, 0.0)
 var default_offset := Vector3(0.0, 0.0, 0.0)
+
+# Vehicles.
+var current_vehicle = null
+var nearby_vehicle = null
+var saved_rotation: Vector3
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -49,15 +50,16 @@ func _ready():
 		null, null
 	]
 	held_item_name = ""
+	
+	add_to_group("player")
 
 func _physics_process(delta: float):
-	if not is_active:
-		return
 	
-	apply_gravity(delta)
-	void_check()
+	if not current_vehicle:
+		apply_gravity(delta)
+		void_check()
 	
-	if not command_mode and not inventory_open:
+	if not command_mode and not inventory_open and not current_vehicle:
 		apply_jump()
 		apply_movement()
 	
@@ -73,6 +75,14 @@ func _input(event):
 		submit_command()
 		get_viewport().set_input_as_handled()
 		return
+		
+	if event.is_action_pressed("enter"):
+		add_message("You pressed ENTER")
+		if current_vehicle:
+			exit_vehicle()
+		elif nearby_vehicle:
+			print("detected")
+			enter_vehicle(nearby_vehicle)
 	
 	if event.is_action_pressed("text") and not command_mode and not inventory_open:
 		open_command()
@@ -107,6 +117,8 @@ func _unhandled_input(event):
 				armature.rotate_y(-event.relative.x * 0.005)
 				# Rotate weapon vertically:
 				held_item.rotation.x = -spring_arm.rotation.x
+
+
 
 func apply_gravity(delta):
 	if not is_on_floor():
@@ -177,15 +189,21 @@ func parse_command(cmd: String):
 		"/gate":
 			var barrier = $"../Other/Gates/Barrier"
 			var arena_gate = $"../Other/Gates/ArenaGate"
+			if current_vehicle:
+				barrier = $"../../../Other/Gates/Barrier"
+				arena_gate = $"../../../Other/Gates/ArenaGate"
 			
-			var distance_barrier = global_position.distance_to(barrier.global_position)
-			var distance_arena_gate = global_position.distance_to(arena_gate.global_position)
+			var distance_barrier
+			var distance_arena_gate
+			
+			distance_barrier = global_position.distance_to(barrier.global_position)
+			distance_arena_gate = global_position.distance_to(arena_gate.global_position)
 			
 			var open
 			
-			if distance_barrier < 10:
+			if distance_barrier < 15:
 				open = barrier.toggle("z")
-			elif distance_arena_gate < 10:
+			elif distance_arena_gate < 15:
 				open = arena_gate.toggle("y")
 			else:
 				return
@@ -212,6 +230,7 @@ func parse_command(cmd: String):
 				if amount < 1:
 					held_item_name = ""
 		"/test":
+			add_message("%s" % nearby_vehicle)
 			pass
 		"/miami":
 			var mat = ProceduralSkyMaterial.new()
@@ -300,3 +319,33 @@ func take_from_inventory(index: int):
 	add_message("* You take %s from slot %d." % [held_item_name, index+1])
 	held_item.update_asset(held_item_name)
 	close_inventory()
+
+# Vehicles.
+func enter_vehicle(vehicle):	
+	saved_rotation = rotation
+	visible = false
+	current_vehicle = vehicle
+	vehicle.driver = self
+	set_physics_process(false)
+	var seat = vehicle.get_node("Seat")
+	reparent(seat)
+	$CollisionShape3D.disabled = true
+	position = Vector3.ZERO
+	spring_arm.spring_length = 5
+	
+func exit_vehicle():
+	if current_vehicle == null:
+		return
+	visible = true
+	current_vehicle.driver = null
+	reparent(get_tree().current_scene)
+	global_position = (
+		current_vehicle.global_position
+		- current_vehicle.global_basis.x * 3.0
+	)
+	current_vehicle = null
+	rotation = saved_rotation
+	spring_arm.spring_length = 3
+	$CollisionShape3D.disabled = false
+	set_physics_process(true)
+	

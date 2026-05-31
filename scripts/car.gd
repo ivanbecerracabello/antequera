@@ -1,26 +1,19 @@
 extends VehicleBody3D
 
-var is_active := false
+var driver : CharacterBody3D = null
 
 @export var MAX_STEER = 0.9
 @export var ENGINE_POWER = 100
-
-@onready var twist_pivot = $TwistPivot
-@onready var pitch_pivot = $TwistPivot/PitchPivot
-var mouse_sensitivity := 0.001
-var twist_input := 0.0
-var pitch_input := 0.0
-
 
 # Rear lights when braking
 @onready var brake_light = $LeftBrakeLight
 @onready var reverse_light = $LeftReverseLight
 
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	pass
 
 func _physics_process(delta):
-	if not is_active:
+	if driver == null:
 		engine_force = 0
 		steering = 0
 		return
@@ -28,34 +21,13 @@ func _physics_process(delta):
 	steering = move_toward(steering, Input.get_axis("right", "left") * MAX_STEER, delta * 10)
 	engine_force = Input.get_axis("backward", "forward") * ENGINE_POWER
 	
-	if Input.is_action_just_pressed("escape"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	
-	apply_camera()
 	apply_braking_lights()
 	apply_reverse_lights()
 
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-			twist_input = - event.relative.x * mouse_sensitivity
-			pitch_input = - event.relative.y * mouse_sensitivity
-
-func apply_camera():
-	# Horizontal rotation.
-	twist_pivot.rotate_y(twist_input)
-	
-	# Vertical rotation.
-	pitch_pivot.rotate_x(pitch_input)
-	pitch_pivot.rotation.x = clamp(
-		pitch_pivot.rotation.x,
-		-0.5,
-		0.5
-	)
-	twist_input = 0.0
-	pitch_input = 0.0
-
 func apply_braking_lights():
+	if driver == null:
+		return
+
 	var lights = brake_light.get_active_material(0)
 	
 	var throttle = Input.get_axis("backward", "forward")
@@ -72,6 +44,8 @@ func apply_braking_lights():
 		lights.emission_enabled = false
 
 func apply_reverse_lights():
+	if driver == null:
+		return
 	var lights = reverse_light.get_active_material(0)
 
 	var throttle = Input.get_axis("backward", "forward")
@@ -90,3 +64,13 @@ func apply_reverse_lights():
 	else:
 		lights.albedo_color = Color("#6C6C6C")
 		lights.emission_enabled = false
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	print(body.name)
+	if body.is_in_group("player"):
+		body.nearby_vehicle = self
+
+func _on_area_3d_body_exited(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		body.nearby_vehicle = null

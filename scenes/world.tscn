@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://b84mwsq5db4e0" path="res://assets/buildings/city_hall.blend" id="13_jhx03"]
 [ext_resource type="PackedScene" uid="uid://oskwxyn5bqya" path="res://assets/buildings/football.blend" id="14_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
-[ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory_ui.tscn" id="17_7t5mc"]
+[ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
 [ext_resource type="PackedScene" uid="uid://c80qb474eo2m5" path="res://assets/buildings/bus_station.blend" id="18_lakw3"]
 [ext_resource type="PackedScene" uid="uid://cko528ngpg5to" path="res://assets/others/tree.blend" id="19_pm21f"]
 [ext_resource type="PackedScene" uid="uid://b4hwdxjm1m4uq" path="res://assets/others/lottery_cabin.blend" id="20_2lf6f"]
@@ -1226,10 +1226,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.485405, 3.8146973e-06, -3
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59, 0.35, -171.34903)
 
 [node name="Player" parent="." unique_id=360165300 instance=ExtResource("14_xo05s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.224112, 1.2000008, -29.801676)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.399805, 17.620869, -11.796796)
 
 [node name="Car" parent="." unique_id=361044799 instance=ExtResource("5_71j4m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.417355, 0.5000008, -66.715126)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22, 0.5, -6.5)
 
 [node name="inmaculada_hood" parent="." unique_id=497439206 instance=ExtResource("25_munwf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
@@ -1242,3 +1242,6 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 68, 
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
 occluder = ExtResource("28_0nbtd")
+
+[node name="VehicleBody3D" parent="." unique_id=366470424 instance=ExtResource("5_71j4m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.099182, 0.3, -11.203514)
