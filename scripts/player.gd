@@ -77,11 +77,9 @@ func _input(event):
 		return
 		
 	if event.is_action_pressed("enter"):
-		add_message("You pressed ENTER")
 		if current_vehicle:
 			exit_vehicle()
 		elif nearby_vehicle:
-			print("detected")
 			enter_vehicle(nearby_vehicle)
 	
 	if event.is_action_pressed("text") and not command_mode and not inventory_open:
@@ -259,7 +257,7 @@ func parse_command(cmd: String):
 			env.ambient_light_color = Color("#2a2a3a")
 			
 			var sun = $"../DirectionalLight3D"
-			sun.light_energy = 0.05
+			sun.light_energy = 0.0
 			sun.shadow_enabled = false
 		_:
 			add_message("Unknown command.")
@@ -341,7 +339,7 @@ func exit_vehicle():
 	reparent(get_tree().current_scene)
 	global_position = (
 		current_vehicle.global_position
-		- current_vehicle.global_basis.x * 3.0
+		+ current_vehicle.global_basis.x * 2.0
 	)
 	current_vehicle = null
 	rotation = saved_rotation
