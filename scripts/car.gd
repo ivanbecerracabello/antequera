@@ -76,11 +76,11 @@ func calculate_braking():
 		right_brake_mat.albedo_color = Color8(129, 5, 5)
 		right_brake_mat.emission_enabled = false
 
-func apply_braking_lights(brake_mat: StandardMaterial3D):
-	brake_mat.albedo_color = Color8(220, 40, 40)
-	brake_mat.emission_enabled = true
-	brake_mat.emission = Color(0.8, 0.05, 0.05)
-	brake_mat.emission_energy_multiplier = 1.5
+func apply_braking_lights(material: StandardMaterial3D):
+	material.albedo_color = Color8(220, 40, 40)
+	material.emission_enabled = true
+	material.emission = Color(0.8, 0.05, 0.05)
+	material.emission_energy_multiplier = 1.5
 
 func calculate_reversing():
 	if driver == null or reverse_mat == null:
@@ -101,11 +101,11 @@ func calculate_reversing():
 		right_reverse_mat.albedo_color = Color("#6C6C6C")
 		right_reverse_mat.emission_enabled = false
 
-func apply_reverse_lights(reverse_mat: StandardMaterial3D):
-	reverse_mat.albedo_color = Color("#A8C8FF")
-	reverse_mat.emission_enabled = true
-	reverse_mat.emission = Color(0.5, 0.6, 1.0)
-	reverse_mat.emission_energy_multiplier = 1.2
+func apply_reverse_lights(material: StandardMaterial3D):
+	material.albedo_color = Color("#A8C8FF")
+	material.emission_enabled = true
+	material.emission = Color(0.5, 0.6, 1.0)
+	material.emission_energy_multiplier = 1.2
 
 func set_lights(brake_on: bool, reverse_on: bool):
 	if brake_mat:

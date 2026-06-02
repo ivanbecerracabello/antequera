@@ -94,14 +94,14 @@ func _input(event):
 	if event.is_action_pressed("escape") and inventory_open:
 		close_inventory()
 	
-	if event.is_action_pressed("right_click") and held_item_name == "Pistol":
+	if event.is_action_pressed("right_click") and held_item_name == "Pistol" and not current_vehicle:
 		aiming = true
 		armature.rotation.y = pivot.rotation.y
 		held_item.rotation.x = -spring_arm.rotation.x
 	if event.is_action_released("right_click") and aiming:
 		aiming = false
 		held_item.rotation_degrees.x = 90
-	if event.is_action_pressed("left_click") and held_item_name == "Pistol":
+	if event.is_action_pressed("left_click") and held_item_name == "Pistol" and not current_vehicle:
 		held_item.shoot()
 		
 func _unhandled_input(event):
@@ -185,24 +185,21 @@ func parse_command(cmd: String):
 		"/quit":
 			get_tree().quit()
 		"/gate":
-			var barrier = $"../Other/Gates/Barrier"
-			var arena_gate = $"../Other/Gates/ArenaGate"
-			if current_vehicle:
-				barrier = $"../../../Other/Gates/Barrier"
-				arena_gate = $"../../../Other/Gates/ArenaGate"
+			var barrier = get_node("/root/World/Other/Gates/Barrier")
+			var arena = get_node("/root/World/Other/Gates/ArenaGate")
 			
 			var distance_barrier
-			var distance_arena_gate
+			var distance_arena
 			
 			distance_barrier = global_position.distance_to(barrier.global_position)
-			distance_arena_gate = global_position.distance_to(arena_gate.global_position)
+			distance_arena = global_position.distance_to(arena.global_position)
 			
 			var open
 			
 			if distance_barrier < 15:
 				open = barrier.toggle("z")
-			elif distance_arena_gate < 15:
-				open = arena_gate.toggle("y")
+			elif distance_arena < 15:
+				open = arena.toggle("y")
 			else:
 				return
 			
@@ -230,35 +227,6 @@ func parse_command(cmd: String):
 		"/test":
 			add_message("%s" % nearby_vehicle)
 			pass
-		"/miami":
-			var mat = ProceduralSkyMaterial.new()
-			mat.sky_horizon_color = Color("#ff4fd8")
-			mat.ground_horizon_color = Color("#ff4fd8")
-			mat.ground_bottom_color = Color("#1a0033")
-			
-			var sky = Sky.new()
-			sky.sky_material = mat
-			
-			var env = $"../WorldEnvironment".environment
-			env.sky = sky
-		"/night":
-			var mat = ProceduralSkyMaterial.new()
-			mat.sky_horizon_color = Color("#0b1026")
-			mat.sky_top_color = Color("#05010f")
-			mat.ground_horizon_color = Color("#0a0a1a")
-			mat.ground_bottom_color = Color("#000000")
-			
-			var sky = Sky.new()
-			sky.sky_material = mat
-			
-			var env = $"../WorldEnvironment".environment
-			env.sky = sky
-			env.ambient_light_energy = 0.15
-			env.ambient_light_color = Color("#2a2a3a")
-			
-			var sun = $"../DirectionalLight3D"
-			sun.light_energy = 0.0
-			sun.shadow_enabled = false
 		_:
 			add_message("Unknown command.")
 			print("This command does NOT exist: ", args.slice(0))
