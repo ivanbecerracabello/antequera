@@ -27,8 +27,9 @@
 [ext_resource type="PackedScene" uid="uid://c1w1w55ad082s" path="res://assets/buildings/flat.blend" id="25_xgqkh"]
 [ext_resource type="PackedScene" uid="uid://baypvcu1rf2ph" path="res://assets/buildings/inmaculada.blend" id="27_ts3gi"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
-[ext_resource type="PackedScene" uid="uid://cqaxxbidpiyoj" path="res://assets/buildings/inmaculada_hood.glb" id="28_37qwj"]
 [ext_resource type="PackedScene" uid="uid://bo2050jsnshx0" path="res://assets/buildings/cruz_blanca.glb" id="29_37qwj"]
+[ext_resource type="PackedScene" uid="uid://bk1idclnb52ie" path="res://assets/buildings/inmaculada_hood.blend" id="29_navra"]
+[ext_resource type="PackedScene" uid="uid://c8ooeqsxlu7cm" path="res://assets/buildings/restaurants.blend" id="30_navra"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -185,7 +186,7 @@ size = Vector3(34, 6, 16)
 size = Vector3(36, 0.1, 46)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0nbtd"]
-size = Vector3(4, 0.1, 8)
+size = Vector3(4, 0.2, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_37qwj"]
 size = Vector3(4, 0.1, 32.14)
@@ -287,7 +288,7 @@ script = ExtResource("1_dss4m")
 environment = SubResource("Environment_i7141")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1219551878]
-transform = Transform3D(-0.17364824, -0.41619748, 0.8925381, 0, 0.90630716, 0.42261785, -0.98480797, 0.073386855, -0.15737855, 1000, 64, 0)
+transform = Transform3D(-0.17364824, -0.41619745, 0.892538, 0, 0.9063071, 0.42261785, -0.98480797, 0.07338685, -0.15737854, 1000, 64, 0)
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
 occluder = ExtResource("28_0nbtd")
@@ -868,7 +869,7 @@ shape = SubResource("BoxShape3D_q5onr")
 [node name="PetrolStation" type="StaticBody3D" parent="Buildings" unique_id=1546458445]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="Asset" parent="Buildings/PetrolStation" unique_id=1349348652 instance=ExtResource("1_w7kh3")]
+[node name="Asset" parent="Buildings/PetrolStation" unique_id=964774145 instance=ExtResource("1_w7kh3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/PetrolStation" unique_id=620530142]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.05, -1)
@@ -954,7 +955,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 0)
 [node name="Asset" parent="Buildings/Garage" unique_id=1075223933 instance=ExtResource("21_7iits")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Garage" unique_id=2118072223]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 4)
 shape = SubResource("BoxShape3D_0nbtd")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Buildings/Garage" unique_id=820253165]
@@ -1193,6 +1194,16 @@ shape = SubResource("BoxShape3D_o8fc1")
 [node name="Asset" parent="Other/Traffic/NoEntry8" unique_id=100016658 instance=ExtResource("8_4mrxx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 
+[node name="NoEntry9" type="StaticBody3D" parent="Other/Traffic" unique_id=1652791000]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 49.5, 0, -106)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Traffic/NoEntry9" unique_id=1984430162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_o8fc1")
+
+[node name="Asset" parent="Other/Traffic/NoEntry9" unique_id=908201508 instance=ExtResource("8_4mrxx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
 [node name="GoRight" type="StaticBody3D" parent="Other/Traffic" unique_id=1804391158]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -17, 0, -142)
 
@@ -1221,7 +1232,7 @@ shape = SubResource("BoxShape3D_oo54l")
 [node name="Asset" parent="Other/Traffic/GoRight3" unique_id=1505901146 instance=ExtResource("9_q5onr")]
 
 [node name="GoLeft" type="StaticBody3D" parent="Other/Traffic" unique_id=1237417538]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 54.9, 0, -72.5)
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 54.9, 0, -73)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Traffic/GoLeft" unique_id=2143411707]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -1240,11 +1251,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.60718, 3.8146973e-06, -6
 [node name="Tree3" parent="Other/Trees" unique_id=2117649402 instance=ExtResource("19_pm21f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.485405, 3.8146973e-06, -37.414246)
 
-[node name="inmaculada" parent="." unique_id=2000815550 instance=ExtResource("27_ts3gi")]
+[node name="inmaculada" parent="." unique_id=1989330018 instance=ExtResource("27_ts3gi")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 68, 0, -76)
-
-[node name="inmaculada_hood" parent="." unique_id=1625667720 instance=ExtResource("28_37qwj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
 
 [node name="cruz_blanca" parent="." unique_id=1362483327 instance=ExtResource("29_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194, 0, -52)
+
+[node name="inmaculada_hood" parent="." unique_id=1319100375 instance=ExtResource("29_navra")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
+
+[node name="restaurants" parent="." unique_id=1573714178 instance=ExtResource("30_navra")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0.1, -18)
