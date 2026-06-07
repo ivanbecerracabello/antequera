@@ -44,9 +44,14 @@ func _physics_process(delta):
 	if driver == null:
 		engine_force = 0
 		steering = 0
-		set_lights(false, false)
+		#set_lights(false, false)
 		return
 
+	if driver.command_mode:
+		engine_force = 0
+		steering = 0
+		return
+		
 	steering = move_toward(
 		steering,
 		Input.get_axis("right", "left") * MAX_STEER,

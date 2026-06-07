@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://bo2050jsnshx0" path="res://assets/buildings/cruz_blanca.glb" id="29_37qwj"]
 [ext_resource type="PackedScene" uid="uid://bk1idclnb52ie" path="res://assets/buildings/inmaculada_hood.blend" id="29_navra"]
 [ext_resource type="PackedScene" uid="uid://c8ooeqsxlu7cm" path="res://assets/buildings/restaurants.blend" id="30_navra"]
+[ext_resource type="PackedScene" uid="uid://dw5s6uha3611t" path="res://assets/buildings/kindergarten.blend" id="31_luhhm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -210,7 +211,7 @@ size = Vector3(96, 0.1, 16)
 size = Vector3(38, 0.2, 52)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5onr"]
-albedo_color = Color(0.49803922, 0.6862745, 0.3019608, 1)
+albedo_color = Color(0, 0.6, 0.2, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_jhx03"]
 material = SubResource("StandardMaterial3D_q5onr")
@@ -288,7 +289,8 @@ script = ExtResource("1_dss4m")
 environment = SubResource("Environment_i7141")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1219551878]
-transform = Transform3D(-0.17364824, -0.41619745, 0.892538, 0, 0.9063071, 0.42261785, -0.98480797, 0.07338685, -0.15737854, 1000, 64, 0)
+transform = Transform3D(-0.17364824, -0.41619742, 0.892538, 0, 0.90630704, 0.42261785, -0.98480797, 0.07338684, -0.15737854, 1000, 64, 0)
+shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
 occluder = ExtResource("28_0nbtd")
@@ -297,7 +299,7 @@ occluder = ExtResource("28_0nbtd")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59, 0.35, -171.34903)
 
 [node name="Player" parent="." unique_id=360165300 instance=ExtResource("14_xo05s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.306179, 36.988876, -11.796796)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9664307, 7.467762, -10.825619)
 
 [node name="Car" parent="." unique_id=361044799 instance=ExtResource("5_71j4m")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22, 0.5, -6.5)
@@ -869,7 +871,7 @@ shape = SubResource("BoxShape3D_q5onr")
 [node name="PetrolStation" type="StaticBody3D" parent="Buildings" unique_id=1546458445]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="Asset" parent="Buildings/PetrolStation" unique_id=964774145 instance=ExtResource("1_w7kh3")]
+[node name="Asset" parent="Buildings/PetrolStation" unique_id=1013216265 instance=ExtResource("1_w7kh3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/PetrolStation" unique_id=620530142]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.05, -1)
@@ -896,11 +898,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7, 0.
 shape = SubResource("BoxShape3D_pm21f")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="Buildings/PetrolStation" unique_id=1373296688]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.1, -11)
 shape = SubResource("BoxShape3D_2lf6f")
 
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="Buildings/PetrolStation" unique_id=92422792]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1, 2, -18)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1, 2.1, -18)
 shape = SubResource("BoxShape3D_2lf6f")
 
 [node name="CollisionShape3D9" type="CollisionShape3D" parent="Buildings/PetrolStation" unique_id=1903374730]
@@ -1246,12 +1248,15 @@ shape = SubResource("BoxShape3D_oo54l")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.54741, 3.8146973e-06, -76.54144)
 
 [node name="Tree2" parent="Other/Trees" unique_id=966843355 instance=ExtResource("19_pm21f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.60718, 3.8146973e-06, -68.55254)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.73724, 3.8146973e-06, -104.22095)
 
 [node name="Tree3" parent="Other/Trees" unique_id=2117649402 instance=ExtResource("19_pm21f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.485405, 3.8146973e-06, -37.414246)
 
-[node name="inmaculada" parent="." unique_id=1989330018 instance=ExtResource("27_ts3gi")]
+[node name="Tree4" parent="Other/Trees" unique_id=405648618 instance=ExtResource("19_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -148.30215, 3.8146973e-06, -67.1422)
+
+[node name="inmaculada" parent="." unique_id=496593192 instance=ExtResource("27_ts3gi")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 68, 0, -76)
 
 [node name="cruz_blanca" parent="." unique_id=1362483327 instance=ExtResource("29_37qwj")]
@@ -1260,5 +1265,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194, 0, -52)
 [node name="inmaculada_hood" parent="." unique_id=1319100375 instance=ExtResource("29_navra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
 
-[node name="restaurants" parent="." unique_id=1573714178 instance=ExtResource("30_navra")]
+[node name="restaurants" parent="." unique_id=1379511742 instance=ExtResource("30_navra")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0.1, -18)
+
+[node name="kindergarten" parent="." unique_id=760601740 instance=ExtResource("31_luhhm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -80)
