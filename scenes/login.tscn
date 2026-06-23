@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bp213sdschvbj"]
+
+[ext_resource type="Script" uid="uid://bclwmv6put34v" path="res://scripts/login.gd" id="1_pymad"]
+
+[node name="Login" type="Control" unique_id=1625216465]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pymad")
+
+[node name="Panel" type="Panel" parent="." unique_id=1694505392]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -125.0
+offset_right = 200.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1099923136]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="Panel/VBoxContainer" unique_id=2132706750]
+layout_mode = 2
+text = "Welcome to Antequera Role Play"
+
+[node name="UsernameInput" type="LineEdit" parent="Panel/VBoxContainer" unique_id=472698551]
+layout_mode = 2
+placeholder_text = "Enter username"
+
+[node name="PasswordInput" type="LineEdit" parent="Panel/VBoxContainer" unique_id=1075536325]
+layout_mode = 2
+placeholder_text = "Enter password"
+secret = true
+
+[node name="ContinueButton" type="Button" parent="Panel/VBoxContainer" unique_id=2024750837]
+layout_mode = 2
+text = "Continue"
+
+[connection signal="pressed" from="Panel/VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]

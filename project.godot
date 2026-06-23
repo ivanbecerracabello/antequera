@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Antequera"
-run/main_scene="uid://0qe23221ngf1"
+run/main_scene="uid://bp213sdschvbj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+UserManager="*uid://ca8ifssewgipq"
 
 [input]
 
