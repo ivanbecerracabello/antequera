@@ -40,18 +40,34 @@ var nearby_vehicle = null
 var saved_rotation: Vector3
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	add_message("Welcome to Antequera Role Play.")
 	
-	inventory = [
-		{ "name": "Beer", "amount": 5 },
-		{ "name": "Mollete", "amount": 5 },
-		{ "name": "Pistol", "amount": 7},
-		null, null
-	]
-	held_item_name = ""
-	
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	add_to_group("player")
+
+	# Spawn at saved position if available.
+	if UserManager and UserManager.current_user != "" and UserManager.users.has(UserManager.current_user):
+		var u = UserManager.users[UserManager.current_user]
+		if u.has("position"):
+			var p = u["position"]
+			if typeof(p) == TYPE_ARRAY and p.size() >= 3:
+				global_position = Vector3(p[0], p[1], p[2])
+			else:
+				global_position = Vector3.ZERO
+		else:
+			global_position = Vector3.ZERO
+		print(u)
+
+		# Load saved inventory and held item state.
+		if u.has("inventory"):
+			for i in range(min(u["inventory"].size(), inventory.size())):
+				print(i)
+				var item = u["inventory"][i]
+				if item != null and typeof(item) == TYPE_DICTIONARY and item.has("name") and item.has("amount"):
+					inventory[i] = {
+						"name": str(item["name"]),
+						"amount": int(item["amount"])
+					}
 
 func _physics_process(delta: float):
 	
@@ -183,6 +199,7 @@ func parse_command(cmd: String):
 			add_message("/gate")
 			add_message("/quit")
 		"/quit":
+			save_user_data()
 			get_tree().quit()
 		"/gate":
 			var barrier = get_node("/root/World/Other/Gates/Barrier")
@@ -210,6 +227,7 @@ func parse_command(cmd: String):
 		
 		# Inventory system.
 		"/inv":
+			print(held_item_name)
 			update_inventory_ui()
 			open_inventory()
 		"/stash":
@@ -226,12 +244,19 @@ func parse_command(cmd: String):
 					held_item_name = ""
 		"/test":
 			add_message("%s" % nearby_vehicle)
-			pass
+			inventory = [
+				{ "name": "Beer", "amount": 5 },
+				{ "name": "Mollete", "amount": 5 },
+				{ "name": "Pistol", "amount": 7},
+				null, null
+			]
+			held_item_name = ""
 		_:
 			add_message("Unknown command.")
 			print("This command does NOT exist: ", args.slice(0))
 
 func update_inventory_ui():
+	inventory_ui.get_node("Panel/Hand").text = ""
 	if held_item_name != "":
 		inventory_ui.get_node("Panel/Hand").text = "Hand: %s (%d)" % [ held_item_name, amount ]
 	
@@ -315,3 +340,9 @@ func exit_vehicle():
 	$CollisionShape3D.disabled = false
 	set_physics_process(true)
 	
+func save_user_data():
+	if UserManager and UserManager.current_user != "" and UserManager.users.has(UserManager.current_user):
+		UserManager.users[UserManager.current_user]["position"] = [global_position.x, global_position.y, global_position.z]
+		UserManager.users[UserManager.current_user]["inventory"] = inventory
+		UserManager.save_users()
+

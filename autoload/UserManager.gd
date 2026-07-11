@@ -1,6 +1,7 @@
 extends Node
 
 var users = {}
+var current_user = ""
 
 const SAVE_PATH = "user://users.json"
 # /home/ivanbecerra/.local/share/godot/app_userdata/Antequera

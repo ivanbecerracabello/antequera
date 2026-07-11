@@ -41,9 +41,13 @@ func _on_continue_button_pressed() -> void:
 	# REGISTER
 	if mode == "register":
 		UserManager.users[current_username] = {
-			"password": password
+			"password": password,
+			"position": [-22.5,0.95,-112.5], # bus station
+			"inventory": [null, null, null, null, null],
+			"held_item": null
 		}
 		UserManager.save_users()
+		UserManager.current_user = current_username
 
 		print("User registered!")
 
@@ -56,6 +60,7 @@ func _on_continue_button_pressed() -> void:
 			return
 
 		print("Login successful!")
+		UserManager.current_user = current_username
 
 	# GO TO GAME
 	get_tree().change_scene_to_file("res://scenes/world.tscn")
