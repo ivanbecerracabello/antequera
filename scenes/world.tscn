@@ -1233,6 +1233,15 @@ shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Asset" parent="Other/Traffic/GoRight3" unique_id=1505901146 instance=ExtResource("9_q5onr")]
 
+[node name="GoRight4" type="StaticBody3D" parent="Other/Traffic" unique_id=1188008176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0.1, -112)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Traffic/GoRight4" unique_id=1980713702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_oo54l")
+
+[node name="Asset" parent="Other/Traffic/GoRight4" unique_id=949753005 instance=ExtResource("9_q5onr")]
+
 [node name="GoLeft" type="StaticBody3D" parent="Other/Traffic" unique_id=1237417538]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 54.9, 0, -73)
 

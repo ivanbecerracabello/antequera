@@ -4,9 +4,15 @@ var current_username = ""
 var mode = "username"  # "username", "login", "register"
 
 func _ready():
-	$Panel/VBoxContainer/PasswordInput.visible = false
+	var username_input = $Panel/VBoxContainer/UsernameInput
+	var password_input = $Panel/VBoxContainer/PasswordInput
 
-func _on_continue_button_pressed() -> void:
+	password_input.visible = false
+	username_input.grab_focus()
+	username_input.text_submitted.connect(_on_continue_button_pressed)
+	password_input.text_submitted.connect(_on_continue_button_pressed)
+
+func _on_continue_button_pressed(_text: String = "") -> void:
 	var username = $Panel/VBoxContainer/UsernameInput.text
 	var password_input = $Panel/VBoxContainer/PasswordInput
 
@@ -22,10 +28,12 @@ func _on_continue_button_pressed() -> void:
 		if UserManager.users.has(username):
 			mode = "login"
 			password_input.visible = true
+			password_input.grab_focus()
 			print("User exists → enter password")
 		else:
 			mode = "register"
 			password_input.visible = true
+			password_input.grab_focus()
 			print("New user → create password")
 
 		return

@@ -56,12 +56,10 @@ func _ready():
 				global_position = Vector3.ZERO
 		else:
 			global_position = Vector3.ZERO
-		print(u)
 
 		# Load saved inventory and held item state.
 		if u.has("inventory"):
 			for i in range(min(u["inventory"].size(), inventory.size())):
-				print(i)
 				var item = u["inventory"][i]
 				if item != null and typeof(item) == TYPE_DICTIONARY and item.has("name") and item.has("amount"):
 					inventory[i] = {
@@ -227,7 +225,6 @@ func parse_command(cmd: String):
 		
 		# Inventory system.
 		"/inv":
-			print(held_item_name)
 			update_inventory_ui()
 			open_inventory()
 		"/stash":
@@ -345,4 +342,3 @@ func save_user_data():
 		UserManager.users[UserManager.current_user]["position"] = [global_position.x, global_position.y, global_position.z]
 		UserManager.users[UserManager.current_user]["inventory"] = inventory
 		UserManager.save_users()
-
