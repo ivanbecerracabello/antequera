@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bk1idclnb52ie"
-path="res://.godot/imported/inmaculada_hood.blend-3c028f7362ec8803e11aa16c191bb7e9.scn"
+path="res://.godot/imported/inmaculada_hood.blend-01a6855e991ca4b59ef82568956ca143.scn"
 
 [deps]
 
-source_file="res://assets/buildings/inmaculada_hood.blend"
-dest_files=["res://.godot/imported/inmaculada_hood.blend-3c028f7362ec8803e11aa16c191bb7e9.scn"]
+source_file="res://assets/roads/inmaculada_hood.blend"
+dest_files=["res://.godot/imported/inmaculada_hood.blend-01a6855e991ca4b59ef82568956ca143.scn"]
 
 [params]
 

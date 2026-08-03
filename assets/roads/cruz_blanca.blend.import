@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://io2pe6cdr1lc"
-path="res://.godot/imported/cruz_blanca.blend-59e27583d7ad307d5a80e1dc4aa5f52d.scn"
+path="res://.godot/imported/cruz_blanca.blend-8db7cc49f7a6017f97ca9bed5547f168.scn"
 
 [deps]
 
-source_file="res://assets/buildings/cruz_blanca.blend"
-dest_files=["res://.godot/imported/cruz_blanca.blend-59e27583d7ad307d5a80e1dc4aa5f52d.scn"]
+source_file="res://assets/roads/cruz_blanca.blend"
+dest_files=["res://.godot/imported/cruz_blanca.blend-8db7cc49f7a6017f97ca9bed5547f168.scn"]
 
 [params]
 

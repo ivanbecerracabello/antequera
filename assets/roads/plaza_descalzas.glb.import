@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bo2050jsnshx0"
-path="res://.godot/imported/cruz_blanca.glb-99824382fa5858b0ccde5eedcca81d19.scn"
+uid="uid://bkjt2k4pm1sfq"
+path="res://.godot/imported/plaza_descalzas.glb-d5d8872d19a841e293a6717220987e5c.scn"
 
 [deps]
 
-source_file="res://assets/buildings/cruz_blanca.glb"
-dest_files=["res://.godot/imported/cruz_blanca.glb-99824382fa5858b0ccde5eedcca81d19.scn"]
+source_file="res://assets/roads/plaza_descalzas.glb"
+dest_files=["res://.godot/imported/plaza_descalzas.glb-d5d8872d19a841e293a6717220987e5c.scn"]
 
 [params]
 
