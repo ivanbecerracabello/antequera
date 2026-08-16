@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://io2pe6cdr1lc"
-path="res://.godot/imported/cruz_blanca.blend-8db7cc49f7a6017f97ca9bed5547f168.scn"
+uid="uid://bk1idclnb52ie"
+path="res://.godot/imported/area_inmaculada.blend-295c83a331a6500a798a1aff8f2ae198.scn"
 
 [deps]
 
-source_file="res://assets/roads/cruz_blanca.blend"
-dest_files=["res://.godot/imported/cruz_blanca.blend-8db7cc49f7a6017f97ca9bed5547f168.scn"]
+source_file="res://assets/roads/area_inmaculada.blend"
+dest_files=["res://.godot/imported/area_inmaculada.blend-295c83a331a6500a798a1aff8f2ae198.scn"]
 
 [params]
 

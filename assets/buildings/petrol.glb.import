@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bo2050jsnshx0"
-path="res://.godot/imported/cruz_blanca.glb-e0da009346b2a99f4e29a98ee0ce97ac.scn"
+uid="uid://b7iyyvxavxbdl"
+path="res://.godot/imported/petrol.glb-3cb55c438ca96cc58a83099740c9d9a7.scn"
 
 [deps]
 
-source_file="res://assets/roads/cruz_blanca.glb"
-dest_files=["res://.godot/imported/cruz_blanca.glb-e0da009346b2a99f4e29a98ee0ce97ac.scn"]
+source_file="res://assets/buildings/petrol.glb"
+dest_files=["res://.godot/imported/petrol.glb-3cb55c438ca96cc58a83099740c9d9a7.scn"]
 
 [params]
 

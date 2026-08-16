@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bk1idclnb52ie"
-path="res://.godot/imported/inmaculada_hood.blend-01a6855e991ca4b59ef82568956ca143.scn"
+uid="uid://bjhxavda1hsxf"
+path="res://.godot/imported/casa_juventud.blend-0d986f8d63072192003dd1752556b4d3.scn"
 
 [deps]
 
-source_file="res://assets/roads/inmaculada_hood.blend"
-dest_files=["res://.godot/imported/inmaculada_hood.blend-01a6855e991ca4b59ef82568956ca143.scn"]
+source_file="res://assets/buildings/casa_juventud.blend"
+dest_files=["res://.godot/imported/casa_juventud.blend-0d986f8d63072192003dd1752556b4d3.scn"]
 
 [params]
 

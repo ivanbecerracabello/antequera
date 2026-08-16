@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cqaxxbidpiyoj"
-path="res://.godot/imported/inmaculada_hood.glb-b757f01fe9e17e0c84c1356c9549b083.scn"
+uid="uid://hf0nm0osi5hk"
+path="res://.godot/imported/area_bus.glb-787ffd631b27df14ac20fc62c6296edd.scn"
 
 [deps]
 
-source_file="res://assets/roads/inmaculada_hood.glb"
-dest_files=["res://.godot/imported/inmaculada_hood.glb-b757f01fe9e17e0c84c1356c9549b083.scn"]
+source_file="res://assets/roads/area_bus.glb"
+dest_files=["res://.godot/imported/area_bus.glb-787ffd631b27df14ac20fc62c6296edd.scn"]
 
 [params]
 
