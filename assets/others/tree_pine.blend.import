@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cko528ngpg5to"
-path="res://.godot/imported/tree.blend-140f4c80bba85b04e8a7b38752350545.scn"
+uid="uid://slhwsmn0xb3c"
+path="res://.godot/imported/tree_pine.blend-0e9765644e21a92a24699516926e2676.scn"
 
 [deps]
 
-source_file="res://assets/others/tree.blend"
-dest_files=["res://.godot/imported/tree.blend-140f4c80bba85b04e8a7b38752350545.scn"]
+source_file="res://assets/others/tree_pine.blend"
+dest_files=["res://.godot/imported/tree_pine.blend-0e9765644e21a92a24699516926e2676.scn"]
 
 [params]
 

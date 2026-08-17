@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
 [ext_resource type="PackedScene" uid="uid://c80qb474eo2m5" path="res://assets/buildings/bus_station.blend" id="18_lakw3"]
-[ext_resource type="PackedScene" uid="uid://cko528ngpg5to" path="res://assets/others/tree.blend" id="19_pm21f"]
 [ext_resource type="PackedScene" uid="uid://b4hwdxjm1m4uq" path="res://assets/others/lottery_cabin.blend" id="20_2lf6f"]
 [ext_resource type="PackedScene" uid="uid://b2xhh8wxslpmj" path="res://assets/buildings/garage.blend" id="21_7iits"]
 [ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/others/barrier.blend" id="22_oo54l"]
@@ -35,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://hf0nm0osi5hk" path="res://assets/roads/area_bus.glb" id="35_x2olw"]
 [ext_resource type="PackedScene" uid="uid://b7iyyvxavxbdl" path="res://assets/buildings/petrol.glb" id="36_817gm"]
 [ext_resource type="PackedScene" uid="uid://cqaxxbidpiyoj" path="res://assets/roads/area_inmaculada.glb" id="36_ggc52"]
+[ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/others/tree_pine.blend" id="36_l8ah6"]
 [ext_resource type="PackedScene" uid="uid://bjhxavda1hsxf" path="res://assets/buildings/casa_juventud.blend" id="36_x2olw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
@@ -174,7 +174,7 @@ size = Vector3(96, 0.1, 16)
 size = Vector3(38, 0.2, 52)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5onr"]
-albedo_color = Color(0, 0.6, 0.2, 1)
+albedo_color = Color(0.30980393, 0.49803922, 0.22745098, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_jhx03"]
 material = SubResource("StandardMaterial3D_q5onr")
@@ -246,6 +246,7 @@ transform = Transform3D(-0.17364824, -0.41619742, 0.892538, 0, 0.90630704, 0.422
 shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
+visible = false
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=1673601800 instance=ExtResource("6_qfnet")]
@@ -1075,14 +1076,14 @@ shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Trees" type="Node" parent="Other" unique_id=624223058]
 
-[node name="Tree" parent="Other/Trees" unique_id=1958798803 instance=ExtResource("19_pm21f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.54741, 3.8146973e-06, -76.54144)
+[node name="Pine" parent="Other/Trees" unique_id=703904696 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.942648, 3.8146973e-06, -81.976204)
 
-[node name="Tree2" parent="Other/Trees" unique_id=966843355 instance=ExtResource("19_pm21f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.73724, 3.8146973e-06, -104.22095)
+[node name="Pine2" parent="Other/Trees" unique_id=1064893943 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29413, 3.8146973e-06, -37.821106)
 
-[node name="Tree3" parent="Other/Trees" unique_id=2117649402 instance=ExtResource("19_pm21f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.485405, 3.8146973e-06, -37.414246)
+[node name="Pine3" parent="Other/Trees" unique_id=962492567 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.87579, 3.8146973e-06, -101.84376)
 
-[node name="Tree4" parent="Other/Trees" unique_id=405648618 instance=ExtResource("19_pm21f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -148.30215, 3.8146973e-06, -67.1422)
+[node name="Pine4" parent="Other/Trees" unique_id=938275905 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -153.887, 3.8146973e-06, -40.40837)
