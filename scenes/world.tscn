@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bkjt2k4pm1sfq" path="res://assets/roads/plaza_descalzas.glb" id="8_fh13f"]
 [ext_resource type="PackedScene" uid="uid://dgml122swxilb" path="res://assets/others/turn_right.blend" id="9_q5onr"]
 [ext_resource type="PackedScene" uid="uid://dox578vyjb2wu" path="res://scenes/gate.tscn" id="11_e3hyu"]
+[ext_resource type="PackedScene" uid="uid://cd15ghonniqui" path="res://assets/buildings/hospital.blend" id="12_817gm"]
 [ext_resource type="PackedScene" uid="uid://b84mwsq5db4e0" path="res://assets/buildings/city_hall.blend" id="13_jhx03"]
 [ext_resource type="PackedScene" uid="uid://oskwxyn5bqya" path="res://assets/buildings/football.blend" id="14_o8fc1"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
@@ -246,7 +247,6 @@ transform = Transform3D(-0.17364824, -0.41619742, 0.892538, 0, 0.90630704, 0.422
 shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
-visible = false
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=1673601800 instance=ExtResource("6_qfnet")]
@@ -663,8 +663,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, -56)
 [node name="area_bus" parent="Roads/Special" unique_id=1122887246 instance=ExtResource("35_x2olw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -112)
 
-[node name="area_inmaculada" parent="Roads/Special" unique_id=706346247 instance=ExtResource("36_ggc52")]
+[node name="area_inmaculada" parent="Roads/Special" unique_id=143747143 instance=ExtResource("36_ggc52")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
+
+[node name="hospital" parent="Roads/Special" unique_id=605712683 instance=ExtResource("12_817gm")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 44, 0, -69)
 
 [node name="Buildings" type="Node" parent="." unique_id=1505486626]
 
@@ -692,7 +695,7 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 68, 
 [node name="petrol" parent="Buildings" unique_id=757233412 instance=ExtResource("36_817gm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="casa_juventud" parent="Buildings" unique_id=1246054844 instance=ExtResource("36_x2olw")]
+[node name="casa_juventud" parent="Buildings" unique_id=1595959887 instance=ExtResource("36_x2olw")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0, 0, -57)
 
 [node name="restaurants" parent="Buildings" unique_id=550824506 instance=ExtResource("30_navra")]
@@ -1076,14 +1079,17 @@ shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Trees" type="Node" parent="Other" unique_id=624223058]
 
-[node name="Pine" parent="Other/Trees" unique_id=703904696 instance=ExtResource("36_l8ah6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.942648, 3.8146973e-06, -81.976204)
+[node name="Pine" parent="Other/Trees" unique_id=1120215594 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.942648, 3.8146973e-06, -74.976204)
 
-[node name="Pine2" parent="Other/Trees" unique_id=1064893943 instance=ExtResource("36_l8ah6")]
+[node name="Pine2" parent="Other/Trees" unique_id=1013399681 instance=ExtResource("36_l8ah6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29413, 3.8146973e-06, -37.821106)
 
-[node name="Pine3" parent="Other/Trees" unique_id=962492567 instance=ExtResource("36_l8ah6")]
+[node name="Pine3" parent="Other/Trees" unique_id=1576497306 instance=ExtResource("36_l8ah6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.87579, 3.8146973e-06, -101.84376)
 
-[node name="Pine4" parent="Other/Trees" unique_id=938275905 instance=ExtResource("36_l8ah6")]
+[node name="Pine4" parent="Other/Trees" unique_id=1188655218 instance=ExtResource("36_l8ah6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -153.887, 3.8146973e-06, -40.40837)
+
+[node name="Pine5" parent="Other/Trees" unique_id=1246216343 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 1, -50)
