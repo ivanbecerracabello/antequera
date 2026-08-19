@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8ooeqsxlu7cm"
-path="res://.godot/imported/restaurants.blend-65ddb4db8eef8e543727224911b65f19.scn"
+path="res://.godot/imported/complex.blend-ef0a17b2e81fac6df02e5f05b198f0d1.scn"
 
 [deps]
 
-source_file="res://assets/buildings/restaurants.blend"
-dest_files=["res://.godot/imported/restaurants.blend-65ddb4db8eef8e543727224911b65f19.scn"]
+source_file="res://assets/buildings/complex.blend"
+dest_files=["res://.godot/imported/complex.blend-ef0a17b2e81fac6df02e5f05b198f0d1.scn"]
 
 [params]
 
