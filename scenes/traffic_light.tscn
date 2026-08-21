@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cpolcpwlbb8tr"]
+
+[ext_resource type="PackedScene" uid="uid://cdvmpbgri26oo" path="res://assets/others/traffic_light.blend" id="1_uttgq"]
+[ext_resource type="Script" uid="uid://da2qhuhb67ft3" path="res://scripts/traffic_light.gd" id="1_va7ut"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uttgq"]
+albedo_color = Color(1, 0.1882353, 0.1882353, 1)
+emission_enabled = true
+emission = Color(0.8, 0.05, 0.05, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_uttgq"]
+material = SubResource("StandardMaterial3D_uttgq")
+top_radius = 0.09
+bottom_radius = 0.09
+height = 0.001
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_va7ut"]
+albedo_color = Color(1, 0.70980394, 0.18039216, 1)
+emission_enabled = true
+emission = Color(1, 0.45, 0.05, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_mfnwl"]
+material = SubResource("StandardMaterial3D_va7ut")
+top_radius = 0.09
+bottom_radius = 0.09
+height = 0.001
+radial_segments = 8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7bbo6"]
+albedo_color = Color(0.20784314, 0.8392157, 0.43529412, 1)
+emission_enabled = true
+emission = Color(0.05, 0.8, 0.2, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ppfu7"]
+material = SubResource("StandardMaterial3D_7bbo6")
+top_radius = 0.09
+bottom_radius = 0.09
+height = 0.001
+radial_segments = 8
+
+[node name="TrafficLight" type="Node3D" unique_id=773682190]
+script = ExtResource("1_va7ut")
+
+[node name="Asset" parent="." unique_id=1758320884 instance=ExtResource("1_uttgq")]
+
+[node name="Red" type="MeshInstance3D" parent="." unique_id=1688194223]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.75, 0.13)
+mesh = SubResource("CylinderMesh_uttgq")
+skeleton = NodePath("")
+
+[node name="Amber" type="MeshInstance3D" parent="." unique_id=430248531]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.45, 0.13)
+mesh = SubResource("CylinderMesh_mfnwl")
+skeleton = NodePath("")
+
+[node name="Green" type="MeshInstance3D" parent="." unique_id=805710197]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.15, 0.13)
+mesh = SubResource("CylinderMesh_ppfu7")
+skeleton = NodePath("")

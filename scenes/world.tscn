@@ -29,14 +29,15 @@
 [ext_resource type="PackedScene" uid="uid://baypvcu1rf2ph" path="res://assets/buildings/inmaculada.blend" id="27_ts3gi"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
 [ext_resource type="PackedScene" uid="uid://bo2050jsnshx0" path="res://assets/roads/area_cruz_blanca.glb" id="29_37qwj"]
-[ext_resource type="PackedScene" uid="uid://dw5s6uha3611t" path="res://assets/buildings/kindergarten.blend" id="31_luhhm"]
 [ext_resource type="PackedScene" uid="uid://dop00n1ut13qu" path="res://assets/roads/wide.blend" id="33_rup4s"]
 [ext_resource type="PackedScene" uid="uid://dq2omfnod7ohu" path="res://assets/roads/wide-short.blend" id="34_4kbfs"]
 [ext_resource type="PackedScene" uid="uid://hf0nm0osi5hk" path="res://assets/roads/area_bus.glb" id="35_x2olw"]
 [ext_resource type="PackedScene" uid="uid://b7iyyvxavxbdl" path="res://assets/buildings/petrol.glb" id="36_817gm"]
 [ext_resource type="PackedScene" uid="uid://cqaxxbidpiyoj" path="res://assets/roads/area_inmaculada.glb" id="36_ggc52"]
 [ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/others/tree_pine.blend" id="36_l8ah6"]
-[ext_resource type="PackedScene" uid="uid://bjhxavda1hsxf" path="res://assets/buildings/casa_juventud.blend" id="36_x2olw"]
+[ext_resource type="PackedScene" uid="uid://1y0m3mqjkver" path="res://assets/buildings/casa_juventud.glb" id="37_817gm"]
+[ext_resource type="PackedScene" uid="uid://dkq3jqqlrqomg" path="res://assets/buildings/kindergarten.glb" id="37_ggc52"]
+[ext_resource type="PackedScene" uid="uid://cpolcpwlbb8tr" path="res://scenes/traffic_light.tscn" id="38_ggc52"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -270,7 +271,6 @@ transform = Transform3D(-0.17364824, -0.41619742, 0.892538, 0, 0.90630704, 0.422
 shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
-visible = false
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=1673601800 instance=ExtResource("6_qfnet")]
@@ -698,29 +698,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -48)
 [node name="Petrol" parent="Buildings" unique_id=757233412 instance=ExtResource("36_817gm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="Complex" parent="Buildings" unique_id=142913685 instance=ExtResource("14_817gm")]
+[node name="Complex" parent="Buildings" unique_id=1828370312 instance=ExtResource("14_817gm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -18)
+
+[node name="CasaJuventud" parent="Buildings" unique_id=68540739 instance=ExtResource("37_817gm")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 1.5502346e-07, 0, -57)
+
+[node name="Kindergarten" parent="Buildings" unique_id=1032936620 instance=ExtResource("37_ggc52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -80)
 
 [node name="CapitanMoreno" parent="Buildings" unique_id=1914978432 instance=ExtResource("7_xo05s")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 128, 0, -12)
-
-[node name="SanSebastian" parent="Buildings" unique_id=1574044999 instance=ExtResource("3_k0juu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 398, 0, 8)
-
-[node name="Ayuntamiento" parent="Buildings" unique_id=144641377 instance=ExtResource("13_jhx03")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 180, 0.1, 14)
-
-[node name="flat" parent="Buildings" unique_id=105968299 instance=ExtResource("25_xgqkh")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 12)
-
-[node name="flat2" parent="Buildings" unique_id=704541329 instance=ExtResource("25_xgqkh")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 36)
-
-[node name="casa_juventud" parent="Buildings" unique_id=1221744162 instance=ExtResource("36_x2olw")]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0, 0, -57)
-
-[node name="kindergarten" parent="Buildings" unique_id=760601740 instance=ExtResource("31_luhhm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -80)
 
 [node name="PuertaEstepa" type="StaticBody3D" parent="Buildings" unique_id=275541547]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.2, -12)
@@ -908,6 +896,18 @@ shape = SubResource("BoxShape3D_3l05q")
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Buildings/Inmaculada" unique_id=446801897]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 1.5, 17)
 shape = SubResource("BoxShape3D_x28ej")
+
+[node name="SanSebastian" parent="Buildings" unique_id=1574044999 instance=ExtResource("3_k0juu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 398, 0, 8)
+
+[node name="Ayuntamiento" parent="Buildings" unique_id=144641377 instance=ExtResource("13_jhx03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 180, 0.1, 14)
+
+[node name="flat" parent="Buildings" unique_id=105968299 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 12)
+
+[node name="flat2" parent="Buildings" unique_id=704541329 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 36)
 
 [node name="Ground" type="Node" parent="." unique_id=402141304]
 
@@ -1142,6 +1142,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_oo54l")
 
 [node name="Asset" parent="Other/Traffic/GoLeft" unique_id=2062515491 instance=ExtResource("25_37qwj")]
+
+[node name="MainTrafficLight" parent="Other/Traffic" unique_id=773682190 instance=ExtResource("38_ggc52")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 128.82843, 0, -8.414214)
+
+[node name="SecondaryTrafficLight" parent="Other/Traffic" unique_id=860451054 instance=ExtResource("38_ggc52")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 129, 0, -16)
+type = 1
 
 [node name="Trees" type="Node" parent="Other" unique_id=624223058]
 

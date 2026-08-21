@@ -12,7 +12,7 @@ func set_sunset():
 	var sky = Sky.new()
 	sky.sky_material = mat
 	
-	var env = $"WorldEnvironment".environment
+	var env = $WorldEnvironment.environment
 	env.sky = sky
 
 func set_night():
@@ -25,11 +25,11 @@ func set_night():
 	var sky = Sky.new()
 	sky.sky_material = mat
 	
-	var env = $"/WorldEnvironment".environment
+	var env = $WorldEnvironment.environment
 	env.sky = sky
 	env.ambient_light_energy = 0.15
 	env.ambient_light_color = Color("#2a2a3a")
 	
-	var sun = $"/DirectionalLight3D"
+	var sun = $DirectionalLight3D
 	sun.light_energy = 0.0
 	sun.shadow_enabled = false
