@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cgwycemx0prtb"
-path="res://.godot/imported/area_bus.glb-787ffd631b27df14ac20fc62c6296edd.scn"
+uid="uid://dall2wihg3gcb"
+path="res://.godot/imported/area_sebastian.glb-21c90e7415201c099eaa880aee7ab050.scn"
 
 [deps]
 
-source_file="res://assets/roads/area_bus.glb"
-dest_files=["res://.godot/imported/area_bus.glb-787ffd631b27df14ac20fc62c6296edd.scn"]
+source_file="res://assets/roads/area_sebastian.glb"
+dest_files=["res://.godot/imported/area_sebastian.glb-21c90e7415201c099eaa880aee7ab050.scn"]
 
 [params]
 

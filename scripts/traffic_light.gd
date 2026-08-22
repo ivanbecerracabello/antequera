@@ -12,22 +12,18 @@ var phase_elapsed := 0.0
 @onready var amber: MeshInstance3D = $Amber
 @onready var green: MeshInstance3D = $Green
 
-
 func _ready() -> void:
 	if type == Type.SECONDARY:
 		phase = Phase.RED
 
 	_apply_phase()
 
-
 func _process(delta: float) -> void:
 	phase_elapsed += delta
-
 	if phase_elapsed >= _phase_duration():
 		phase_elapsed = 0.0
 		phase = ((phase + 1) % 4) as Phase
 		_apply_phase()
-
 
 func _phase_duration() -> float:
 	match type:
