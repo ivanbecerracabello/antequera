@@ -240,6 +240,7 @@ func parse_command(cmd: String):
 				if amount < 1:
 					held_item_name = ""
 		"/test":
+			self.position = Vector3(0, 10, 0)
 			add_message("%s" % nearby_vehicle)
 			inventory = [
 				{ "name": "Beer", "amount": 5 },

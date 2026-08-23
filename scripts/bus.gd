@@ -4,18 +4,18 @@ var MAX_STEER := 0.6
 var ARRIVAL_DISTANCE := 2.0
 
 var BUS_STOPS = [
-	Vector3(-13, 0, -136),
-	Vector3(-13, 0, -112), # Roundabout
+	Vector3(-14, 0, -133),
+	Vector3(-14, 0, -112), # Enter roundabout.
 	Vector3(-22, 0, -100),
-	Vector3(-14, 0, -88),
-	Vector3(-14, 0, -24), # Roundabout
-	Vector3(-27, 0, -22),
-	Vector3(-150, 0, -22),
-	Vector3(-162, 0, -30),
-	Vector3(-162, 0, -106),
-	Vector3(-121, 0, -110),
-	Vector3(-118, 0, -176),
-	Vector3(-59, 0, -180)
+	Vector3(-14, 0, -90), # Exit roundabount.
+	Vector3(-14, 0, -24), # Enter roundabout.
+	Vector3(-22, 0, -13),
+	Vector3(-11, 0, -2),
+	Vector3(-1, 0, -10), # Exit roundabout.
+	Vector3(119, 0, -10), # Capitan Moreno.
+	Vector3(160, 0, 29), # City Hall.
+
+	Vector3(415, 0, 30) # San Sebastian.
 ]
 
 var current_target_index: int = 0

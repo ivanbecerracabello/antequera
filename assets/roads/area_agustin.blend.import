@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://saskvuf3g353"
-path="res://.godot/imported/iglesia_san_sebastian.blend-b6d4ad9aa28b43e5ec57fddf2c9108f6.scn"
+uid="uid://bgp0sb8xpgwvv"
+path="res://.godot/imported/area_agustin.blend-b8596404092116183cc81b8750ce18bf.scn"
 
 [deps]
 
-source_file="res://assets/buildings/iglesia_san_sebastian.blend"
-dest_files=["res://.godot/imported/iglesia_san_sebastian.blend-b6d4ad9aa28b43e5ec57fddf2c9108f6.scn"]
+source_file="res://assets/roads/area_agustin.blend"
+dest_files=["res://.godot/imported/area_agustin.blend-b8596404092116183cc81b8750ce18bf.scn"]
 
 [params]
 
