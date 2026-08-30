@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cijhyb11r7nes"
-path="res://.godot/imported/road_merecillas.glb-c6154e93784e72fe5685c174a3362265.scn"
+uid="uid://cbkqdh5r8ktw7"
+path="res://.godot/imported/roads_agustin.glb-9572964379c3b90908665f7349877692.scn"
 
 [deps]
 
-source_file="res://assets/districts/estepa/road_merecillas.glb"
-dest_files=["res://.godot/imported/road_merecillas.glb-c6154e93784e72fe5685c174a3362265.scn"]
+source_file="res://assets/districts/agustin/roads_agustin.glb"
+dest_files=["res://.godot/imported/roads_agustin.glb-9572964379c3b90908665f7349877692.scn"]
 
 [params]
 
@@ -42,4 +42,4 @@ materials/extract_path=""
 _subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
-gltf/texture_map_mode=0
+gltf/texture_map_mode=1

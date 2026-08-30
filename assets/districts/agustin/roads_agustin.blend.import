@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cth33hbeh77h2"
-path="res://.godot/imported/arch_road.blend-31eadc4489acdd692b2e6cee9f7a0522.scn"
+uid="uid://bbpfx5u5ufget"
+path="res://.godot/imported/roads_agustin.blend-1d0ad965001f1dd9209615d027a4aebf.scn"
 
 [deps]
 
-source_file="res://assets/districts/sebastian/arch_road.blend"
-dest_files=["res://.godot/imported/arch_road.blend-31eadc4489acdd692b2e6cee9f7a0522.scn"]
+source_file="res://assets/districts/agustin/roads_agustin.blend"
+dest_files=["res://.godot/imported/roads_agustin.blend-1d0ad965001f1dd9209615d027a4aebf.scn"]
 
 [params]
 
@@ -46,7 +46,7 @@ blender/nodes/punctual_lights=true
 blender/nodes/cameras=true
 blender/nodes/custom_properties=true
 blender/nodes/modifiers=1
-blender/meshes/vertex_colors=2
+blender/meshes/vertex_colors=1
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false
@@ -60,4 +60,4 @@ blender/animation/limit_playback=true
 blender/animation/always_sample=true
 blender/animation/group_tracks=true
 gltf/naming_version=2
-gltf/texture_map_mode=0
+gltf/texture_map_mode=1
