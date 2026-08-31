@@ -1,70 +1,51 @@
-[gd_scene load_steps=3 format=3 uid="uid://m8cwy3qs2qd1q"]
+[gd_scene format=3 uid="uid://c7cnj50dvw03f"]
 
-[ext_resource type="Script" path="res://scripts/radar.gd" id="1_hpr16"]
-[ext_resource type="Texture2D" path="res://miscellaneous/antequeland.png" id="2_qsc3f"]
-[ext_resource type="Script" path="res://scripts/circle_border.gd" id="3_border"]
+[ext_resource type="Shader" uid="uid://dfvt6ehop70l6" path="res://scripts/radar_circle.gdshader" id="1_23uor"]
+[ext_resource type="Script" uid="uid://8ie83tcrb0fa" path="res://scripts/radar.gd" id="1_g0dnf"]
+[ext_resource type="Texture2D" uid="uid://b42hojetu3fyh" path="res://miscellaneous/antequeland.png" id="1_vnohn"]
 
-[node name="Radar" type="CanvasLayer"]
-layer=1
-script=ExtResource("1_hpr16")
-radar_size=256
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vnohn"]
+shader = ExtResource("1_23uor")
 
-[node name="Control" type="Control" parent="."]
-anchor_left=0.0
-anchor_top=1.0
-anchor_right=0.0
-anchor_bottom=1.0
-offset_left=20.0
-offset_top=-276.0
-offset_right=276.0
-offset_bottom=-20.0
-clip_contents=true
-mouse_filter=2
+[sub_resource type="ViewportTexture" id="ViewportTexture_23uor"]
+viewport_path = NodePath("SubViewport")
 
-[node name="MapContainer" type="Node2D" parent="Control"]
+[node name="Radar" type="CanvasLayer" unique_id=689580934]
+script = ExtResource("1_g0dnf")
 
-[node name="TextureRect" type="TextureRect" parent="Control/MapContainer"]
-offset_left=0.0
-offset_top=0.0
-custom_minimum_size=Vector2(2000, 1000)
-texture=ExtResource("2_qsc3f")
-expand_mode=1
-stretch_mode=1
+[node name="Control" type="Control" parent="." unique_id=1225863771]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 256.0
 
-[node name="Cursor" type="Control" parent="Control"]
-anchor_left=0.5
-anchor_top=0.5
-anchor_right=0.5
-anchor_bottom=0.5
-offset_left=-6.0
-offset_top=-6.0
-offset_right=6.0
-offset_bottom=6.0
-mouse_filter=2
+[node name="RadarTexture" type="TextureRect" parent="Control" unique_id=1929417585]
+material = SubResource("ShaderMaterial_vnohn")
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 256.0
+texture = SubResource("ViewportTexture_23uor")
 
-[node name="CursorVisual" type="Panel" parent="Control/Cursor"]
-anchor_left=0.0
-anchor_top=0.0
-anchor_right=1.0
-anchor_bottom=1.0
-self_modulate=Color(1, 1, 1, 1)
+[node name="Cursor" type="Control" parent="Control" unique_id=1065123552]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="CircleBorder" type="Control" parent="Control"]
-anchor_left=0.5
-anchor_top=0.5
-anchor_right=0.5
-anchor_bottom=0.5
-offset_left=-128.0
-offset_top=-128.0
-offset_right=128.0
-offset_bottom=128.0
-mouse_filter=2
-script=ExtResource("3_border")
+[node name="CursorVisual" type="Panel" parent="Control/Cursor" unique_id=1891356969]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
+[node name="CircleBorder" type="Control" parent="Control" unique_id=1430117408]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
+[node name="SubViewport" type="SubViewport" parent="." unique_id=503065211]
 
+[node name="MapContainer" type="Node2D" parent="SubViewport" unique_id=1712547525]
 
-
-
-
-
+[node name="TextureRect" type="TextureRect" parent="SubViewport/MapContainer" unique_id=1999976856]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vnohn")

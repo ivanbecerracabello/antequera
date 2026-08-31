@@ -50,7 +50,7 @@
 [ext_resource type="PackedScene" uid="uid://b7lfhu00cqa46" path="res://assets/districts/estepa/petrol.glb" id="50_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://mkssveqr1p4r" path="res://assets/districts/real/flat.glb" id="50_1jxku"]
 [ext_resource type="PackedScene" uid="uid://ck8o7dsi487y3" path="res://assets/districts/estepa/road_estepa.glb" id="50_x28ej"]
-[ext_resource type="PackedScene" uid="uid://bm4b7wy2d4qrg" path="res://scenes/radar.tscn" id="51_1jxku"]
+[ext_resource type="PackedScene" uid="uid://c7cnj50dvw03f" path="res://scenes/radar.tscn" id="51_1jxku"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -263,8 +263,6 @@ offset_bottom = 72.0
 
 [node name="InventoryUI" parent="UI" unique_id=778877993 instance=ExtResource("17_7t5mc")]
 visible = false
-
-[node name="Radar" parent="." unique_id=1245753126 instance=ExtResource("51_1jxku")]
 
 [node name="Districts" type="Node3D" parent="." unique_id=487173944]
 
@@ -819,3 +817,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, 36)
 
 [node name="road_coso_viejo" parent="." unique_id=1967886295 instance=ExtResource("46_18clu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, 32)
+
+[node name="Radar" parent="." unique_id=689580934 instance=ExtResource("51_1jxku")]
