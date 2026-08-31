@@ -10,55 +10,54 @@ shader = ExtResource("1_23uor")
 [sub_resource type="ViewportTexture" id="ViewportTexture_23uor"]
 viewport_path = NodePath("SubViewport")
 
-[node name="Radar" type="CanvasLayer"]
+[node name="Radar" type="CanvasLayer" unique_id=1131919599]
 layer = -1
 script = ExtResource("1_g0dnf")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 0
+[node name="Control" type="Control" parent="." unique_id=1508629215]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
 offset_left = 20.0
 offset_top = -200.0
 offset_right = 200.0
 offset_bottom = -20.0
-anchor_left = 0.0
-anchor_top = 1.0
-anchor_right = 0.0
-anchor_bottom = 1.0
 
-[node name="RadarTexture" type="TextureRect" parent="Control"]
+[node name="RadarTexture" type="TextureRect" parent="Control" unique_id=1515106030]
+material = SubResource("ShaderMaterial_vnohn")
 layout_mode = 0
 offset_right = 180.0
 offset_bottom = 180.0
-material = SubResource("ShaderMaterial_vnohn")
 texture = SubResource("ViewportTexture_23uor")
 
-[node name="Cursor" type="Control" parent="Control"]
-layout_mode = 0
+[node name="Cursor" type="Control" parent="Control" unique_id=1746246681]
+anchors_preset = 0
 offset_right = 180.0
 offset_bottom = 180.0
 mouse_filter = 2
 
-[node name="CursorVisual" type="ColorRect" parent="Control/Cursor"]
+[node name="CursorVisual" type="ColorRect" parent="Control/Cursor" unique_id=1834915599]
 layout_mode = 0
-offset_left = 82.0
-offset_top = 82.0
-offset_right = 98.0
-offset_bottom = 98.0
+offset_left = 84.0
+offset_top = 84.0
+offset_right = 96.0
+offset_bottom = 96.0
 color = Color(1, 0.2, 0.2, 1)
 
-[node name="CircleBorder" type="Control" parent="Control"]
-layout_mode = 0
+[node name="CircleBorder" type="Control" parent="Control" unique_id=1757593650]
+anchors_preset = 0
 offset_right = 180.0
 offset_bottom = 180.0
 mouse_filter = 2
 
-[node name="SubViewport" type="SubViewport" parent="."]
-size = Vector2i(180, 180)
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1371837164]
 transparent_bg = true
+size = Vector2i(180, 180)
 
-[node name="MapContainer" type="Node2D" parent="SubViewport"]
+[node name="MapContainer" type="Node2D" parent="SubViewport" unique_id=1561111627]
 
-[node name="TextureRect" type="TextureRect" parent="SubViewport/MapContainer"]
+[node name="TextureRect" type="TextureRect" parent="SubViewport/MapContainer" unique_id=1586522257]
 offset_right = 2000.0
 offset_bottom = 1000.0
 texture = ExtResource("1_vnohn")
