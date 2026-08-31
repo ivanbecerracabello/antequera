@@ -15,8 +15,9 @@ extends CanvasLayer
 
 @onready var texture_rect = $SubViewport/MapContainer/TextureRect
 @onready var map_container = $SubViewport/MapContainer
-@onready var player = get_tree().get_first_node_in_group("player")
 
+@onready var player = get_tree().get_first_node_in_group("player")
+@onready var player_pivot = player.get_node("Pivot") if player else null
 
 func _process(_delta):
 	if not player:
@@ -24,7 +25,6 @@ func _process(_delta):
 		return
 	
 	update_radar_position()
-
 
 func update_radar_position():
 	if not map_container:
@@ -37,11 +37,25 @@ func update_radar_position():
 
 	map_container.scale = Vector2(radar_zoom, radar_zoom)
 
-	var offset_x = (map_x * radar_zoom) - (radar_size / 2.0)
-	var offset_z = (map_z * radar_zoom) - (radar_size / 2.0)
+	# Player position inside the scaled map
+	var player_map_pos = Vector2(
+		map_x * radar_zoom,
+		map_z * radar_zoom
+	)
 
-	map_container.position = Vector2(-offset_x, -offset_z)
+	# Radar center
+	var radar_center = Vector2(
+		radar_size / 2.0,
+		radar_size / 2.0
+	)
 
+	# Rotate the map according to the camera/pivot
+	var rotation = player_pivot.global_rotation.y
+	map_container.rotation = rotation
+
+	# Position the map so the player remains at the radar center
+	var rotated_player_pos = player_map_pos.rotated(rotation)
+	map_container.position = radar_center - rotated_player_pos
 
 func world_to_map_x(world_x: float) -> float:
 	var normalized = (world_x - world_min_x) / (world_max_x - world_min_x)
