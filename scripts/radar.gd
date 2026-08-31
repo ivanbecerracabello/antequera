@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@export var radar_size := 256
+@export var radar_size := 180
 @export var map_width := 2000.0
 @export var map_height := 1000.0
 
@@ -29,14 +29,13 @@ func update_radar_position():
 		return
 
 	var player_pos = player.global_position
-
 	var map_x = world_to_map_x(player_pos.x)
 	var map_z = world_to_map_z(player_pos.z)
 
-	var offset_x = map_x - (radar_size / 2.0)
-	var offset_z = map_z - (radar_size / 2.0)
+	var radar_center = Vector2(radar_size * 0.5, radar_size * 0.5)
+	var map_center = Vector2(map_x, map_z)
 
-	map_container.position = Vector2(-offset_x, -offset_z)
+	map_container.position = radar_center - map_center
 
 
 func world_to_map_x(world_x: float) -> float:
