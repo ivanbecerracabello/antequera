@@ -51,6 +51,7 @@
 [ext_resource type="PackedScene" uid="uid://mkssveqr1p4r" path="res://assets/districts/real/flat.glb" id="50_1jxku"]
 [ext_resource type="PackedScene" uid="uid://ck8o7dsi487y3" path="res://assets/districts/estepa/road_estepa.glb" id="50_x28ej"]
 [ext_resource type="PackedScene" uid="uid://c7cnj50dvw03f" path="res://scenes/radar.tscn" id="51_1jxku"]
+[ext_resource type="PackedScene" uid="uid://w1muc3ng8sft" path="res://assets/districts/sebastian/museum_art.blend" id="52_1dgkn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -676,7 +677,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -153.887, 3.8146973e-06, -40.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1, -49)
 
 [node name="Pine6" parent="Other/Trees" unique_id=1169586846 instance=ExtResource("36_l8ah6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -43.5)
 
 [node name="Roads" type="Node" parent="." unique_id=544354002]
 
@@ -819,3 +820,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, 36)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, 32)
 
 [node name="Radar" parent="." unique_id=689580934 instance=ExtResource("51_1jxku")]
+
+[node name="museum_art" parent="." unique_id=547522313 instance=ExtResource("52_1dgkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304, 0, -47)
