@@ -676,7 +676,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -153.887, 3.8146973e-06, -40.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1, -49)
 
 [node name="Pine6" parent="Other/Trees" unique_id=1169586846 instance=ExtResource("36_l8ah6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 1, -44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -44)
 
 [node name="Roads" type="Node" parent="." unique_id=544354002]
 

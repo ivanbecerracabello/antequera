@@ -3,6 +3,10 @@
 [ext_resource type="Shader" uid="uid://dfvt6ehop70l6" path="res://scripts/radar_circle.gdshader" id="1_23uor"]
 [ext_resource type="Script" uid="uid://8ie83tcrb0fa" path="res://scripts/radar.gd" id="1_g0dnf"]
 [ext_resource type="Texture2D" uid="uid://b42hojetu3fyh" path="res://miscellaneous/antequeland.png" id="1_vnohn"]
+[ext_resource type="Shader" path="res://scripts/radar_border.gdshader" id="2_border"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_border"]
+shader = ExtResource("2_border")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vnohn"]
 shader = ExtResource("1_23uor")
@@ -45,11 +49,13 @@ offset_right = 96.0
 offset_bottom = 96.0
 color = Color(1, 0.2, 0.2, 1)
 
-[node name="CircleBorder" type="Control" parent="Control" unique_id=1757593650]
-anchors_preset = 0
+[node name="CircleBorder" type="ColorRect" parent="Control"]
+material = SubResource("ShaderMaterial_border")
+layout_mode = 0
 offset_right = 180.0
 offset_bottom = 180.0
 mouse_filter = 2
+color = Color(1, 1, 1, 1)
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1371837164]
 transparent_bg = true

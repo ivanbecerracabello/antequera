@@ -42,12 +42,15 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#d9d9d9;stroke:#e6e6e6;stroke-width:0.264583;stroke-opacity:1;fill-opacity:1"
+       style="fill:#cccccc;stroke:#e6e6e6;stroke-width:0.264583;stroke-opacity:1;fill-opacity:1"
        id="rect7278"
        width="2078.3967"
        height="1069.6815"
        x="-35.951229"
-       y="-33.242123" />
+       y="-33.242123"
+       inkscape:export-filename="/home/ivanbecerra/repos/antequera/miscellaneous/rect7278.png"
+       inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke-width:0.274571"
        id="rect1714"
