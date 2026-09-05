@@ -8,10 +8,12 @@ extends CanvasLayer
 
 @export var game_scale := 1.0
 
-@export var world_min_x := -244.0
-@export var world_max_x := 556.0
-@export var world_min_z := -208.0
-@export var world_max_z := 192.0
+@export var world_min_x := -268.0
+@export var world_max_x := 532.0
+@export var world_min_z := -232.0
+@export var world_max_z := 184.0
+
+@export var png_pixels_per_meter := 20.0 / 8.0
 
 @onready var texture_rect = $SubViewport/MapContainer/TextureRect
 @onready var map_container = $SubViewport/MapContainer
@@ -58,10 +60,8 @@ func update_radar_position():
 	map_container.position = radar_center - rotated_player_pos
 
 func world_to_map_x(world_x: float) -> float:
-	var normalized = (world_x - world_min_x) / (world_max_x - world_min_x)
-	return clamp(normalized * map_width, 0, map_width)
+	return clamp((world_x - world_min_x) * png_pixels_per_meter, 0, map_width)
 
 
 func world_to_map_z(world_z: float) -> float:
-	var normalized = (world_z - world_min_z) / (world_max_z - world_min_z)
-	return clamp(normalized * map_height, 0, map_height)
+	return clamp((world_z - world_min_z) * png_pixels_per_meter, 0, map_height)
