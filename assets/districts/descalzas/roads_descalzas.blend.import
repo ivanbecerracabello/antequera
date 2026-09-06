@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cp7ol1gitxa44"
-path="res://.godot/imported/guardia_civil.blend-d8616ec5b090e1f3630ec32c4fbfee62.scn"
+uid="uid://c3e3ryorvlwy0"
+path="res://.godot/imported/roads_descalzas.blend-0c8d2db8866e6ffd320376b68580af26.scn"
 
 [deps]
 
-source_file="res://assets/buildings/guardia_civil.blend"
-dest_files=["res://.godot/imported/guardia_civil.blend-d8616ec5b090e1f3630ec32c4fbfee62.scn"]
+source_file="res://assets/districts/descalzas/roads_descalzas.blend"
+dest_files=["res://.godot/imported/roads_descalzas.blend-0c8d2db8866e6ffd320376b68580af26.scn"]
 
 [params]
 
