@@ -52,11 +52,11 @@ func update_radar_position():
 	)
 
 	# Rotate the map according to the camera/pivot
-	var rotation = player_pivot.global_rotation.y
-	map_container.rotation = rotation
+	var player_rotation = player_pivot.global_rotation.y
+	map_container.rotation = player_rotation
 
 	# Position the map so the player remains at the radar center
-	var rotated_player_pos = player_map_pos.rotated(rotation)
+	var rotated_player_pos = player_map_pos.rotated(player_rotation)
 	map_container.position = radar_center - rotated_player_pos
 
 func world_to_map_x(world_x: float) -> float:

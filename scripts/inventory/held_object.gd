@@ -2,9 +2,9 @@ extends Node3D
 
 @onready var asset = $Asset
 
-var pistol_asset = preload("res://assets/inventory/pistol.blend")
-var beer_asset = preload("res://assets/inventory/beer.blend")
-var mollete_asset = preload("res://assets/inventory/mollete.blend")
+var pistol_asset = preload("res://assets/models/inventory/pistol.blend")
+var beer_asset = preload("res://assets/models/inventory/beer.blend")
+var mollete_asset = preload("res://assets/models/inventory/mollete.blend")
 
 @onready var animation = $AnimationPlayer
 

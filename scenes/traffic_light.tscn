@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpolcpwlbb8tr"]
 
-[ext_resource type="PackedScene" uid="uid://cdvmpbgri26oo" path="res://assets/others/traffic_light.blend" id="1_uttgq"]
+[ext_resource type="PackedScene" uid="uid://cdvmpbgri26oo" path="res://assets/generic/traffic_light.blend" id="1_uttgq"]
 [ext_resource type="Script" uid="uid://da2qhuhb67ft3" path="res://scripts/traffic_light.gd" id="1_va7ut"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uttgq"]
