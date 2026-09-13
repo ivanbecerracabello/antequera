@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1536mm"
+   height="192mm"
+   viewBox="0 0 1536 192"
+   version="1.1"
+   id="svg2008"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="police_parking.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/police_parking.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2010"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.33986041"
+     inkscape:cx="664.9789"
+     inkscape:cy="659.09413"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2005" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.907532;stroke-opacity:1"
+       id="rect2125"
+       width="1535.0924"
+       height="191.09247"
+       x="0.45376614"
+       y="0.45376614" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3107"
+       width="127.79362"
+       height="12.793615"
+       x="130.16702"
+       y="179.1032" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3111"
+       width="127.79362"
+       height="12.793615"
+       x="385.75424"
+       y="179.1032" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3115"
+       width="127.79362"
+       height="12.793615"
+       x="641.34149"
+       y="179.1032" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3119"
+       width="127.79362"
+       height="12.793615"
+       x="896.92877"
+       y="179.1032" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3123"
+       width="127.79362"
+       height="12.793615"
+       x="1152.516"
+       y="179.1032" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:0.206385;stroke-opacity:1"
+       id="rect3127"
+       width="127.79362"
+       height="12.793615"
+       x="1408.1031"
+       y="179.1032" />
+  </g>
+</svg>
