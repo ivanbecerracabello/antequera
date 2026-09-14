@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1800mm"
+   height="2000mm"
+   viewBox="0 0 1800 2000"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.16993021"
+     inkscape:cx="2383.3314"
+     inkscape:cy="5890.6538"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f5e8c8;fill-opacity:1;stroke:#f5e8c8;stroke-width:1.6807;stroke-opacity:1"
+       id="rect880"
+       width="1798.3193"
+       height="1998.3193"
+       x="0.84035128"
+       y="0.84035128" />
+    <rect
+       style="fill:#c62828;fill-opacity:1;stroke:#c62828;stroke-width:0.264583;stroke-opacity:1"
+       id="rect1020"
+       width="591.47229"
+       height="123.34225"
+       x="584.92633"
+       y="1606.6089" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:85.2335px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.13085"
+       x="673.81268"
+       y="1625.6736"
+       id="text8694"
+       transform="scale(0.95701015,1.044921)"><tspan
+         sodipodi:role="line"
+         id="tspan8692"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:2.13085"
+         x="673.81268"
+         y="1625.6736">Bazar Chino</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:2.13085"
+         x="673.81268"
+         y="1732.2155"
+         id="tspan8696" /></text>
+  </g>
+</svg>
