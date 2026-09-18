@@ -31,7 +31,6 @@
 [ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/models/generic/tree_pine.blend" id="36_l8ah6"]
 [ext_resource type="PackedScene" uid="uid://d1166ygvne7f" path="res://assets/models/districts/descalzas/roads_west_cruz_blanca.glb" id="37_3l05q"]
 [ext_resource type="PackedScene" uid="uid://cpolcpwlbb8tr" path="res://scenes/traffic_light.tscn" id="38_ggc52"]
-[ext_resource type="PackedScene" uid="uid://dgvywnnchpvpn" path="res://assets/models/districts/descalzas/parking.blend" id="41_e68xj"]
 [ext_resource type="PackedScene" uid="uid://cth33hbeh77h2" path="res://assets/models/districts/sebastian/arch_road.blend" id="44_hi6a0"]
 [ext_resource type="PackedScene" uid="uid://d2ryudfn0ctme" path="res://assets/models/districts/sebastian/arch_sebastian.blend" id="45_eo1xk"]
 [ext_resource type="PackedScene" uid="uid://bivehn4uvkph" path="res://assets/models/districts/sebastian/road_coso_viejo.blend" id="46_18clu"]
@@ -54,9 +53,8 @@
 [ext_resource type="PackedScene" uid="uid://ch58s3esrq75t" path="res://assets/models/districts/inmaculada/hospital.glb" id="53_qg546"]
 [ext_resource type="PackedScene" uid="uid://te6n1nuptx0i" path="res://assets/models/generic/roundabout.glb" id="54_5hglh"]
 [ext_resource type="PackedScene" uid="uid://ca1t6sduco8ng" path="res://assets/models/districts/estepa/roads_comedias.glb" id="54_qg546"]
-[ext_resource type="PackedScene" uid="uid://dbnt24jb72172" path="res://assets/models/districts/descalzas/cruz_blanca.blend" id="55_qg546"]
+[ext_resource type="PackedScene" uid="uid://6k4hm1o5v4u2" path="res://assets/models/districts/descalzas/chunk_cruz_blanca.glb" id="55_qg546"]
 [ext_resource type="PackedScene" uid="uid://pnixvc56tgd7" path="res://assets/models/districts/inmaculada/road_porterias.glb" id="56_pf35h"]
-[ext_resource type="PackedScene" uid="uid://dtqyylhevbvvr" path="res://assets/models/districts/descalzas/buildings_cruz_blanca.glb" id="57_iexy4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -322,9 +320,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 250, 0, -52)
 [node name="RoadsEast" parent="Districts/Descalzas" unique_id=550923711 instance=ExtResource("25_3l05q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 418, 0, -48)
 
-[node name="Parking" parent="Districts/Descalzas" unique_id=1096049610 instance=ExtResource("41_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 276, 0.1, -53)
-
 [node name="Cantareros-Ponce" type="MeshInstance3D" parent="Districts/Descalzas" unique_id=1700802907]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 286, 0, -50)
 mesh = SubResource("PlaneMesh_l8ah6")
@@ -334,6 +329,9 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Descalzas/Cantareros-Ponce/StaticBody3D" unique_id=2003419261]
 shape = SubResource("ConvexPolygonShape3D_e75v4")
+
+[node name="ChunkCruzBlanca" parent="Districts/Descalzas" unique_id=1757744138 instance=ExtResource("55_qg546")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 259, 0, -101)
 
 [node name="Other" type="Node" parent="." unique_id=671482998]
 
@@ -468,7 +466,7 @@ shape = SubResource("BoxShape3D_o8fc1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 
 [node name="NoEntry10" type="StaticBody3D" parent="Other/Traffic" unique_id=298153622]
-transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, -0.70710677, 263.5, 0, -103.5)
+transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, -0.70710677, 264, 0, -103.8)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Traffic/NoEntry10" unique_id=213364575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -568,6 +566,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1, -49)
 [node name="Pine6" parent="Other/Trees" unique_id=1169586846 instance=ExtResource("36_l8ah6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, -43.5)
 
+[node name="Pine7" parent="Other/Trees" unique_id=1850427115 instance=ExtResource("36_l8ah6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -12.5)
+
 [node name="Roads" type="Node" parent="." unique_id=544354002]
 
 [node name="WideShort2" type="StaticBody3D" parent="Roads" unique_id=1074458730]
@@ -592,11 +593,5 @@ shape = SubResource("BoxShape3D_l8ah6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 230, 0, -64)
 mesh = SubResource("PlaneMesh_4bi45")
 
-[node name="cruz_blanca" parent="." unique_id=2058070561 instance=ExtResource("55_qg546")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 257, 0.1, -104)
-
 [node name="road_porterias" parent="." unique_id=466636917 instance=ExtResource("56_pf35h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 0, -110)
-
-[node name="buildings_cruz_blanca" parent="." unique_id=606106815 instance=ExtResource("57_iexy4")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 258, 0, -104)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hj5mcfaqee70"]
 
 [ext_resource type="Script" uid="uid://dxtwwq3nql5fm" path="res://scripts/car.gd" id="1_c35m8"]
-[ext_resource type="PackedScene" uid="uid://3vuhl5dckyo4" path="res://assets/vehicles/car_offroad.glb" id="2_qt2eu"]
+[ext_resource type="PackedScene" uid="uid://3vuhl5dckyo4" path="res://assets/models/vehicles/car_offroad.glb" id="2_qt2eu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b0jew"]
 size = Vector3(1.5, 0.5, 3.5)
@@ -46,7 +46,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.15)
 shape = SubResource("BoxShape3D_b0jew")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=1777100508]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 1.1)
 use_as_steering = true
 wheel_radius = 0.3
 wheel_rest_length = 0.2
@@ -61,7 +61,7 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 
 mesh = SubResource("CylinderMesh_50v30")
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="." unique_id=372005532]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 1.1)
 use_as_steering = true
 wheel_radius = 0.3
 wheel_rest_length = 0.2
@@ -76,7 +76,7 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 
 mesh = SubResource("CylinderMesh_50v30")
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=644522565]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, -1.35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, -1.35)
 use_as_traction = true
 wheel_radius = 0.3
 wheel_rest_length = 0.2
@@ -91,7 +91,7 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 
 mesh = SubResource("CylinderMesh_50v30")
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=524760769]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, -1.35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, -1.35)
 use_as_traction = true
 wheel_radius = 0.3
 wheel_rest_length = 0.2
