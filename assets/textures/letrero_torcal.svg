@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1600mm"
+   height="300mm"
+   viewBox="0 0 1600 300"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="letrero_torcal.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/letrero_torcal.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="16000mm"
+     inkscape:zoom="0.084965103"
+     inkscape:cx="2789.3805"
+     inkscape:cy="647.32459"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e8d39b;fill-opacity:1;stroke:#e8d39b;stroke-width:1.71405;stroke-opacity:1"
+       id="rect917"
+       width="1598.2859"
+       height="298.28595"
+       x="0.8570261"
+       y="0.8570261" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.866px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.14666"
+       x="486.51566"
+       y="180.36607"
+       id="text4561"
+       transform="scale(0.91127083,1.0973686)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.866px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;stroke-width:3.14666"
+         x="486.51566"
+         y="180.36607"
+         id="tspan4563">CINE TORCAL</tspan></text>
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.10133;stroke-opacity:1"
+       id="rect56275"
+       width="199.89867"
+       height="49.89867"
+       x="0.050664999"
+       y="50.050667" />
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.10133;stroke-opacity:1"
+       id="rect56589"
+       width="199.89867"
+       height="49.89867"
+       x="0.05066495"
+       y="150.05066" />
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.10133;stroke-opacity:1"
+       id="rect56591"
+       width="199.89867"
+       height="49.89867"
+       x="1400.0507"
+       y="150.05066" />
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.10133;stroke-opacity:1"
+       id="rect80041"
+       width="199.89867"
+       height="49.89867"
+       x="1400.0507"
+       y="50.050667" />
+  </g>
+</svg>
