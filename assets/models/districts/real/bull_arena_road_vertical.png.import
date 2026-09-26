@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkwojomtgnytj"
-path.s3tc="res://.godot/imported/football_football.png-0a754985695d250d2ab51a152cec63a6.s3tc.ctex"
+uid="uid://bktwervgqxrh4"
+path.s3tc="res://.godot/imported/bull_arena_road_vertical.png-c8d608a994252117eb4344dcacbcccbd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2944815704f0427ff6b338bf45d107ca"
+"md5": "00481512f4e32d9c2a013961f2f02604"
 }
 
 [deps]
 
-source_file="res://assets/models/districts/real/football_football.png"
-dest_files=["res://.godot/imported/football_football.png-0a754985695d250d2ab51a152cec63a6.s3tc.ctex"]
+source_file="res://assets/models/districts/real/bull_arena_road_vertical.png"
+dest_files=["res://.godot/imported/bull_arena_road_vertical.png-c8d608a994252117eb4344dcacbcccbd.s3tc.ctex"]
 
 [params]
 

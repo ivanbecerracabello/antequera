@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkwojomtgnytj"
-path.s3tc="res://.godot/imported/football_football.png-0a754985695d250d2ab51a152cec63a6.s3tc.ctex"
+uid="uid://dvbpodyqmowi7"
+path.s3tc="res://.godot/imported/paseo_road.png-3f1e9d35ed6f8e1df056513e99424f05.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "2944815704f0427ff6b338bf45d107ca"
+"md5": "50e098d33dccedb8273a8eb02ce54b40"
 }
 
 [deps]
 
-source_file="res://assets/models/districts/real/football_football.png"
-dest_files=["res://.godot/imported/football_football.png-0a754985695d250d2ab51a152cec63a6.s3tc.ctex"]
+source_file="res://assets/models/districts/real/paseo_road.png"
+dest_files=["res://.godot/imported/paseo_road.png-3f1e9d35ed6f8e1df056513e99424f05.s3tc.ctex"]
 
 [params]
 
