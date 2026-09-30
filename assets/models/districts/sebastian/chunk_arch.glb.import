@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ce7lhlomcsl25"
-path="res://.godot/imported/parking.glb-8bb218a2d853692cc735fb29da63f60e.scn"
+uid="uid://b8r1vfsgy18yp"
+path="res://.godot/imported/chunk_arch.glb-20f95f073ba4a25eff59e9018ff208a4.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/descalzas/parking.glb"
-dest_files=["res://.godot/imported/parking.glb-8bb218a2d853692cc735fb29da63f60e.scn"]
+source_file="res://assets/models/districts/sebastian/chunk_arch.glb"
+dest_files=["res://.godot/imported/chunk_arch.glb-20f95f073ba4a25eff59e9018ff208a4.scn"]
 
 [params]
 

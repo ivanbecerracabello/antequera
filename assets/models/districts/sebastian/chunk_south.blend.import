@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bw0g2kh0awg41"
-path="res://.godot/imported/roads_west_cruz_blanca.blend-72557d137bbc22c91e508a1affcef3de.scn"
+uid="uid://b6712h5s605nw"
+path="res://.godot/imported/chunk_south.blend-629a1981b715ee7e7a242eb202bc61ca.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/descalzas/roads_west_cruz_blanca.blend"
-dest_files=["res://.godot/imported/roads_west_cruz_blanca.blend-72557d137bbc22c91e508a1affcef3de.scn"]
+source_file="res://assets/models/districts/sebastian/chunk_south.blend"
+dest_files=["res://.godot/imported/chunk_south.blend-629a1981b715ee7e7a242eb202bc61ca.scn"]
 
 [params]
 
@@ -46,7 +46,7 @@ blender/nodes/punctual_lights=true
 blender/nodes/cameras=true
 blender/nodes/custom_properties=true
 blender/nodes/modifiers=1
-blender/meshes/vertex_colors=2
+blender/meshes/vertex_colors=1
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false
@@ -60,4 +60,4 @@ blender/animation/limit_playback=true
 blender/animation/always_sample=true
 blender/animation/group_tracks=true
 gltf/naming_version=2
-gltf/texture_map_mode=0
+gltf/texture_map_mode=1

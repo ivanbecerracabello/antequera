@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dbnt24jb72172"
-path="res://.godot/imported/cruz_blanca.blend-27bfc34531b14e38eeaab1581e13ce87.scn"
+uid="uid://bkpuyrxrjod85"
+path="res://.godot/imported/chunk_arch.blend-445b4076070da9aa902becf0f36d57d9.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/descalzas/cruz_blanca.blend"
-dest_files=["res://.godot/imported/cruz_blanca.blend-27bfc34531b14e38eeaab1581e13ce87.scn"]
+source_file="res://assets/models/districts/sebastian/chunk_arch.blend"
+dest_files=["res://.godot/imported/chunk_arch.blend-445b4076070da9aa902becf0f36d57d9.scn"]
 
 [params]
 

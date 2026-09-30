@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dtqyylhevbvvr"
-path="res://.godot/imported/buildings_cruz_blanca.glb-7a6ae40a9e5d70d5ba8aa3763996e989.scn"
+uid="uid://tq0a03jslgfp"
+path="res://.godot/imported/chunk_south.glb-f24708a799d708fae9062b2178969ca2.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/descalzas/buildings_cruz_blanca.glb"
-dest_files=["res://.godot/imported/buildings_cruz_blanca.glb-7a6ae40a9e5d70d5ba8aa3763996e989.scn"]
+source_file="res://assets/models/districts/sebastian/chunk_south.glb"
+dest_files=["res://.godot/imported/chunk_south.glb-f24708a799d708fae9062b2178969ca2.scn"]
 
 [params]
 
