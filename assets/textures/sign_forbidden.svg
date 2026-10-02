@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="right_lane.svg"
-   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/right_lane.png"
+   sodipodi:docname="sign_forbidden.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/sign_forbidden.png"
    inkscape:export-xdpi="25.4"
    inkscape:export-ydpi="25.4"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -43,24 +43,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#003399;fill-opacity:1;stroke:#003399;stroke-width:0.683056;stroke-opacity:1"
+       style="fill:#ff1c13;fill-opacity:1;stroke:#ff1c13;stroke-width:0.683056;stroke-opacity:1"
        id="rect880"
        width="399.31699"
        height="399.31693"
        x="25.341528"
        y="25.341528" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.311766;stroke-opacity:1"
-       id="rect1028"
-       width="149.68823"
-       height="49.688236"
-       x="202.47682"
-       y="-26.773573"
-       transform="rotate(45)" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.56686;stroke-opacity:1"
-       d="m 250.24373,246.4137 51.93592,-51.93591 0.81786,5.24698 c 0.44984,2.88585 4.34401,30.14729 8.65373,60.58099 l 7.83587,55.33397 -53.19332,-7.56392 c -29.25633,-4.16016 -56.52167,-8.05045 -60.58967,-8.64504 l -7.39633,-1.08113 z"
-       id="path2699" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.09861;stroke-opacity:1"
        d="M 25.838475,75.287562 26.12444,26.12444 75.287569,25.838476 124.45069,25.552511 V 37.379933 49.207346 L 86.817171,86.829019 49.183632,124.45069 H 37.368073 25.552511 Z"
@@ -146,5 +134,12 @@
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.139588;stroke-opacity:1"
        d="m 25.144767,224.93021 c 0.0291,-0.0771 5.598914,-22.69003 12.377275,-50.25117 6.778372,-27.56116 12.359686,-50.22325 12.402895,-50.36022 0.075,-0.23743 -0.501126,-0.24902 -12.388265,-0.24902 H 25.069809 l 0.011,50.50019 c 0.006,27.7751 0.0348,50.4372 0.0639,50.36022 z"
        id="path3454" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.06774;stroke-opacity:1"
+       id="rect3802"
+       width="247.93225"
+       height="72.932259"
+       x="101.03387"
+       y="188.03387" />
   </g>
 </svg>
