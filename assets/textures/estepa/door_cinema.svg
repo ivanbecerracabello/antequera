@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1400mm"
+   height="300mm"
+   viewBox="0 0 1400 300"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="door_cinema.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/estepa/door_cinema.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.24031761"
+     inkscape:cx="3029.3244"
+     inkscape:cy="511.82267"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e8d39b;fill-opacity:1;stroke:#e8d39b;stroke-width:0.855442;stroke-opacity:1"
+       id="rect914"
+       width="799.14459"
+       height="299.14456"
+       x="300.42773"
+       y="0.42772105" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.430566;stroke-opacity:1"
+       id="rect1062"
+       width="199.56943"
+       height="199.56944"
+       x="600.21527"
+       y="100.21529" />
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.878844;stroke-opacity:1"
+       id="rect3768"
+       width="299.12115"
+       height="299.12115"
+       x="1099.5723"
+       y="0.42772105" />
+    <rect
+       style="fill:#2455a4;fill-opacity:1;stroke:#2455a4;stroke-width:0.878844;stroke-opacity:1"
+       id="rect3894"
+       width="299.12115"
+       height="299.12115"
+       x="1.3066406"
+       y="0.42772105" />
+    <rect
+       style="fill:#b8d8e8;fill-opacity:1;stroke:#b8d8e8;stroke-width:0.31126;stroke-opacity:1"
+       id="rect3918"
+       width="99.688744"
+       height="49.68874"
+       x="1200.1556"
+       y="175.15562" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.3022px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.657557"
+       x="1257.3009"
+       y="136.32693"
+       id="text7016"
+       transform="scale(0.93444618,1.0701526)"><tspan
+         sodipodi:role="line"
+         id="tspan7014"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.3022px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.657557"
+         x="1257.3009"
+         y="136.32693">TAQUILLAS</tspan></text>
+  </g>
+</svg>

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ysviofi2g15"
-path.s3tc="res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"
+uid="uid://c72630m2tjtoc"
+path.s3tc="res://.godot/imported/door_cinema.png-8d0e3b1036c5e459b52240d0aa2fa990.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/generic/road_horizontal.png"
-dest_files=["res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"]
+source_file="res://assets/textures/estepa/door_cinema.png"
+dest_files=["res://.godot/imported/door_cinema.png-8d0e3b1036c5e459b52240d0aa2fa990.s3tc.ctex"]
 
 [params]
 

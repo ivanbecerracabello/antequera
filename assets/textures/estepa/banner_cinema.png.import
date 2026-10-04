@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ysviofi2g15"
-path.s3tc="res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"
+uid="uid://m4ay0q5bamoy"
+path.s3tc="res://.godot/imported/banner_cinema.png-e2e641ff2f7d9f1faa49e59288e7a228.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/textures/generic/road_horizontal.png"
-dest_files=["res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"]
+source_file="res://assets/textures/estepa/banner_cinema.png"
+dest_files=["res://.godot/imported/banner_cinema.png-e2e641ff2f7d9f1faa49e59288e7a228.s3tc.ctex"]
 
 [params]
 

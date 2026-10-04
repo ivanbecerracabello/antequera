@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ysviofi2g15"
-path.s3tc="res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"
+uid="uid://b350lp7g3cla1"
+path.s3tc="res://.godot/imported/chunk_inmaculada_hospital_parking.png-51d080c6705d6da04a244fd81ac6882a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "afa738a65398e5ce44ed494e210937ae"
+}
 
 [deps]
 
-source_file="res://assets/textures/generic/road_horizontal.png"
-dest_files=["res://.godot/imported/road_horizontal.png-1184e098a7c6df72fa0eb25d77b38475.s3tc.ctex"]
+source_file="res://assets/models/districts/inmaculada/chunk_inmaculada_hospital_parking.png"
+dest_files=["res://.godot/imported/chunk_inmaculada_hospital_parking.png-51d080c6705d6da04a244fd81ac6882a.s3tc.ctex"]
 
 [params]
 

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyjklnpgqrlma"
-path.s3tc="res://.godot/imported/letrero_torcal.png-59a4e51610baa0ccce5715ecb1f75784.s3tc.ctex"
+uid="uid://bw1hn5cn48jep"
+path.s3tc="res://.godot/imported/chunk_cine_torcal_door_cinema.png-308a41c7cf52943c75f1585e985881d2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "5587dde23570a656ad8093bb3783fec7"
+}
 
 [deps]
 
-source_file="res://assets/textures/estepa/letrero_torcal.png"
-dest_files=["res://.godot/imported/letrero_torcal.png-59a4e51610baa0ccce5715ecb1f75784.s3tc.ctex"]
+source_file="res://assets/models/districts/estepa/chunk_cine_torcal_door_cinema.png"
+dest_files=["res://.godot/imported/chunk_cine_torcal_door_cinema.png-308a41c7cf52943c75f1585e985881d2.s3tc.ctex"]
 
 [params]
 
