@@ -27,8 +27,11 @@
 [ext_resource type="PackedScene" uid="uid://botslbolqvyjx" path="res://assets/models/districts/sebastian/tower.glb" id="36_e68xj"]
 [ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/models/generic/tree_pine.blend" id="36_l8ah6"]
 [ext_resource type="PackedScene" uid="uid://bw22gjhxna8ml" path="res://assets/models/districts/sebastian/museum.glb" id="37_5hglh"]
+[ext_resource type="PackedScene" uid="uid://cjsjf4q2itlps" path="res://assets/models/districts/sebastian/coso.glb" id="38_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://cpolcpwlbb8tr" path="res://scenes/traffic_light.tscn" id="38_ggc52"]
+[ext_resource type="PackedScene" uid="uid://dcgbg35kvg68q" path="res://assets/models/districts/descalzas/library.glb" id="40_e68xj"]
 [ext_resource type="PackedScene" uid="uid://vbtucjtkxu31" path="res://assets/models/districts/descalzas/market.glb" id="41_1dgkn"]
+[ext_resource type="PackedScene" uid="uid://1xa4w4vvk50g" path="res://assets/models/districts/descalzas/descalzas.glb" id="41_5hglh"]
 [ext_resource type="PackedScene" uid="uid://byt3s3hgw1sh6" path="res://assets/models/generic/traffic_sign_stop.glb" id="48_5hglh"]
 [ext_resource type="PackedScene" uid="uid://b6fnfnpgo6eo3" path="res://assets/models/generic/traffic_sign_lane.glb" id="48_qg546"]
 [ext_resource type="PackedScene" uid="uid://bdjyxsokf81sx" path="res://assets/models/districts/real/urbanisation_garage.glb" id="49_3l05q"]
@@ -48,10 +51,7 @@
 [ext_resource type="PackedScene" uid="uid://de5tnim3v6xtt" path="res://assets/models/districts/real/arena.glb" id="53_qg546"]
 [ext_resource type="PackedScene" uid="uid://te6n1nuptx0i" path="res://assets/models/generic/roundabout.glb" id="54_5hglh"]
 [ext_resource type="PackedScene" uid="uid://cd3ih4oa5sb2h" path="res://assets/models/generic/lottery_cabin.glb" id="54_pf35h"]
-[ext_resource type="PackedScene" uid="uid://4jrry7aunlh8" path="res://assets/models/districts/sebastian/chunk_coso_viejo.glb" id="54_qg546"]
 [ext_resource type="PackedScene" uid="uid://pnixvc56tgd7" path="res://assets/models/districts/inmaculada/road_porterias.glb" id="56_pf35h"]
-[ext_resource type="PackedScene" uid="uid://djn3l40lh1wfr" path="res://assets/models/districts/descalzas/chunk_descalzas.glb" id="58_e6ckp"]
-[ext_resource type="PackedScene" uid="uid://cijpijfubmbrb" path="res://assets/models/districts/descalzas/chunk_library.glb" id="58_npbic"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
 
@@ -260,6 +260,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 33)
 [node name="Tower" parent="Districts/Sebastian" unique_id=798676012 instance=ExtResource("36_e68xj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 379, 0, 12)
 
+[node name="coso" parent="Districts/Sebastian" unique_id=1405035710 instance=ExtResource("38_1dgkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
+
 [node name="Descalzas" type="Node3D" parent="Districts" unique_id=1783506910]
 
 [node name="Cantareros" type="MeshInstance3D" parent="Districts/Descalzas" unique_id=1700802907]
@@ -272,17 +275,14 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Descalzas/Cantareros/StaticBody3D" unique_id=960298811]
 shape = SubResource("ConvexPolygonShape3D_e68xj")
 
-[node name="Chunk-Library" parent="Districts/Descalzas" unique_id=1640733588 instance=ExtResource("58_npbic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 352, 0, -90)
-
-[node name="Chunk-Descalzas" parent="Districts/Descalzas" unique_id=1966848666 instance=ExtResource("58_e6ckp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 388, 0, -48)
-
-[node name="Chunk-CosoViejo" parent="Districts/Descalzas" unique_id=384473261 instance=ExtResource("54_qg546")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
-
 [node name="Market" parent="Districts/Descalzas" unique_id=157951898 instance=ExtResource("41_1dgkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 259, 0, -105)
+
+[node name="Library" parent="Districts/Descalzas" unique_id=783265618 instance=ExtResource("40_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 352, 0, -90)
+
+[node name="Descalzas" parent="Districts/Descalzas" unique_id=911830653 instance=ExtResource("41_5hglh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 388, 0, -48)
 
 [node name="Legion" type="Node3D" parent="Districts" unique_id=1512650106]
 
