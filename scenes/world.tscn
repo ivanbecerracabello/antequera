@@ -3,28 +3,32 @@
 [ext_resource type="Script" uid="uid://e2fx2r6et7yl" path="res://scripts/world.gd" id="1_dss4m"]
 [ext_resource type="PackedScene" uid="uid://hj5mcfaqee70" path="res://scenes/car.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://x7le3kiw3yij" path="res://scenes/bus.tscn" id="6_qfnet"]
-[ext_resource type="PackedScene" uid="uid://cljx2nohuqwwd" path="res://assets/models/districts/estepa/capitan_moreno.glb" id="9_8u370"]
+[ext_resource type="PackedScene" uid="uid://b8eoyc4btwbn0" path="res://assets/models/districts/real/bus.glb" id="8_e68xj"]
 [ext_resource type="PackedScene" uid="uid://bwat6onhxwe2b" path="res://assets/models/districts/real/road_ronda.glb" id="10_3l05q"]
-[ext_resource type="PackedScene" uid="uid://dmscohf60b1q1" path="res://assets/models/districts/estepa/ayuntamiento.glb" id="10_8u370"]
 [ext_resource type="PackedScene" uid="uid://dox578vyjb2wu" path="res://scenes/gate.tscn" id="11_e3hyu"]
-[ext_resource type="PackedScene" uid="uid://c636b6j53clo7" path="res://assets/models/districts/real/bull_arena.glb" id="12_4wdv8"]
 [ext_resource type="PackedScene" uid="uid://cuttc4lrko84q" path="res://assets/models/districts/real/urbanisation.glb" id="13_6oujy"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
-[ext_resource type="PackedScene" uid="uid://12v1dkjduie6" path="res://assets/models/districts/real/paseo.glb" id="15_hi6a0"]
-[ext_resource type="PackedScene" uid="uid://w6rpydxqgif3" path="res://assets/models/districts/real/chunk_bus.glb" id="16_5hglh"]
 [ext_resource type="PackedScene" uid="uid://digxud8mmrrpc" path="res://assets/models/districts/real/football.glb" id="16_6oujy"]
+[ext_resource type="PackedScene" uid="uid://cjc0jikxwaahj" path="res://assets/models/districts/estepa/alleys.glb" id="17_5hglh"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
+[ext_resource type="PackedScene" uid="uid://bp7mt41u0mhi1" path="res://assets/models/districts/estepa/arch.glb" id="17_e68xj"]
 [ext_resource type="PackedScene" uid="uid://cijhyb11r7nes" path="res://assets/models/districts/estepa/road_merecillas.glb" id="18_3l05q"]
-[ext_resource type="PackedScene" uid="uid://ba20iuwi625ey" path="res://assets/models/districts/estepa/puerta_estepa.glb" id="19_1dgkn"]
+[ext_resource type="PackedScene" uid="uid://cxa3xhrw6c6xs" path="res://assets/models/districts/estepa/bifurcation.glb" id="18_5hglh"]
+[ext_resource type="PackedScene" uid="uid://c53jy1bawos6r" path="res://assets/models/districts/estepa/cinema.glb" id="18_e68xj"]
+[ext_resource type="PackedScene" uid="uid://bndlm3141hx5b" path="res://assets/models/districts/estepa/council.glb" id="20_qg546"]
 [ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/models/generic/barrier.blend" id="22_oo54l"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
-[ext_resource type="PackedScene" uid="uid://n3001w86kqtk" path="res://assets/models/districts/estepa/chunk_cine_torcal.glb" id="28_pf35h"]
+[ext_resource type="PackedScene" uid="uid://ch58s3esrq75t" path="res://assets/models/districts/inmaculada/hospital.glb" id="28_e68xj"]
+[ext_resource type="PackedScene" uid="uid://cd4vi5rvtuw58" path="res://assets/models/districts/agustin/lebis.glb" id="31_e68xj"]
+[ext_resource type="PackedScene" uid="uid://23b4dtkimjxy" path="res://assets/models/districts/agustin/monastery.glb" id="32_5hglh"]
 [ext_resource type="PackedScene" uid="uid://da4ogkuy7a388" path="res://assets/models/districts/estepa/road_fernando.glb" id="32_e68xj"]
-[ext_resource type="PackedScene" uid="uid://cyyswp42xkeo5" path="res://assets/models/districts/agustin/monasterio_san_agustin.glb" id="33_e68xj"]
+[ext_resource type="PackedScene" uid="uid://djtllkocquu4" path="res://assets/models/districts/sebastian/south.glb" id="35_e68xj"]
+[ext_resource type="PackedScene" uid="uid://8u3ovusqtm74" path="res://assets/models/districts/sebastian/square.glb" id="36_5hglh"]
+[ext_resource type="PackedScene" uid="uid://botslbolqvyjx" path="res://assets/models/districts/sebastian/tower.glb" id="36_e68xj"]
 [ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/models/generic/tree_pine.blend" id="36_l8ah6"]
+[ext_resource type="PackedScene" uid="uid://bw22gjhxna8ml" path="res://assets/models/districts/sebastian/museum.glb" id="37_5hglh"]
 [ext_resource type="PackedScene" uid="uid://cpolcpwlbb8tr" path="res://scenes/traffic_light.tscn" id="38_ggc52"]
-[ext_resource type="PackedScene" uid="uid://d2ryudfn0ctme" path="res://assets/models/districts/sebastian/arch_sebastian.blend" id="45_eo1xk"]
-[ext_resource type="PackedScene" uid="uid://ss0a6wneiij6" path="res://assets/models/districts/descalzas/chunk_market.glb" id="45_iexy4"]
+[ext_resource type="PackedScene" uid="uid://vbtucjtkxu31" path="res://assets/models/districts/descalzas/market.glb" id="41_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://byt3s3hgw1sh6" path="res://assets/models/generic/traffic_sign_stop.glb" id="48_5hglh"]
 [ext_resource type="PackedScene" uid="uid://b6fnfnpgo6eo3" path="res://assets/models/generic/traffic_sign_lane.glb" id="48_qg546"]
 [ext_resource type="PackedScene" uid="uid://bdjyxsokf81sx" path="res://assets/models/districts/real/urbanisation_garage.glb" id="49_3l05q"]
@@ -35,21 +39,16 @@
 [ext_resource type="PackedScene" uid="uid://ck8o7dsi487y3" path="res://assets/models/districts/estepa/road_estepa.glb" id="50_x28ej"]
 [ext_resource type="PackedScene" uid="uid://c7cnj50dvw03f" path="res://scenes/radar.tscn" id="51_1jxku"]
 [ext_resource type="PackedScene" uid="uid://bgkwp3pp36y60" path="res://assets/models/generic/traffic_sign_go_right.glb" id="51_5hglh"]
-[ext_resource type="PackedScene" uid="uid://1nlg0bbkbtj7" path="res://assets/models/districts/sebastian/museum_art.glb" id="52_1dgkn"]
-[ext_resource type="PackedScene" uid="uid://dogmd4yg2fbyt" path="res://assets/models/districts/inmaculada/chunk_inmaculada.glb" id="52_5hglh"]
-[ext_resource type="PackedScene" uid="uid://cq6s7o4uy87fb" path="res://assets/models/districts/estepa/guardia_civil.glb" id="52_e68xj"]
 [ext_resource type="PackedScene" uid="uid://bfy232yvtxktw" path="res://assets/models/districts/legion/road_legion.glb" id="53_5hglh"]
-[ext_resource type="PackedScene" uid="uid://b425ukdqqjybx" path="res://assets/models/districts/agustin/chunk_agustin.glb" id="53_e6ckp"]
-[ext_resource type="PackedScene" uid="uid://5suuvbjfxoka" path="res://assets/models/districts/estepa/complex.glb" id="53_e68xj"]
-[ext_resource type="PackedScene" uid="uid://dn7bowie4oxhr" path="res://assets/models/districts/sebastian/chunk_lucena.glb" id="53_h3odw"]
-[ext_resource type="PackedScene" uid="uid://bg1s1x24ct1sr" path="res://assets/models/districts/sebastian/iglesia_san_sebastian.glb" id="53_iexy4"]
-[ext_resource type="PackedScene" uid="uid://bpk3uwlnqbonk" path="res://assets/models/districts/estepa/chunk_alleys.glb" id="53_mvg0v"]
-[ext_resource type="PackedScene" uid="uid://b8r1vfsgy18yp" path="res://assets/models/districts/sebastian/chunk_arch.glb" id="53_npbic"]
+[ext_resource type="PackedScene" uid="uid://bp247liohfid6" path="res://assets/models/districts/estepa/police.glb" id="53_5hl1e"]
+[ext_resource type="PackedScene" uid="uid://cf3yfp6wronop" path="res://assets/models/districts/real/promenade.glb" id="53_66tox"]
+[ext_resource type="PackedScene" uid="uid://bosd3k7nhwbvx" path="res://assets/models/districts/estepa/flats.glb" id="53_e68xj"]
+[ext_resource type="PackedScene" uid="uid://bjsq4nrw8spw8" path="res://assets/models/districts/sebastian/alley.glb" id="53_iexy4"]
 [ext_resource type="PackedScene" uid="uid://c1t4hlsda2u01" path="res://assets/models/districts/inmaculada/inmaculada.glb" id="53_pf35h"]
+[ext_resource type="PackedScene" uid="uid://de5tnim3v6xtt" path="res://assets/models/districts/real/arena.glb" id="53_qg546"]
 [ext_resource type="PackedScene" uid="uid://te6n1nuptx0i" path="res://assets/models/generic/roundabout.glb" id="54_5hglh"]
 [ext_resource type="PackedScene" uid="uid://cd3ih4oa5sb2h" path="res://assets/models/generic/lottery_cabin.glb" id="54_pf35h"]
 [ext_resource type="PackedScene" uid="uid://4jrry7aunlh8" path="res://assets/models/districts/sebastian/chunk_coso_viejo.glb" id="54_qg546"]
-[ext_resource type="PackedScene" uid="uid://6k4hm1o5v4u2" path="res://assets/models/districts/descalzas/chunk_cruz_blanca.glb" id="55_qg546"]
 [ext_resource type="PackedScene" uid="uid://pnixvc56tgd7" path="res://assets/models/districts/inmaculada/road_porterias.glb" id="56_pf35h"]
 [ext_resource type="PackedScene" uid="uid://djn3l40lh1wfr" path="res://assets/models/districts/descalzas/chunk_descalzas.glb" id="58_e6ckp"]
 [ext_resource type="PackedScene" uid="uid://cijpijfubmbrb" path="res://assets/models/districts/descalzas/chunk_library.glb" id="58_npbic"]
@@ -73,16 +72,6 @@ size = Vector2(76, 84)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5hglh"]
 points = PackedVector3Array(38, 0, 41.991783, -38, 0, 41.991783, 38, 0, -42, -38, 0, -42)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3l05q"]
-albedo_color = Color(0.47843137, 0.40392157, 0.29803923, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_x28ej"]
-material = SubResource("StandardMaterial3D_3l05q")
-size = Vector2(32, 46)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qg546"]
-points = PackedVector3Array(16, 0, 23, -16, 0, 23, 16, 0, -23, -16, 0, -23)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggc52"]
 albedo_color = Color(0.5019608, 0.5019608, 0.5019608, 1)
@@ -157,17 +146,30 @@ visible = false
 
 [node name="Real" type="Node3D" parent="Districts" unique_id=1335738981]
 
-[node name="RoadRonda" parent="Districts/Real" unique_id=1683948531 instance=ExtResource("10_3l05q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -132, 0, 48)
-
-[node name="BullArena" parent="Districts/Real" unique_id=1161351739 instance=ExtResource("12_4wdv8")]
+[node name="Arena" parent="Districts/Real" unique_id=1556476290 instance=ExtResource("53_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, -44)
 
-[node name="Paseo" parent="Districts/Real" unique_id=1000077148 instance=ExtResource("15_hi6a0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -16)
+[node name="Bus" parent="Districts/Real" unique_id=902974833 instance=ExtResource("8_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -112)
 
 [node name="Football" parent="Districts/Real" unique_id=869907243 instance=ExtResource("16_6oujy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107, 0.1, 23)
+
+[node name="Garage" parent="Districts/Real" unique_id=1410238512 instance=ExtResource("49_3l05q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 0)
+
+[node name="Garden" type="MeshInstance3D" parent="Districts/Real" unique_id=308461197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -66)
+mesh = SubResource("PlaneMesh_jhx03")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Districts/Real/Garden" unique_id=1813856376]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Real/Garden/StaticBody3D" unique_id=638734100]
+shape = SubResource("ConvexPolygonShape3D_5hglh")
+
+[node name="Promenade" parent="Districts/Real" unique_id=823841954 instance=ExtResource("53_66tox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -16)
 
 [node name="Urbanisation" parent="Districts/Real" unique_id=520140360 instance=ExtResource("13_6oujy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 0)
@@ -178,107 +180,85 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36,
 [node name="Flat2" parent="Districts/Real" unique_id=160501534 instance=ExtResource("50_1jxku")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 36)
 
-[node name="Garage" parent="Districts/Real" unique_id=1410238512 instance=ExtResource("49_3l05q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 0)
-
-[node name="MapaGarden" type="MeshInstance3D" parent="Districts/Real" unique_id=308461197]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -66)
-mesh = SubResource("PlaneMesh_jhx03")
-skeleton = NodePath("")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Districts/Real/MapaGarden" unique_id=1813856376]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Real/MapaGarden/StaticBody3D" unique_id=638734100]
-shape = SubResource("ConvexPolygonShape3D_5hglh")
-
-[node name="PoorHood" type="MeshInstance3D" parent="Districts/Real" unique_id=434419206]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0.1, 23)
-mesh = SubResource("PlaneMesh_x28ej")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Districts/Real/PoorHood" unique_id=1651779574]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Real/PoorHood/StaticBody3D" unique_id=2006697581]
-shape = SubResource("ConvexPolygonShape3D_qg546")
+[node name="Road-Ronda" parent="Districts/Real" unique_id=1683948531 instance=ExtResource("10_3l05q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -132, 0, 48)
 
 [node name="Roundabout" parent="Districts/Real" unique_id=849722027 instance=ExtResource("54_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -100)
 
-[node name="ChunkBus" parent="Districts/Real" unique_id=1808605422 instance=ExtResource("16_5hglh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -112)
-
 [node name="Estepa" type="Node3D" parent="Districts" unique_id=1638685462]
 
-[node name="Arch" parent="Districts/Estepa" unique_id=597097161 instance=ExtResource("19_1dgkn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 0.2, -12)
+[node name="Alleys" parent="Districts/Estepa" unique_id=1551129166 instance=ExtResource("17_5hglh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 222, 0, 20)
 
-[node name="RoadEstepa" parent="Districts/Estepa" unique_id=1989432433 instance=ExtResource("50_x28ej")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+[node name="Arch" parent="Districts/Estepa" unique_id=1166465653 instance=ExtResource("17_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
 
-[node name="RoadMerecillas" parent="Districts/Estepa" unique_id=1299597644 instance=ExtResource("18_3l05q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0, -16)
+[node name="Bifurcation" parent="Districts/Estepa" unique_id=499895730 instance=ExtResource("18_5hglh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112, 0, -12)
 
-[node name="CapitanMoreno" parent="Districts/Estepa" unique_id=1138499505 instance=ExtResource("9_8u370")]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 112, 0, -12)
+[node name="Cinema" parent="Districts/Estepa" unique_id=875046685 instance=ExtResource("18_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, -54)
 
-[node name="Ayuntamiento" parent="Districts/Estepa" unique_id=599953865 instance=ExtResource("10_8u370")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 158, 0.1, 20)
+[node name="Council" parent="Districts/Estepa" unique_id=458312064 instance=ExtResource("20_qg546")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 158, 0, 20)
+
+[node name="Flats" parent="Districts/Estepa" unique_id=374778712 instance=ExtResource("53_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -20)
 
 [node name="Petrol" parent="Districts/Estepa" unique_id=573056901 instance=ExtResource("50_1dgkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
-[node name="Complex" parent="Districts/Estepa" unique_id=1665128324 instance=ExtResource("53_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, -20)
+[node name="Police" parent="Districts/Estepa" unique_id=850260745 instance=ExtResource("53_5hl1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
 
-[node name="Cuartel" parent="Districts/Estepa" unique_id=931073303 instance=ExtResource("52_e68xj")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14, 0, 0)
+[node name="Road-Estepa" parent="Districts/Estepa" unique_id=1989432433 instance=ExtResource("50_x28ej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+
+[node name="Road-Fernando" parent="Districts/Estepa" unique_id=1748707767 instance=ExtResource("32_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144, 0, 28)
+
+[node name="Road-Merecillas" parent="Districts/Estepa" unique_id=1299597644 instance=ExtResource("18_3l05q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0, -16)
 
 [node name="Roundabout" parent="Districts/Estepa" unique_id=217602100 instance=ExtResource("54_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -12)
 
-[node name="ChunkCine" parent="Districts/Estepa" unique_id=103634327 instance=ExtResource("28_pf35h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200, 0, -54)
-
-[node name="ChunkAlleys" parent="Districts/Estepa" unique_id=1385655367 instance=ExtResource("53_mvg0v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 222, 0, 20)
-
-[node name="road_fernando" parent="Districts/Estepa" unique_id=1748707767 instance=ExtResource("32_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144, 0, 28)
-
 [node name="Inmaculada" type="Node3D" parent="Districts" unique_id=156342723]
 
-[node name="inmaculada" parent="Districts/Inmaculada" unique_id=2001675423 instance=ExtResource("53_pf35h")]
+[node name="Hospital" parent="Districts/Inmaculada" unique_id=1762050457 instance=ExtResource("28_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
+
+[node name="Inmaculada" parent="Districts/Inmaculada" unique_id=2001675423 instance=ExtResource("53_pf35h")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 56, 0, -76)
 
-[node name="road_porterias" parent="Districts/Inmaculada" unique_id=466636917 instance=ExtResource("56_pf35h")]
+[node name="Road-Porterias" parent="Districts/Inmaculada" unique_id=466636917 instance=ExtResource("56_pf35h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 0, -110)
-
-[node name="Chunk-Inmaculada" parent="Districts/Inmaculada" unique_id=1956809654 instance=ExtResource("52_5hglh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -42)
 
 [node name="Agustin" type="Node3D" parent="Districts" unique_id=1816754749]
 
-[node name="monasterio_san_agustin" parent="Districts/Agustin" unique_id=565754492 instance=ExtResource("33_e68xj")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 266, 0, 38)
-
-[node name="chunk_agustin" parent="Districts/Agustin" unique_id=157809109 instance=ExtResource("53_e6ckp")]
+[node name="Lebis" parent="Districts/Agustin" unique_id=1299197653 instance=ExtResource("31_e68xj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 202, 0, 32)
+
+[node name="Monastery" parent="Districts/Agustin" unique_id=848590593 instance=ExtResource("32_5hglh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 266, 0, 34)
 
 [node name="Sebastian" type="Node3D" parent="Districts" unique_id=107948501]
 
-[node name="arch_sebastian" parent="Districts/Sebastian" unique_id=1968210928 instance=ExtResource("45_eo1xk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 33)
+[node name="Alley" parent="Districts/Sebastian" unique_id=183398774 instance=ExtResource("53_iexy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 270, 0, 24)
 
-[node name="museum_art" parent="Districts/Sebastian" unique_id=926203309 instance=ExtResource("52_1dgkn")]
+[node name="Museum" parent="Districts/Sebastian" unique_id=206946795 instance=ExtResource("37_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304, 0, -47)
 
-[node name="iglesia_san_sebastian" parent="Districts/Sebastian" unique_id=1514370670 instance=ExtResource("53_iexy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 379, 0, 12)
-
-[node name="chunk_arch" parent="Districts/Sebastian" unique_id=1347940221 instance=ExtResource("53_npbic")]
+[node name="South" parent="Districts/Sebastian" unique_id=419452535 instance=ExtResource("35_e68xj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272, 0, 29)
 
-[node name="chunk_lucena" parent="Districts/Sebastian" unique_id=1571607486 instance=ExtResource("53_h3odw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 270, 0, 24)
+[node name="Square" parent="Districts/Sebastian" unique_id=1383883524 instance=ExtResource("36_5hglh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 33)
+
+[node name="Tower" parent="Districts/Sebastian" unique_id=798676012 instance=ExtResource("36_e68xj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 379, 0, 12)
 
 [node name="Descalzas" type="Node3D" parent="Districts" unique_id=1783506910]
 
@@ -292,12 +272,6 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Districts/Descalzas/Cantareros/StaticBody3D" unique_id=960298811]
 shape = SubResource("ConvexPolygonShape3D_e68xj")
 
-[node name="Chunk-CruzBlanca" parent="Districts/Descalzas" unique_id=1757744138 instance=ExtResource("55_qg546")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 259, 0, -101)
-
-[node name="Chunk-Market" parent="Districts/Descalzas" unique_id=1574360864 instance=ExtResource("45_iexy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 320, 0, -52)
-
 [node name="Chunk-Library" parent="Districts/Descalzas" unique_id=1640733588 instance=ExtResource("58_npbic")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 352, 0, -90)
 
@@ -306,6 +280,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 388, 0, -48)
 
 [node name="Chunk-CosoViejo" parent="Districts/Descalzas" unique_id=384473261 instance=ExtResource("54_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
+
+[node name="Market" parent="Districts/Descalzas" unique_id=157951898 instance=ExtResource("41_1dgkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 259, 0, -105)
 
 [node name="Legion" type="Node3D" parent="Districts" unique_id=1512650106]
 
