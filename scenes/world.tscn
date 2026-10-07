@@ -248,6 +248,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 266, 0, 34)
 [node name="Alley" parent="Districts/Sebastian" unique_id=183398774 instance=ExtResource("53_iexy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 270, 0, 24)
 
+[node name="Coso" parent="Districts/Sebastian" unique_id=1405035710 instance=ExtResource("38_1dgkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
+
 [node name="Museum" parent="Districts/Sebastian" unique_id=206946795 instance=ExtResource("37_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304, 0, -47)
 
@@ -259,9 +262,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 33)
 
 [node name="Tower" parent="Districts/Sebastian" unique_id=798676012 instance=ExtResource("36_e68xj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 379, 0, 12)
-
-[node name="coso" parent="Districts/Sebastian" unique_id=1405035710 instance=ExtResource("38_1dgkn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
 
 [node name="Descalzas" type="Node3D" parent="Districts" unique_id=1783506910]
 

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800mm"
+   height="800mm"
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="shop_mileva.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/estepa/shop_mileva.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="800mm"
+     inkscape:zoom="0.16993021"
+     inkscape:cx="935.67827"
+     inkscape:cy="1094.567"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e8d5ad;fill-opacity:1;stroke:#e8d5ad;stroke-width:1.52776;stroke-opacity:1"
+       id="rect882"
+       width="798.47229"
+       height="798.47223"
+       x="0.76387453"
+       y="0.76387453" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect1058"
+       width="99.752975"
+       height="99.752975"
+       x="100.12351"
+       y="100.12351" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect1060"
+       width="99.752975"
+       height="99.752975"
+       x="100.12354"
+       y="299.62946" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect1064"
+       width="99.752975"
+       height="99.752975"
+       x="598.88843"
+       y="100.12351" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect1066"
+       width="99.752975"
+       height="99.752975"
+       x="598.88843"
+       y="299.62946" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect1068"
+       width="99.752975"
+       height="99.752975"
+       x="350.12347"
+       y="100.12351" />
+    <rect
+       style="fill:#1c1b1a;fill-opacity:1;stroke:#1c1b1a;stroke-width:0.307034;stroke-opacity:1"
+       id="rect1204"
+       width="299.69296"
+       height="49.692966"
+       x="250.15352"
+       y="510.1535" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0148px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.07539"
+       x="257.10403"
+       y="652.22736"
+       id="text4830"
+       transform="scale(1.1923718,0.83866459)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.0148px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:1.07539"
+         x="257.10403"
+         y="652.22736"
+         id="tspan4832">MILEVA</tspan></text>
+    <rect
+       style="fill:#242323;fill-opacity:1;stroke:#b9dce5;stroke-width:0.815383;stroke-opacity:1"
+       id="rect11334"
+       width="199.18462"
+       height="189.18462"
+       x="300.40768"
+       y="610.40771" />
+    <rect
+       style="fill:#6b4a32;stroke:#6b4a32;stroke-width:0.247024"
+       id="rect11598"
+       width="99.752975"
+       height="99.752975"
+       x="350.12347"
+       y="299.62946" />
+  </g>
+</svg>

@@ -2,24 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cugpi6wg8r3hh"
-path.s3tc="res://.godot/imported/flats_shop_chinese.png-1235d4f057b58764365ae5c2987ccbb2.s3tc.ctex"
+uid="uid://qcchpw7357m7"
+path="res://.godot/imported/dome_curtain.svg-7e8766323ad0641a7e7712dc6b49e54f.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "7c4484cb10a7240320ab666524925271"
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/districts/estepa/flats_shop_chinese.png"
-dest_files=["res://.godot/imported/flats_shop_chinese.png-1235d4f057b58764365ae5c2987ccbb2.s3tc.ctex"]
+source_file="res://assets/textures/estepa/dome_curtain.svg"
+dest_files=["res://.godot/imported/dome_curtain.svg-7e8766323ad0641a7e7712dc6b49e54f.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -27,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -41,4 +37,7 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

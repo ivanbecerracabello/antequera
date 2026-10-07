@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cugpi6wg8r3hh"
-path.s3tc="res://.godot/imported/flats_shop_chinese.png-1235d4f057b58764365ae5c2987ccbb2.s3tc.ctex"
+uid="uid://da7rf1k6dw003"
+path.s3tc="res://.godot/imported/shop_mileva.png-0345f2cd18d0b82bd8dd317c187c3b68.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "7c4484cb10a7240320ab666524925271"
-}
 
 [deps]
 
-source_file="res://assets/models/districts/estepa/flats_shop_chinese.png"
-dest_files=["res://.godot/imported/flats_shop_chinese.png-1235d4f057b58764365ae5c2987ccbb2.s3tc.ctex"]
+source_file="res://assets/textures/estepa/shop_mileva.png"
+dest_files=["res://.godot/imported/shop_mileva.png-0345f2cd18d0b82bd8dd317c187c3b68.s3tc.ctex"]
 
 [params]
 
