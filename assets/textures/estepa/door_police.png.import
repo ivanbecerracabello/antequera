@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gfe6uy85rbpe"
-path="res://.godot/imported/bazar_chino.svg-1580cdfa1b46da0cb4efac888b92a9cc.ctex"
+uid="uid://cl4uvbrsndyjs"
+path.s3tc="res://.godot/imported/door_police.png-cf012b4501a7a06a643a8131ea0eab21.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://assets/textures/estepa/bazar_chino.svg"
-dest_files=["res://.godot/imported/bazar_chino.svg-1580cdfa1b46da0cb4efac888b92a9cc.ctex"]
+source_file="res://assets/textures/estepa/door_police.png"
+dest_files=["res://.godot/imported/door_police.png-cf012b4501a7a06a643a8131ea0eab21.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -23,7 +24,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -37,7 +38,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
+detect_3d/compress_to=0

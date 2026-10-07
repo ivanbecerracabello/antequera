@@ -34,7 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://1xa4w4vvk50g" path="res://assets/models/districts/descalzas/descalzas.glb" id="41_5hglh"]
 [ext_resource type="PackedScene" uid="uid://byt3s3hgw1sh6" path="res://assets/models/generic/traffic_sign_stop.glb" id="48_5hglh"]
 [ext_resource type="PackedScene" uid="uid://b6fnfnpgo6eo3" path="res://assets/models/generic/traffic_sign_lane.glb" id="48_qg546"]
-[ext_resource type="PackedScene" uid="uid://bdjyxsokf81sx" path="res://assets/models/districts/real/urbanisation_garage.glb" id="49_3l05q"]
+[ext_resource type="PackedScene" uid="uid://bdjyxsokf81sx" path="res://assets/models/districts/real/garage.glb" id="49_3l05q"]
 [ext_resource type="PackedScene" uid="uid://0yljq4kq8x4t" path="res://assets/models/generic/traffic_sign_forbidden.glb" id="49_qg546"]
 [ext_resource type="PackedScene" uid="uid://b7lfhu00cqa46" path="res://assets/models/districts/estepa/petrol.glb" id="50_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://mkssveqr1p4r" path="res://assets/models/districts/real/flat.glb" id="50_1jxku"]
