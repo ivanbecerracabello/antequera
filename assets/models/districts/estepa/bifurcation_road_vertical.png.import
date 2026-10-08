@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chv7t8l3p272v"
-path.s3tc="res://.godot/imported/alleys_shop_mileva.png-f10cb63557c348b07cf5369459dbb81a.s3tc.ctex"
+uid="uid://dravnkhktoc1s"
+path.s3tc="res://.godot/imported/bifurcation_road_vertical.png-95d2f12e46269f958f70717e4986b368.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "6f49aa91e5cd90972ed177a9eecc8d9d"
+"md5": "00481512f4e32d9c2a013961f2f02604"
 }
 
 [deps]
 
-source_file="res://assets/models/districts/estepa/alleys_shop_mileva.png"
-dest_files=["res://.godot/imported/alleys_shop_mileva.png-f10cb63557c348b07cf5369459dbb81a.s3tc.ctex"]
+source_file="res://assets/models/districts/estepa/bifurcation_road_vertical.png"
+dest_files=["res://.godot/imported/bifurcation_road_vertical.png-95d2f12e46269f958f70717e4986b368.s3tc.ctex"]
 
 [params]
 

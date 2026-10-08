@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cuttc4lrko84q" path="res://assets/models/districts/real/urbanisation.glb" id="13_6oujy"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
 [ext_resource type="PackedScene" uid="uid://digxud8mmrrpc" path="res://assets/models/districts/real/football.glb" id="16_6oujy"]
+[ext_resource type="PackedScene" uid="uid://dw6ckatdp0bsw" path="res://assets/models/districts/estepa/alameda.glb" id="17_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://cjc0jikxwaahj" path="res://assets/models/districts/estepa/alleys.glb" id="17_5hglh"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
 [ext_resource type="PackedScene" uid="uid://bp7mt41u0mhi1" path="res://assets/models/districts/estepa/arch.glb" id="17_e68xj"]
@@ -39,7 +40,6 @@
 [ext_resource type="PackedScene" uid="uid://b7lfhu00cqa46" path="res://assets/models/districts/estepa/petrol.glb" id="50_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://mkssveqr1p4r" path="res://assets/models/districts/real/flat.glb" id="50_1jxku"]
 [ext_resource type="PackedScene" uid="uid://bbkekrulbrssu" path="res://assets/models/generic/traffic_sign_go_left.glb" id="50_qg546"]
-[ext_resource type="PackedScene" uid="uid://ck8o7dsi487y3" path="res://assets/models/districts/estepa/road_estepa.glb" id="50_x28ej"]
 [ext_resource type="PackedScene" uid="uid://c7cnj50dvw03f" path="res://scenes/radar.tscn" id="51_1jxku"]
 [ext_resource type="PackedScene" uid="uid://bgkwp3pp36y60" path="res://assets/models/generic/traffic_sign_go_right.glb" id="51_5hglh"]
 [ext_resource type="PackedScene" uid="uid://bfy232yvtxktw" path="res://assets/models/districts/legion/road_legion.glb" id="53_5hglh"]
@@ -177,9 +177,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 0)
 [node name="Flat" parent="Districts/Real" unique_id=751818274 instance=ExtResource("50_1jxku")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 12)
 
-[node name="Flat2" parent="Districts/Real" unique_id=160501534 instance=ExtResource("50_1jxku")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 36)
-
 [node name="Road-Ronda" parent="Districts/Real" unique_id=1683948531 instance=ExtResource("10_3l05q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -132, 0, 48)
 
@@ -187,6 +184,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -132, 0, 48)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -100)
 
 [node name="Estepa" type="Node3D" parent="Districts" unique_id=1638685462]
+
+[node name="Alameda" parent="Districts/Estepa" unique_id=1299714432 instance=ExtResource("17_1dgkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 
 [node name="Alleys" parent="Districts/Estepa" unique_id=1551129166 instance=ExtResource("17_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 222, 0, 20)
@@ -211,9 +211,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
 
 [node name="Police" parent="Districts/Estepa" unique_id=850260745 instance=ExtResource("53_5hl1e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 0)
-
-[node name="Road-Estepa" parent="Districts/Estepa" unique_id=1989432433 instance=ExtResource("50_x28ej")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
 
 [node name="Road-Fernando" parent="Districts/Estepa" unique_id=1748707767 instance=ExtResource("32_e68xj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144, 0, 28)
@@ -321,6 +318,9 @@ shape = SubResource("BoxShape3D_4kbfs")
 
 [node name="Lane" parent="Other/Traffic" unique_id=416373858 instance=ExtResource("48_qg546")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -96.2, 0.1, -112)
+
+[node name="Lane2" parent="Other/Traffic" unique_id=1842856855 instance=ExtResource("48_qg546")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -127.2, 0.1, -112)
 
 [node name="Stop" parent="Other/Traffic" unique_id=1911803193 instance=ExtResource("48_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.5, 0.1, -7.5)

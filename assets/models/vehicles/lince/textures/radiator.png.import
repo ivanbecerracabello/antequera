@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bah4pupvvjeyn"
-path.s3tc="res://.godot/imported/road_estepa_road_horizontal.png-c6660c14e07e58f47807b8dc068631fb.s3tc.ctex"
+uid="uid://cv0sjoqagov3w"
+path.s3tc="res://.godot/imported/radiator.png-70e14d731145da7522493b49104c97d4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "50e098d33dccedb8273a8eb02ce54b40"
-}
 
 [deps]
 
-source_file="res://assets/models/districts/estepa/road_estepa_road_horizontal.png"
-dest_files=["res://.godot/imported/road_estepa_road_horizontal.png-c6660c14e07e58f47807b8dc068631fb.s3tc.ctex"]
+source_file="res://assets/models/vehicles/lince/textures/radiator.png"
+dest_files=["res://.godot/imported/radiator.png-70e14d731145da7522493b49104c97d4.s3tc.ctex"]
 
 [params]
 
