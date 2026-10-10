@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cgj8vrmmn6se1"
-path="res://.godot/imported/chunk_coso_viejo.blend-83971ee3bdf93cad132f9e7e0bb97763.scn"
+uid="uid://dd8udlp7cqt2y"
+path="res://.godot/imported/irish.blend-fd16279142844fc3acea15d629d6c9e0.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/sebastian/chunk_coso_viejo.blend"
-dest_files=["res://.godot/imported/chunk_coso_viejo.blend-83971ee3bdf93cad132f9e7e0bb97763.scn"]
+source_file="res://assets/models/districts/sebastian/irish.blend"
+dest_files=["res://.godot/imported/irish.blend-fd16279142844fc3acea15d629d6c9e0.scn"]
 
 [params]
 

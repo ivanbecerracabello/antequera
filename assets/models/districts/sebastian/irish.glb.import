@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://5cc4xi3hr1kr"
-path="res://.godot/imported/arch_sebastian.glb-dc3df5c2f5e04168af8723b1c6368bc4.scn"
+uid="uid://ij2k417uspwn"
+path="res://.godot/imported/irish.glb-2786c0d679e96368eb30fd0b25727c37.scn"
 
 [deps]
 
-source_file="res://assets/models/districts/sebastian/arch_sebastian.glb"
-dest_files=["res://.godot/imported/arch_sebastian.glb-dc3df5c2f5e04168af8723b1c6368bc4.scn"]
+source_file="res://assets/models/districts/sebastian/irish.glb"
+dest_files=["res://.godot/imported/irish.glb-2786c0d679e96368eb30fd0b25727c37.scn"]
 
 [params]
 

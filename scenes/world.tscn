@@ -47,6 +47,7 @@
 [ext_resource type="PackedScene" uid="uid://cf3yfp6wronop" path="res://assets/models/districts/real/promenade.glb" id="53_66tox"]
 [ext_resource type="PackedScene" uid="uid://bosd3k7nhwbvx" path="res://assets/models/districts/estepa/flats.glb" id="53_e68xj"]
 [ext_resource type="PackedScene" uid="uid://bjsq4nrw8spw8" path="res://assets/models/districts/sebastian/alley.glb" id="53_iexy4"]
+[ext_resource type="PackedScene" uid="uid://ij2k417uspwn" path="res://assets/models/districts/sebastian/irish.glb" id="53_npbic"]
 [ext_resource type="PackedScene" uid="uid://c1t4hlsda2u01" path="res://assets/models/districts/inmaculada/inmaculada.glb" id="53_pf35h"]
 [ext_resource type="PackedScene" uid="uid://de5tnim3v6xtt" path="res://assets/models/districts/real/arena.glb" id="53_qg546"]
 [ext_resource type="PackedScene" uid="uid://te6n1nuptx0i" path="res://assets/models/generic/roundabout.glb" id="54_5hglh"]
@@ -175,7 +176,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -16)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 0)
 
 [node name="Flat" parent="Districts/Real" unique_id=751818274 instance=ExtResource("50_1jxku")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -36, 0.1, 12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.1, 12)
 
 [node name="Road-Ronda" parent="Districts/Real" unique_id=1683948531 instance=ExtResource("10_3l05q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -132, 0, 48)
@@ -248,6 +249,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 270, 0, 24)
 [node name="Coso" parent="Districts/Sebastian" unique_id=1405035710 instance=ExtResource("38_1dgkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 16)
 
+[node name="Irish" parent="Districts/Sebastian" unique_id=1860516981 instance=ExtResource("53_npbic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 388, 0, 16)
+
 [node name="Museum" parent="Districts/Sebastian" unique_id=206946795 instance=ExtResource("37_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304, 0, -47)
 
@@ -258,7 +262,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272, 0, 29)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 390, 0, 33)
 
 [node name="Tower" parent="Districts/Sebastian" unique_id=798676012 instance=ExtResource("36_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 379, 0, 12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 380, 0, 12)
 
 [node name="Descalzas" type="Node3D" parent="Districts" unique_id=1783506910]
 
@@ -395,7 +399,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29413, 3.8146973e-06, -10
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.87579, 3.8146973e-06, -101.84376)
 
 [node name="Pine4" parent="Other/Trees" unique_id=1188655218 instance=ExtResource("36_l8ah6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120.651886, 3.8146973e-06, -27.408371)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.651886, 3.8146973e-06, -87.40837)
 
 [node name="Pine5" parent="Other/Trees" unique_id=1246216343 instance=ExtResource("36_l8ah6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 1, -49)
