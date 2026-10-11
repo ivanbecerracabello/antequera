@@ -312,6 +312,8 @@ func take_from_inventory(index: int):
 # Vehicles.
 func enter_vehicle(vehicle):	
 	saved_rotation = rotation
+	if vehicle.has_method("open_door"):
+		vehicle.open_door()
 	visible = false
 	current_vehicle = vehicle
 	vehicle.driver = self
@@ -326,6 +328,8 @@ func exit_vehicle():
 	if current_vehicle == null:
 		return
 	visible = true
+	if current_vehicle.has_method("close_door"):
+		current_vehicle.close_door()
 	current_vehicle.driver = null
 	reparent(get_tree().current_scene)
 	global_position = (
