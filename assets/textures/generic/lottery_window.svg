@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150mm"
+   height="300mm"
+   viewBox="0 0 150 300"
+   version="1.1"
+   id="svg36277"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="lottery_window.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/generic/lottery_window.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36279"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.9612704"
+     inkscape:cx="226.78322"
+     inkscape:cy="460.84848"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs36274" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#14513f;fill-opacity:1;stroke:#14513f;stroke-width:0.902014;stroke-opacity:1"
+       id="rect36360"
+       width="149.09799"
+       height="299.09799"
+       x="0.45100698"
+       y="0.45100698" />
+    <rect
+       style="fill:#759c94;fill-opacity:1;stroke:#ffffff;stroke-width:0.362529;stroke-opacity:1"
+       id="rect42616"
+       width="75.637474"
+       height="49.63747"
+       x="37.669117"
+       y="153.83273" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0788072;stroke-opacity:1"
+       id="path68227"
+       cx="73.465012"
+       cy="246.78069"
+       r="2.4605963" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68397"
+       width="2.8932109"
+       height="9.8932104"
+       x="-63.815628"
+       y="254.10812"
+       transform="rotate(-30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68479"
+       width="2.8932109"
+       height="9.8932104"
+       x="191.52921"
+       y="187.67648"
+       transform="rotate(30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68481"
+       width="2.8932109"
+       height="9.8932104"
+       x="-67.445068"
+       y="260.98691"
+       transform="rotate(-30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0822205;stroke-opacity:1"
+       id="rect69069"
+       width="0.91777945"
+       height="14.91778"
+       x="-59.810165"
+       y="261.08755"
+       transform="rotate(-30)" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.228729;stroke-opacity:1"
+       id="path69253"
+       cx="73.313248"
+       cy="258.81265"
+       rx="1.3856355"
+       ry="0.8856355" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69357"
+       width="39.865524"
+       height="0.8655234"
+       x="54.368881"
+       y="237.07755" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69439"
+       width="39.865524"
+       height="0.8655234"
+       x="237.07755"
+       y="-95.09993"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69441"
+       width="39.865524"
+       height="0.8655234"
+       x="54.368881"
+       y="276.07755" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69443"
+       width="39.865524"
+       height="0.8655234"
+       x="237.07755"
+       y="-54.368881"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.4064px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f4d66b;fill-opacity:1;stroke:none;stroke-width:0.535162"
+       x="75.542717"
+       y="93.156853"
+       id="text72460"
+       transform="scale(1.0076077,0.99244973)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.4064px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#f4d66b;fill-opacity:1;stroke-width:0.535162"
+         x="75.542717"
+         y="93.156853"
+         id="tspan72462">LOTERÍA</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96mm"
+   height="192mm"
+   viewBox="0 0 96 192"
+   version="1.1"
+   id="svg36277"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="lottery_blue.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/generic/lottery_blue.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36279"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.7188833"
+     inkscape:cx="226.9314"
+     inkscape:cy="588.4769"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs36274" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#14513f;fill-opacity:1;stroke:#14513f;stroke-width:0.577289;stroke-opacity:1"
+       id="rect36360"
+       width="95.422714"
+       height="191.42271"
+       x="0.28864449"
+       y="0.28864449" />
+    <rect
+       style="fill:#2586b5;fill-opacity:1;stroke:#ffffff;stroke-width:0.362529;stroke-opacity:1"
+       id="rect42616"
+       width="75.637474"
+       height="49.63747"
+       x="10.181264"
+       y="30.181265" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.84967px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.246242"
+       x="49.068539"
+       y="51.934975"
+       id="text44272"
+       transform="scale(0.98809541,1.012048)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.84967px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.246242"
+         x="49.068539"
+         y="51.934975"
+         id="tspan49606">CUPONES</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.84967px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.246242"
+         x="49.068539"
+         y="64.247063"
+         id="tspan59870">SEMANALES</tspan></text>
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0788072;stroke-opacity:1"
+       id="path68227"
+       cx="48.059296"
+       cy="135.22948"
+       r="2.4605963" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68397"
+       width="2.8932109"
+       height="9.8932104"
+       x="-30.042021"
+       y="144.79906"
+       transform="rotate(-30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68479"
+       width="2.8932109"
+       height="9.8932104"
+       x="113.75159"
+       y="103.77316"
+       transform="rotate(30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.106789;stroke-opacity:1"
+       id="rect68481"
+       width="2.8932109"
+       height="9.8932104"
+       x="-33.671455"
+       y="151.67784"
+       transform="rotate(-30)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0822205;stroke-opacity:1"
+       id="rect69069"
+       width="0.91777945"
+       height="14.91778"
+       x="-26.036556"
+       y="151.77849"
+       transform="rotate(-30)" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.228729;stroke-opacity:1"
+       id="path69253"
+       cx="47.907532"
+       cy="147.26144"
+       rx="1.3856355"
+       ry="0.8856355" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69357"
+       width="39.865524"
+       height="0.8655234"
+       x="28.963163"
+       y="125.52634" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69439"
+       width="39.865524"
+       height="0.8655234"
+       x="125.52634"
+       y="-69.694214"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69441"
+       width="39.865524"
+       height="0.8655234"
+       x="28.963163"
+       y="164.52634" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.134477;stroke-opacity:1"
+       id="rect69443"
+       width="39.865524"
+       height="0.8655234"
+       x="125.52634"
+       y="-28.963163"
+       transform="rotate(90)" />
+  </g>
+</svg>
