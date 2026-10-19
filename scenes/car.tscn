@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://4ypf0ws6ihmi" path="res://assets/models/vehicles/lince/lince.glb" id="2_qt2eu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_b0jew"]
-size = Vector3(1.5, 0.5, 3.5)
+size = Vector3(1.5, 0.5, 3.3598633)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qt2eu"]
 albedo_color = Color(0.133333, 0.133333, 0.133333, 1)
@@ -13,7 +13,7 @@ albedo_color = Color(0.133333, 0.133333, 0.133333, 1)
 material = SubResource("StandardMaterial3D_qt2eu")
 top_radius = 0.25
 bottom_radius = 0.25
-height = 0.2
+height = 0.15
 radial_segments = 8
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50v30"]
@@ -42,13 +42,13 @@ script = ExtResource("1_c35m8")
 [node name="Asset" parent="." unique_id=1746796797 instance=ExtResource("2_qt2eu")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1511531394]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.07055664)
 shape = SubResource("BoxShape3D_b0jew")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="." unique_id=1777100508]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 1.2)
 use_as_steering = true
-wheel_radius = 0.3
+wheel_radius = 0.25
 wheel_rest_length = 0.2
 wheel_friction_slip = 2.0
 suspension_travel = 0.4
@@ -63,7 +63,7 @@ mesh = SubResource("CylinderMesh_50v30")
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="." unique_id=372005532]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 1.2)
 use_as_steering = true
-wheel_radius = 0.3
+wheel_radius = 0.25
 wheel_rest_length = 0.2
 wheel_friction_slip = 2.0
 suspension_travel = 0.4
@@ -78,7 +78,7 @@ mesh = SubResource("CylinderMesh_50v30")
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="." unique_id=644522565]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, -0.9)
 use_as_traction = true
-wheel_radius = 0.3
+wheel_radius = 0.25
 wheel_rest_length = 0.2
 wheel_friction_slip = 2.0
 suspension_travel = 0.4
@@ -93,7 +93,7 @@ mesh = SubResource("CylinderMesh_50v30")
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="." unique_id=524760769]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, -0.9)
 use_as_traction = true
-wheel_radius = 0.3
+wheel_radius = 0.25
 wheel_rest_length = 0.2
 wheel_friction_slip = 2.0
 suspension_travel = 0.4
