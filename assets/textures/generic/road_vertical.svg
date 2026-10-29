@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512"
-   height="512"
-   viewBox="0 0 135.46666 135.46666"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866665 33.866665"
    version="1.1"
    id="svg5"
-   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/road_vertical.png"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/generic/road_vertical.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -29,8 +29,8 @@
      units="px"
      width="512px"
      inkscape:zoom="1.0829308"
-     inkscape:cx="158.82824"
-     inkscape:cy="272.4089"
+     inkscape:cx="158.82825"
+     inkscape:cy="272.40891"
      inkscape:window-width="1920"
      inkscape:window-height="935"
      inkscape:window-x="1920"
@@ -44,28 +44,21 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.319717;stroke-opacity:1"
+       style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.11441;stroke-opacity:1"
        id="rect846"
-       width="65.826111"
-       height="135.14694"
-       x="0.15985857"
-       y="0.15985857"
+       width="33.752254"
+       height="33.752254"
+       x="0.057205472"
+       y="0.057205472"
        inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/horizontal_road.png"
        inkscape:export-xdpi="96.000008"
        inkscape:export-ydpi="96.000008" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.217741;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.0605799;stroke-opacity:1"
        id="rect1130"
-       width="3.2218423"
-       height="135.24892"
-       x="66.2547"
-       y="0.1088705" />
-    <rect
-       style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.319076;stroke-opacity:1"
-       id="rect1670"
-       width="65.562172"
-       height="135.14758"
-       x="69.744949"
-       y="0.15953758" />
+       width="0.99775338"
+       height="33.806087"
+       x="16.434456"
+       y="0.03028995" />
   </g>
 </svg>

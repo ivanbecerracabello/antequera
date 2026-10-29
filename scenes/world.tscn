@@ -51,7 +51,8 @@
 [ext_resource type="PackedScene" uid="uid://c1t4hlsda2u01" path="res://assets/models/districts/inmaculada/inmaculada.glb" id="53_pf35h"]
 [ext_resource type="PackedScene" uid="uid://de5tnim3v6xtt" path="res://assets/models/districts/real/arena.glb" id="53_qg546"]
 [ext_resource type="PackedScene" uid="uid://te6n1nuptx0i" path="res://assets/models/generic/roundabout.glb" id="54_5hglh"]
-[ext_resource type="PackedScene" uid="uid://cd3ih4oa5sb2h" path="res://assets/models/generic/lottery_cabin.glb" id="54_pf35h"]
+[ext_resource type="PackedScene" uid="uid://cd3ih4oa5sb2h" path="res://assets/models/generic/lottery.glb" id="54_pf35h"]
+[ext_resource type="PackedScene" uid="uid://dnw2117ftfnay" path="res://assets/models/generic/traffic_sign_no_parking.glb" id="54_qg546"]
 [ext_resource type="PackedScene" uid="uid://pnixvc56tgd7" path="res://assets/models/districts/inmaculada/road_porterias.glb" id="56_pf35h"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_71j4m"]
@@ -236,7 +237,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 0, -110)
 [node name="Agustin" type="Node3D" parent="Districts" unique_id=1816754749]
 
 [node name="Lebis" parent="Districts/Agustin" unique_id=1299197653 instance=ExtResource("31_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 202, 0, 32)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 194, 0, 32)
 
 [node name="Monastery" parent="Districts/Agustin" unique_id=848590593 instance=ExtResource("32_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 266, 0, 34)
@@ -412,3 +413,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, -12.5)
 
 [node name="Lottery" parent="Other" unique_id=1283243039 instance=ExtResource("54_pf35h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0.2, -6)
+
+[node name="NoParking" parent="." unique_id=90163274 instance=ExtResource("54_qg546")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 196.2, 0, 40)
+
+[node name="NoParking2" parent="." unique_id=1092122255 instance=ExtResource("54_qg546")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73, 0.1, -7)

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46667 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="traffic_stop.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/generic/traffic_sign_stop.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="450mm"
+     inkscape:zoom="0.9612704"
+     inkscape:cx="372.42383"
+     inkscape:cy="332.89281"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#c91f18;fill-opacity:1;stroke:none;stroke-width:0.231724;stroke-opacity:1"
+       id="rect880"
+       width="135.46666"
+       height="135.46666"
+       x="0.115664"
+       y="0.115664" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.0916px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.827305"
+       x="25.788218"
+       y="74.617714"
+       id="text3898"
+       transform="scale(0.94596927,1.0571168)"><tspan
+         sodipodi:role="line"
+         id="tspan3896"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.827305"
+         x="25.788218"
+         y="74.617714">STOP</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.220772;stroke-opacity:1"
+       id="rect25621"
+       width="135.46666"
+       height="6.6145835"
+       x="0"
+       y="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.137877;stroke-opacity:1"
+       d="M 6.6835218,19.843747 V 6.6835218 H 19.754242 32.82496 L 19.788818,19.843747 C 12.618941,27.081869 6.7371168,33.003979 6.7180998,33.003979 c -0.01904,0 -0.03458,-5.92211 -0.03458,-13.160232 z"
+       id="path26011" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.220772;stroke-opacity:1"
+       id="rect25137"
+       width="135.46666"
+       height="6.6145835"
+       x="0"
+       y="-6.6145835"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.220772;stroke-opacity:1"
+       id="rect25175"
+       width="135.46666"
+       height="6.6145835"
+       x="0"
+       y="128.85208" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.137877;stroke-opacity:1"
+       d="M 20.547177,128.63286 H 7.3869472 v -13.07072 -13.07072 l 13.1602298,13.03614 c 7.23812,7.16988 13.160228,13.0517 13.160228,13.07072 0,0.019 -5.922108,0.0346 -13.160228,0.0346 z"
+       id="path25530" />
+  </g>
+</svg>
