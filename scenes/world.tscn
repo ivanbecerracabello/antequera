@@ -5,11 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://x7le3kiw3yij" path="res://scenes/bus.tscn" id="6_qfnet"]
 [ext_resource type="PackedScene" uid="uid://dox578vyjb2wu" path="res://scenes/gate.tscn" id="11_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
-[ext_resource type="PackedScene" uid="uid://dw6ckatdp0bsw" path="res://assets/models/districts/estepa/alameda.glb" id="17_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
 [ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/models/generic/barrier.blend" id="22_oo54l"]
 [ext_resource type="PackedScene" uid="uid://b5uaqwe1q5id6" path="res://assets/models/chunks/mapa.glb" id="25_xgqkh"]
+[ext_resource type="PackedScene" uid="uid://b4sok3nobs00w" path="res://assets/models/chunks/legion.glb" id="26_munwf"]
+[ext_resource type="PackedScene" uid="uid://dnw2117ftfnay" path="res://assets/models/generic/traffic_sign_no_parking.glb" id="27_ts3gi"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
+[ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/models/generic/tree_pine.blend" id="28_37qwj"]
 [ext_resource type="PackedScene" uid="uid://b45x4b6l587n5" path="res://assets/models/chunks/bifurcation.glb" id="48_x28ej"]
 [ext_resource type="PackedScene" uid="uid://drsmvjihk818g" path="res://assets/models/chunks/comedias.glb" id="49_5hglh"]
 [ext_resource type="PackedScene" uid="uid://dtgmhba4np78x" path="res://assets/models/chunks/estepa.glb" id="49_x28ej"]
@@ -125,17 +127,25 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.075, 0)
 shape = SubResource("BoxShape3D_4kbfs")
 
-[node name="Alameda" parent="." unique_id=1299714432 instance=ExtResource("17_1dgkn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 30)
-visible = false
-
 [node name="Chunks" type="Node3D" parent="." unique_id=619973064]
 
-[node name="Lucena" parent="Chunks" unique_id=312453183 instance=ExtResource("56_npbic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 317, 0, 64)
+[node name="Bus" parent="Chunks" unique_id=612073438 instance=ExtResource("58_npbic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -68)
+
+[node name="Mapa" parent="Chunks" unique_id=185477220 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
+
+[node name="Paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8)
+
+[node name="Inmaculada" parent="Chunks" unique_id=1657091284 instance=ExtResource("55_pf35h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
 
 [node name="Arch" parent="Chunks" unique_id=144525133 instance=ExtResource("55_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
+
+[node name="Estepa" parent="Chunks" unique_id=1964872061 instance=ExtResource("49_x28ej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 12)
 
 [node name="Bifurcation" parent="Chunks" unique_id=1065836922 instance=ExtResource("48_x28ej")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 38)
@@ -143,11 +153,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 38)
 [node name="Comedias" parent="Chunks" unique_id=399072996 instance=ExtResource("49_5hglh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 238, 0, 60)
 
-[node name="Estepa" parent="Chunks" unique_id=1964872061 instance=ExtResource("49_x28ej")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 12)
-
-[node name="Inmaculada" parent="Chunks" unique_id=1657091284 instance=ExtResource("55_pf35h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+[node name="Lucena" parent="Chunks" unique_id=312453183 instance=ExtResource("56_npbic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 317, 0, 64)
 
 [node name="sebastian" parent="Chunks" unique_id=2095385735 instance=ExtResource("52_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 381, 0, 64)
@@ -164,14 +171,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 263, 0, -57)
 [node name="lebis" parent="Chunks" unique_id=176779945 instance=ExtResource("57_iexy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 202, 0, 72)
 
-[node name="bus" parent="Chunks" unique_id=612073438 instance=ExtResource("58_npbic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -68)
-
-[node name="Paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8)
-
 [node name="library" parent="Chunks" unique_id=931476760 instance=ExtResource("60_mvg0v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 356, 0, -42)
 
-[node name="Mapa" parent="Chunks" unique_id=185477220 instance=ExtResource("25_xgqkh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
+[node name="legion" parent="Chunks" unique_id=1226788808 instance=ExtResource("26_munwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, 64)
+
+[node name="traffic_sign_no_parking" parent="." unique_id=1092122255 instance=ExtResource("27_ts3gi")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 204.59157, 0, 79.83866)
+
+[node name="tree_pine" parent="." unique_id=1850427115 instance=ExtResource("28_37qwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.679035, 0.10000038, -49.533306)
+
+[node name="tree_pine2" parent="." unique_id=2048282164 instance=ExtResource("28_37qwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.910393, 0.10000038, -49.533306)
+
+[node name="tree_pine3" parent="." unique_id=945610224 instance=ExtResource("28_37qwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.899, 0.5, -21.072515)

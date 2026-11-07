@@ -58,10 +58,10 @@ func update_chunk_visibility() -> void:
 		chunk.visible = in_range
 		set_chunk_collisions_enabled(chunk, in_range)
 
-func get_player_grid_coordinates(position: Vector3) -> Vector2i:
+func get_player_grid_coordinates(world_position: Vector3) -> Vector2i:
 	return Vector2i(
-		floori((position.x - GRID_CELL_1_ORIGIN.x) / CHUNK_SIZE) + 1,
-		floori((position.z - GRID_CELL_1_ORIGIN.y) / CHUNK_SIZE) + 1
+		floori((world_position.x - GRID_CELL_1_ORIGIN.x) / CHUNK_SIZE) + 1,
+		floori((world_position.z - GRID_CELL_1_ORIGIN.y) / CHUNK_SIZE) + 1
 	)
 
 func set_chunk_collisions_enabled(node: Node, enabled: bool) -> void:
