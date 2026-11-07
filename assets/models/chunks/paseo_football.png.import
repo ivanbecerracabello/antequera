@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://begvmnv6exi3d"
-path.s3tc="res://.godot/imported/football.png-42bf6ba04168431764c4827f39125b71.s3tc.ctex"
+uid="uid://cjfj6inxksau"
+path.s3tc="res://.godot/imported/paseo_football.png-afb7db35119ad78c04a611ae1ac02977.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "899e9aac425955da2308212a2be7e5d9"
+}
 
 [deps]
 
-source_file="res://assets/textures/real/football.png"
-dest_files=["res://.godot/imported/football.png-42bf6ba04168431764c4827f39125b71.s3tc.ctex"]
+source_file="res://assets/models/chunks/paseo_football.png"
+dest_files=["res://.godot/imported/paseo_football.png-afb7db35119ad78c04a611ae1ac02977.s3tc.ctex"]
 
 [params]
 
