@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjp667j26fa82"
-path.s3tc="res://.godot/imported/arena_road_vertical.png-6dc15debfb5f745d3b4e52e425534d4e.s3tc.ctex"
+uid="uid://dxma5ko510r6q"
+path.s3tc="res://.godot/imported/police_parking.png-14b636ba57f485f879ba545509aca13b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "5e88f9950d873ddc8428788874d88716"
-}
 
 [deps]
 
-source_file="res://assets/models/chunks/arena_road_vertical.png"
-dest_files=["res://.godot/imported/arena_road_vertical.png-6dc15debfb5f745d3b4e52e425534d4e.s3tc.ctex"]
+source_file="res://assets/textures/police_parking.png"
+dest_files=["res://.godot/imported/police_parking.png-14b636ba57f485f879ba545509aca13b.s3tc.ctex"]
 
 [params]
 

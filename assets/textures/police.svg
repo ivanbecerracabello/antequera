@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="512"
+   viewBox="0 0 270.93333 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="police.svg"
+   inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/police.png"
+   inkscape:export-xdpi="96.000008"
+   inkscape:export-ydpi="96.000008"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     height="800mm"
+     inkscape:zoom="0.9612704"
+     inkscape:cx="477.49312"
+     inkscape:cy="239.2667"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e8e4d8;fill-opacity:1;stroke:#e8e4d8;stroke-width:0.248228;stroke-opacity:1"
+       id="rect880"
+       width="270.68509"
+       height="135.21844"
+       x="0.12411398"
+       y="0.12411398" />
+    <rect
+       style="fill:#777777;fill-opacity:1;stroke:#777777;stroke-width:0.114042;stroke-opacity:1"
+       id="rect1020"
+       width="270.81927"
+       height="29.519291"
+       x="0.057020999"
+       y="105.89036" />
+    <rect
+       style="fill:#65452f;fill-opacity:1;stroke:#65452f;stroke-width:0.0705268;stroke-opacity:1"
+       id="rect1162"
+       width="52.846138"
+       height="56.021141"
+       x="112.04065"
+       y="79.410263" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect1466"
+       width="13.206898"
+       height="13.206898"
+       x="241.88033"
+       y="78.295212" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76328px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.194084"
+       x="149.54825"
+       y="60.453239"
+       id="text4740"
+       transform="scale(0.92468325,1.0814514)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76328px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.194084"
+         x="149.54825"
+         y="60.453239"
+         id="tspan4096">GUARDIA</tspan></text>
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31796"
+       width="13.206898"
+       height="13.206898"
+       x="241.53102"
+       y="22.508343" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31798"
+       width="13.206898"
+       height="13.206898"
+       x="189.99318"
+       y="21.670189" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31800"
+       width="13.206898"
+       height="13.206898"
+       x="187.0251"
+       y="78.432144" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31802"
+       width="13.206898"
+       height="13.206898"
+       x="19.437754"
+       y="80.622818" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31804"
+       width="13.206898"
+       height="13.206898"
+       x="20.669292"
+       y="23.083801" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31806"
+       width="13.206898"
+       height="13.206898"
+       x="71.084732"
+       y="24.27157" />
+    <rect
+       style="fill:#315a3a;fill-opacity:1;stroke:#315a3a;stroke-width:0.0222693;stroke-opacity:1"
+       id="rect31808"
+       width="13.206898"
+       height="13.206898"
+       x="68.025002"
+       y="81.147896" />
+    <path
+       sodipodi:type="star"
+       style="fill:#cc0000;fill-opacity:1;stroke:none;stroke-opacity:1"
+       id="path31905"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="474.61072"
+       sodipodi:cy="93.651978"
+       sodipodi:r1="41.819729"
+       sodipodi:r2="20.909864"
+       sodipodi:arg1="0.92118287"
+       sodipodi:arg2="1.5495014"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 499.90658,126.95377 -24.85062,-12.39667 -24.30027,13.44349 4.11066,-27.46513 -20.29471,-18.956662 27.39115,-4.577715 11.75745,-25.159353 12.81799,24.635942 27.56122,3.407331 -19.46919,19.803564 z"
+       transform="matrix(0.26458333,0,0,0.26458333,12.515242,7.262451)"
+       inkscape:transform-center-x="0.072807957"
+       inkscape:transform-center-y="-0.98711248" />
+  </g>
+</svg>

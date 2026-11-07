@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dw6ckatdp0bsw" path="res://assets/models/districts/estepa/alameda.glb" id="17_1dgkn"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
 [ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/models/generic/barrier.blend" id="22_oo54l"]
+[ext_resource type="PackedScene" uid="uid://b5uaqwe1q5id6" path="res://assets/models/chunks/mapa.glb" id="25_xgqkh"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
 [ext_resource type="PackedScene" uid="uid://b45x4b6l587n5" path="res://assets/models/chunks/bifurcation.glb" id="48_x28ej"]
 [ext_resource type="PackedScene" uid="uid://drsmvjihk818g" path="res://assets/models/chunks/comedias.glb" id="49_5hglh"]
@@ -19,7 +20,6 @@
 [ext_resource type="PackedScene" uid="uid://bg6jghtli1dex" path="res://assets/models/chunks/market.glb" id="55_iexy4"]
 [ext_resource type="PackedScene" uid="uid://lrbtufuwaeyy" path="res://assets/models/chunks/inmaculada.glb" id="55_pf35h"]
 [ext_resource type="PackedScene" uid="uid://b1mjgdueyshs7" path="res://assets/models/chunks/arch.glb" id="55_qg546"]
-[ext_resource type="PackedScene" uid="uid://ckiy7e03ey8dg" path="res://assets/models/chunks/arena.glb" id="56_iexy4"]
 [ext_resource type="PackedScene" uid="uid://q46cqm5q8ot0" path="res://assets/models/chunks/lucena.glb" id="56_npbic"]
 [ext_resource type="PackedScene" uid="uid://crlpec6hsbwet" path="res://assets/models/chunks/lebis.glb" id="57_iexy4"]
 [ext_resource type="PackedScene" uid="uid://bmf807lri83y8" path="res://assets/models/chunks/bus.glb" id="58_npbic"]
@@ -137,9 +137,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 317, 0, 64)
 [node name="Arch" parent="Chunks" unique_id=144525133 instance=ExtResource("55_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 12)
 
-[node name="Arena" parent="Chunks" unique_id=654700288 instance=ExtResource("56_iexy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
-
 [node name="Bifurcation" parent="Chunks" unique_id=1065836922 instance=ExtResource("48_x28ej")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 38)
 
@@ -170,8 +167,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 202, 0, 72)
 [node name="bus" parent="Chunks" unique_id=612073438 instance=ExtResource("58_npbic")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -68)
 
-[node name="paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
+[node name="Paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8)
 
 [node name="library" parent="Chunks" unique_id=931476760 instance=ExtResource("60_mvg0v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 356, 0, -42)
+
+[node name="Mapa" parent="Chunks" unique_id=185477220 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
