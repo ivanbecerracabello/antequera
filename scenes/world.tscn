@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dox578vyjb2wu" path="res://scenes/gate.tscn" id="11_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://320m2gdhydko" path="res://scenes/player.tscn" id="14_xo05s"]
 [ext_resource type="PackedScene" uid="uid://bhw15v63w2ysa" path="res://scenes/inventory/inventory_ui.tscn" id="17_7t5mc"]
-[ext_resource type="PackedScene" uid="uid://bq06e0v1g00uk" path="res://assets/models/generic/barrier.blend" id="22_oo54l"]
+[ext_resource type="PackedScene" uid="uid://ut28lxrhgq4t" path="res://assets/models/gates/barrier.glb" id="25_ts3gi"]
 [ext_resource type="PackedScene" uid="uid://b5uaqwe1q5id6" path="res://assets/models/chunks/mapa.glb" id="25_xgqkh"]
 [ext_resource type="PackedScene" uid="uid://b4sok3nobs00w" path="res://assets/models/chunks/legion.glb" id="26_munwf"]
 [ext_resource type="PackedScene" uid="uid://dnw2117ftfnay" path="res://assets/models/generic/traffic_sign_no_parking.glb" id="27_ts3gi"]
@@ -62,7 +62,6 @@ transform = Transform3D(-0.17364818, -0.6963642, 0.6963642, 0, 0.70710677, 0.707
 shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
-visible = false
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=97374417 instance=ExtResource("6_qfnet")]
@@ -96,36 +95,6 @@ offset_bottom = 72.0
 visible = false
 
 [node name="Radar" parent="UI" unique_id=689580934 instance=ExtResource("51_1jxku")]
-
-[node name="Other" type="Node" parent="." unique_id=671482998]
-
-[node name="Gates" type="Node" parent="Other" unique_id=2026161109]
-
-[node name="ArenaGate" parent="Other/Gates" unique_id=721909841 instance=ExtResource("11_e3hyu")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -26, 0, -56)
-visible = false
-
-[node name="Mesh" type="MeshInstance3D" parent="Other/Gates/ArenaGate" unique_id=56765866]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 0)
-mesh = SubResource("BoxMesh_oo54l")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Other/Gates/ArenaGate" unique_id=390995767]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Gates/ArenaGate/StaticBody3D" unique_id=1106697834]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 0)
-shape = SubResource("BoxShape3D_f17e3")
-
-[node name="Barrier" parent="Other/Gates" unique_id=650623134 instance=ExtResource("11_e3hyu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.6, 7.9)
-visible = false
-
-[node name="Asset" parent="Other/Gates/Barrier" unique_id=2112807713 instance=ExtResource("22_oo54l")]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Other/Gates/Barrier" unique_id=1235872058]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Gates/Barrier/StaticBody3D" unique_id=1825747375]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.075, 0)
-shape = SubResource("BoxShape3D_4kbfs")
 
 [node name="Chunks" type="Node3D" parent="." unique_id=619973064]
 
@@ -177,14 +146,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 356, 0, -42)
 [node name="legion" parent="Chunks" unique_id=1226788808 instance=ExtResource("26_munwf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, 64)
 
-[node name="traffic_sign_no_parking" parent="." unique_id=1092122255 instance=ExtResource("27_ts3gi")]
+[node name="Other" type="Node3D" parent="." unique_id=1314714892]
+
+[node name="Gates" type="Node3D" parent="Other" unique_id=611605684]
+
+[node name="ArenaGate" parent="Other/Gates" unique_id=721909841 instance=ExtResource("11_e3hyu")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -2.19, 0.1, -30.968)
+
+[node name="Mesh" type="MeshInstance3D" parent="Other/Gates/ArenaGate" unique_id=56765866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 0)
+mesh = SubResource("BoxMesh_oo54l")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Other/Gates/ArenaGate" unique_id=390995767]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Gates/ArenaGate/StaticBody3D" unique_id=1106697834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 0)
+shape = SubResource("BoxShape3D_f17e3")
+
+[node name="Barrier" parent="Other/Gates" unique_id=650623134 instance=ExtResource("11_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05, 0.8, 32.1)
+
+[node name="Asset" parent="Other/Gates/Barrier" unique_id=2097733545 instance=ExtResource("25_ts3gi")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Other/Gates/Barrier" unique_id=1235872058]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Other/Gates/Barrier/StaticBody3D" unique_id=1825747375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.075, 0)
+shape = SubResource("BoxShape3D_4kbfs")
+
+[node name="Traffic" type="Node3D" parent="Other" unique_id=1386311335]
+
+[node name="NoParking" parent="Other/Traffic" unique_id=1092122255 instance=ExtResource("27_ts3gi")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 204.59157, 0, 79.83866)
 
-[node name="tree_pine" parent="." unique_id=1850427115 instance=ExtResource("28_37qwj")]
+[node name="Trees" type="Node3D" parent="Other" unique_id=215877660]
+
+[node name="Pine" parent="Other/Trees" unique_id=1850427115 instance=ExtResource("28_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.679035, 0.10000038, -49.533306)
 
-[node name="tree_pine2" parent="." unique_id=2048282164 instance=ExtResource("28_37qwj")]
+[node name="Pine2" parent="Other/Trees" unique_id=2048282164 instance=ExtResource("28_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.910393, 0.10000038, -49.533306)
 
-[node name="tree_pine3" parent="." unique_id=945610224 instance=ExtResource("28_37qwj")]
+[node name="Pine3" parent="Other/Trees" unique_id=945610224 instance=ExtResource("28_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.899, 0.5, -21.072515)

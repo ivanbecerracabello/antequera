@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bq06e0v1g00uk"
-path="res://.godot/imported/barrier.blend-091ef716d76a10102695ae5928ff3938.scn"
+path="res://.godot/imported/barrier.blend-9fb84b1c23889354e2a6de09ad2879ed.scn"
 
 [deps]
 
-source_file="res://assets/models/generic/barrier.blend"
-dest_files=["res://.godot/imported/barrier.blend-091ef716d76a10102695ae5928ff3938.scn"]
+source_file="res://assets/models/gates/barrier.blend"
+dest_files=["res://.godot/imported/barrier.blend-9fb84b1c23889354e2a6de09ad2879ed.scn"]
 
 [params]
 
