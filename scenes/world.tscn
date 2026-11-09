@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://b4sok3nobs00w" path="res://assets/models/chunks/legion.glb" id="26_munwf"]
 [ext_resource type="PackedScene" uid="uid://dnw2117ftfnay" path="res://assets/models/generic/traffic_sign_no_parking.glb" id="27_ts3gi"]
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
-[ext_resource type="PackedScene" uid="uid://slhwsmn0xb3c" path="res://assets/models/generic/tree_pine.blend" id="28_37qwj"]
 [ext_resource type="PackedScene" uid="uid://b45x4b6l587n5" path="res://assets/models/chunks/bifurcation.glb" id="48_x28ej"]
 [ext_resource type="PackedScene" uid="uid://drsmvjihk818g" path="res://assets/models/chunks/comedias.glb" id="49_5hglh"]
 [ext_resource type="PackedScene" uid="uid://dtgmhba4np78x" path="res://assets/models/chunks/estepa.glb" id="49_x28ej"]
@@ -62,10 +61,11 @@ transform = Transform3D(-0.17364818, -0.6963642, 0.6963642, 0, 0.70710677, 0.707
 shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035194397, 0, 0.071380615)
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=97374417 instance=ExtResource("6_qfnet")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48, 0.35, -142)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.820345, 0.35, -97.92564)
 
 [node name="Player" parent="." unique_id=360165300 instance=ExtResource("14_xo05s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -100,9 +100,6 @@ visible = false
 
 [node name="Bus" parent="Chunks" unique_id=612073438 instance=ExtResource("58_npbic")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -68)
-
-[node name="Mapa" parent="Chunks" unique_id=185477220 instance=ExtResource("25_xgqkh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
 
 [node name="Paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8)
@@ -146,6 +143,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 356, 0, -42)
 [node name="legion" parent="Chunks" unique_id=1226788808 instance=ExtResource("26_munwf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, 64)
 
+[node name="mapa" parent="Chunks" unique_id=1669106346 instance=ExtResource("25_xgqkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
+
 [node name="Other" type="Node3D" parent="." unique_id=1314714892]
 
 [node name="Gates" type="Node3D" parent="Other" unique_id=611605684]
@@ -180,12 +180,3 @@ shape = SubResource("BoxShape3D_4kbfs")
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 204.59157, 0, 79.83866)
 
 [node name="Trees" type="Node3D" parent="Other" unique_id=215877660]
-
-[node name="Pine" parent="Other/Trees" unique_id=1850427115 instance=ExtResource("28_37qwj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.679035, 0.10000038, -49.533306)
-
-[node name="Pine2" parent="Other/Trees" unique_id=2048282164 instance=ExtResource("28_37qwj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.910393, 0.10000038, -49.533306)
-
-[node name="Pine3" parent="Other/Trees" unique_id=945610224 instance=ExtResource("28_37qwj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.899, 0.5, -21.072515)
