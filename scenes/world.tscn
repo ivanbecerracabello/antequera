@@ -62,6 +62,7 @@ shadow_enabled = true
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=1590727291]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035194397, 0, 0.071380615)
+visible = false
 occluder = ExtResource("28_0nbtd")
 
 [node name="Bus" parent="." unique_id=97374417 instance=ExtResource("6_qfnet")]
@@ -99,7 +100,7 @@ visible = false
 [node name="Chunks" type="Node3D" parent="." unique_id=619973064]
 
 [node name="Bus" parent="Chunks" unique_id=612073438 instance=ExtResource("58_npbic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -68)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.695988, 0, -101.724434)
 
 [node name="Paseo" parent="Chunks" unique_id=49649135 instance=ExtResource("59_e6ckp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8)

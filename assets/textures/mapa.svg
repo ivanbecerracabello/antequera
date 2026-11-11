@@ -29,7 +29,7 @@
      units="px"
      inkscape:zoom="5.4377665"
      inkscape:cx="28.688249"
-     inkscape:cy="42.848474"
+     inkscape:cy="42.664576"
      inkscape:window-width="1920"
      inkscape:window-height="935"
      inkscape:window-x="1920"
@@ -57,19 +57,19 @@
        x="0.52916664"
        y="0.52916664" />
     <rect
-       style="fill:#f2d16b;fill-opacity:1;stroke-width:2.33993"
+       style="fill:#f2d16b;fill-opacity:1;stroke-width:1.84988"
        id="rect1587"
-       width="4.2333331"
+       width="2.6458333"
        height="4.4979167"
-       x="10.054167"
-       y="9.7895832"
+       x="5.5562501"
+       y="10.847917"
        inkscape:export-filename="/home/ivanbecerra/repos/antequera/assets/textures/rect1587.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:#4f7f3a;fill-opacity:1;stroke-width:4.12148"
+       style="fill:#4f7f3a;fill-opacity:1;stroke-width:2.46306"
        id="rect2028"
-       width="7.4083333"
+       width="2.6458333"
        height="9.260417"
        x="0.52916664"
        y="7.1437502" />
