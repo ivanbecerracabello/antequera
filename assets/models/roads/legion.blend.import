@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c15x0mjqaudch"
-path="res://.godot/imported/legion.blend-a92ed92923cef1aca13fa2d40f0a2d7c.scn"
+uid="uid://bbponcgc0p56i"
+path="res://.godot/imported/legion.blend-e429b0c23382b15a053168d507faef9b.scn"
 
 [deps]
 
-source_file="res://assets/models/chunks/legion.blend"
-dest_files=["res://.godot/imported/legion.blend-a92ed92923cef1aca13fa2d40f0a2d7c.scn"]
+source_file="res://assets/models/roads/legion.blend"
+dest_files=["res://.godot/imported/legion.blend-e429b0c23382b15a053168d507faef9b.scn"]
 
 [params]
 
