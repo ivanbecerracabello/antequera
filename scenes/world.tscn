@@ -14,6 +14,7 @@
 [ext_resource type="ArrayOccluder3D" uid="uid://dmv8njfvaf60r" path="res://miscellaneous/world.occ" id="28_0nbtd"]
 [ext_resource type="PackedScene" uid="uid://cdnnp86r8fu26" path="res://assets/models/chunks/picasso.glb" id="28_navra"]
 [ext_resource type="PackedScene" uid="uid://cbpx1dbw46rr1" path="res://assets/models/roads/infante.glb" id="29_37qwj"]
+[ext_resource type="PackedScene" uid="uid://dumpaqy432ica" path="res://assets/models/roads/higueruelos.glb" id="30_navra"]
 [ext_resource type="PackedScene" uid="uid://b45x4b6l587n5" path="res://assets/models/chunks/bifurcation.glb" id="48_x28ej"]
 [ext_resource type="PackedScene" uid="uid://drsmvjihk818g" path="res://assets/models/chunks/comedias.glb" id="49_5hglh"]
 [ext_resource type="PackedScene" uid="uid://dtgmhba4np78x" path="res://assets/models/chunks/estepa.glb" id="49_x28ej"]
@@ -153,7 +154,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -20)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67, 0, 9)
 
 [node name="Legion" parent="Roads" unique_id=183445588 instance=ExtResource("27_37qwj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59, 0, 64)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0, 64)
 
 [node name="Other" type="Node3D" parent="." unique_id=1314714892]
 
@@ -191,7 +192,10 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 208,
 [node name="Trees" type="Node3D" parent="Other" unique_id=215877660]
 
 [node name="picasso" parent="." unique_id=204161077 instance=ExtResource("28_navra")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, 64)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 64)
 
 [node name="infante" parent="." unique_id=2086109635 instance=ExtResource("29_37qwj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 192, 0, 68)
+
+[node name="higueruelos" parent="." unique_id=363829761 instance=ExtResource("30_navra")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 208, 6, 125)

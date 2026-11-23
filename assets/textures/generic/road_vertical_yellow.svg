@@ -51,32 +51,18 @@
        x="1.9437701"
        y="1.9437701" />
     <rect
-       style="fill:#a3a3a3;fill-opacity:1;stroke:#a3a3a3;stroke-width:1.97569;stroke-opacity:1"
-       id="rect1094"
-       width="9.1368103"
-       height="65.757645"
-       x="0.98784673"
-       y="0.98784673" />
-    <rect
-       style="fill:#a3a3a3;fill-opacity:1;stroke:#a3a3a3;stroke-width:1.97569;stroke-opacity:1"
-       id="rect1212"
-       width="9.1368103"
-       height="65.757645"
-       x="57.608677"
-       y="0.987845" />
-    <rect
-       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:1.40047;stroke-opacity:1"
-       id="rect1350"
-       width="0.45161527"
-       height="66.33287"
-       x="13.135652"
-       y="0.70023" />
-    <rect
-       style="fill:#d8b72a;fill-opacity:1;stroke:#d8b72a;stroke-width:1.40047;stroke-opacity:1"
+       style="fill:#d8b72a;fill-opacity:1;stroke:none;stroke-width:2.86587;stroke-opacity:1"
        id="rect1696"
-       width="0.45161527"
-       height="66.33287"
-       x="54.146069"
-       y="0.70023185" />
+       width="1.8520833"
+       height="67.73333"
+       x="64.029167"
+       y="0" />
+    <rect
+       style="fill:#d8b72a;fill-opacity:1;stroke:none;stroke-width:2.86587;stroke-opacity:1"
+       id="rect1271"
+       width="1.8520833"
+       height="67.73333"
+       x="1.8520833"
+       y="0" />
   </g>
 </svg>
