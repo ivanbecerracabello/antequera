@@ -134,7 +134,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 381, 0, 64)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 396, 0, 0)
 
 [node name="cinema" parent="Chunks" unique_id=1130618827 instance=ExtResource("54_mvg0v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 208, 0, -8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 208, 0, -6)
 
 [node name="market" parent="Chunks" unique_id=1109796058 instance=ExtResource("55_iexy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 263, 0, -57)
